@@ -1,6 +1,3 @@
-// @ts-check
-// Note: type annotations allow type checking and IDE autocompletion
-
 import { Config } from '@docusaurus/types';
 
 
@@ -29,7 +26,7 @@ const config: Config = {
           routeBasePath: '/docs', // Base path for docs
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/yashhingole/iarm-docs/edit/main/', // Replace with your repo edit URL
+            'https://dev.azure.com/VivekB0271/Product%20Documentation/_git/Product%20Documentation?path=', // Replace with your repo edit URL
         },
         blog: false, // Disable the blog if not needed
         theme: {
