@@ -26,7 +26,7 @@ const config: Config = {
           routeBasePath: '/docs', // Base path for docs
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://dev.azure.com/VivekB0271/Product%20Documentation/_git/Product%20Documentation?path=', // Replace with your repo edit URL
+            'https://github.com/Infotechtion/docs/edit/main/', 
         },
         blog: false, // Disable the blog if not needed
         theme: {
