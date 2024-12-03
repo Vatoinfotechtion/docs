@@ -15,10 +15,7 @@ jobs:
     steps:
     
     # Checkout the repository
-    - task: Checkout@2
-      inputs:
-        repository: self
-        clean: true
+    - checkout: self
 
     # Install dependencies
     - task: NodeTool@0
@@ -34,15 +31,3 @@ jobs:
     - script: |
         npm run build
       displayName: 'Build Docusaurus'
-
-    # Deploy to Azure WebApp
-    - task: AzureWebApp@1
-      inputs:
-        azureSubscription: '<your-service-connection>'  # Replace with your Azure Service Connection
-        appName: '<your-webapp-name>'  # Replace with the name of your Azure WebApp
-        package: '$(Build.ArtifactStagingDirectory)/$(buildDirectory)'  # Path to the build directory
-        deploymentMethod: 'zipDeploy'
-
-    # Optional: Publish build artifacts if needed
-    - publish: $(Build.ArtifactStagingDirectory)
-      artifact: drop
