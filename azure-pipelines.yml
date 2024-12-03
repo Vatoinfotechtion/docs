@@ -1,21 +1,48 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
-- main
+  branches:
+    include:
+      - main  # Trigger on the main branch. Change this to your branch if needed.
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '20.x'
-  displayName: 'Install Node.js'
+variables:
+  buildDirectory: 'build'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+jobs:
+  - job: BuildAndDeploy
+    displayName: 'Build Docusaurus and Deploy to Azure WebApp'
+    steps:
+    
+    # Checkout the repository
+    - task: Checkout@2
+      inputs:
+        repository: self
+        clean: true
+
+    # Install dependencies
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '20'  # You can adjust the Node.js version here
+        addToPath: true
+
+    - script: |
+        npm install
+      displayName: 'Install npm dependencies'
+
+    # Build the Docusaurus app
+    - script: |
+        npm run build
+      displayName: 'Build Docusaurus'
+
+    # Deploy to Azure WebApp
+    - task: AzureWebApp@1
+      inputs:
+        azureSubscription: '<your-service-connection>'  # Replace with your Azure Service Connection
+        appName: '<your-webapp-name>'  # Replace with the name of your Azure WebApp
+        package: '$(Build.ArtifactStagingDirectory)/$(buildDirectory)'  # Path to the build directory
+        deploymentMethod: 'zipDeploy'
+
+    # Optional: Publish build artifacts if needed
+    - publish: $(Build.ArtifactStagingDirectory)
+      artifact: drop
