@@ -87,8 +87,8 @@ const config: Config = {
             { label: 'PRM', to: '/docs/prm' },
             { label: 'Audit Log Sync', to: '/docs/audit-log-sync' },
             // { label: 'Universal Retention Connector', to: '/uniRetentionConn' },
-            { label: 'Reports', to: '/reports' },
-            { label: 'Administration', to: '/administration' },
+            // { label: 'Reports', to: '/reports' },
+            // { label: 'Administration', to: '/administration' },
           ],
         },
         {
