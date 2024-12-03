@@ -1,8 +1,8 @@
 .features {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping to new rows */
-  gap: 20px; /* Adds space between both rows and columns */
-  justify-content: center; /* Centers cards within the container */
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
   padding: 2rem 0;
   width: 100%;
 }
@@ -50,7 +50,8 @@
 
 @media (max-width: 480px) {
   .cardStyle {
-    grid-template-columns: 1fr; /* 1 card per row */
+    margin-left: 10%;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }

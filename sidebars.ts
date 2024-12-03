@@ -142,10 +142,6 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'uniretentionconn/overview'
-        // 'uniRetentionConn/detailed-intro',
-        // 'uniRetentionConn/glossary-taxonomy',
-        // 'uniRetentionConn/deployment-requirements',
-        // 'uniRetentionConn/troubleshooting-faq',
       ],
     },
   ],
