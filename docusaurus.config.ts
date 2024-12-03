@@ -86,7 +86,7 @@ const config: Config = {
             { label: 'Workspace Gov', to: '/docs/workspace-gov' },
             { label: 'PRM', to: '/docs/prm' },
             { label: 'Audit Log Sync', to: '/docs/audit-log-sync' },
-            { label: 'Universal Retention Connector', to: '/uniRetentionConn' },
+            // { label: 'Universal Retention Connector', to: '/uniRetentionConn' },
             { label: 'Reports', to: '/reports' },
             { label: 'Administration', to: '/administration' },
           ],
