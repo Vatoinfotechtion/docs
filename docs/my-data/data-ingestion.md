@@ -33,4 +33,4 @@ Data ingestion is the process of importing, transferring, and loading data from 
 
 ## Troubleshooting
 
-If you encounter issues, refer to the [Troubleshooting / FAQ](../troubleshooting-faq) section for help.
+If you encounter issues, refer to the [Troubleshooting / FAQ](./troubleshooting-faq) section for help.
