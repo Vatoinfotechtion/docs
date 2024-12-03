@@ -138,10 +138,10 @@ const sidebars: SidebarsConfig = {
       label: 'Universal Retention Connector',
       link: {
         type: 'doc',
-        id: 'uniretentionconn/index',
+        id: 'uniRetentionConn/index',
       },
       items: [
-        'uniretentionconn/overview'
+        'uniRetentionConn/overview'
       ],
     },
   ],
