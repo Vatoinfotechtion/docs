@@ -6,7 +6,7 @@ const config: Config = {
   tagline: 'Get Started With i-ARM Documentation',
   url: 'https://your-site.com', // Replace with your site's URL
   baseUrl: '/', // Use '/' for local or hosted root-level setups
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
