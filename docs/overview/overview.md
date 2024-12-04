@@ -1,6 +1,6 @@
-# Overview of i-ARM
+# Overview
 
-Welcome to the **Overview** section of iARM documentation. This section provides a high-level understanding of the platform's structure, key concepts, and navigation.
+Welcome to the **Overview** section of documentation. This section provides a high-level understanding of the platform's structure, key concepts, and navigation.
 
 ## Subsections
 1. [Detailed Introduction](detailed-introduction.md): A comprehensive insight into the platform.
