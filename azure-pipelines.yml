@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-      - main  # Trigger on the main branch. Change this to your branch if needed.
+      - main  # Trigger on the main branch. Change if needed.
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -15,12 +15,12 @@ jobs:
     steps:
     
     # Checkout the repository
-    - checkout: self
+    - checkout: self  # Correct syntax for checkout
 
     # Install dependencies
     - task: NodeTool@0
       inputs:
-        versionSpec: '20'  # You can adjust the Node.js version here
+        versionSpec: '20.x'  # Ensure this version is compatible with Docusaurus
         addToPath: true
 
     - script: |
@@ -31,3 +31,15 @@ jobs:
     - script: |
         npm run build
       displayName: 'Build Docusaurus'
+
+    # Deploy to Azure WebApp
+    - task: AzureWebApp@1
+      inputs:
+        azureSubscription: 'Infotechtion Documentation'  # Replace with your Azure service connection name
+        appName: 'iarm-docs'  # Replace with your Azure WebApp name
+        package: '$(System.DefaultWorkingDirectory)/$(buildDirectory)'  # Path to the build directory
+        deploymentMethod: 'zipDeploy'
+
+    # Optional: Publish build artifacts if needed
+    - publish: $(Build.ArtifactStagingDirectory)
+      artifact: drop
