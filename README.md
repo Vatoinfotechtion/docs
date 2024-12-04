@@ -29,9 +29,14 @@ You can easily modify the documentation by editing .md files in the app.
 1. Locating .md Files
 All documentation files are located in the docs folder.
 
-2. Editing an .md File
+2. Follow steps to edit docs directly from documentation website
+
+### 1. Navigate to any documentation
+
+3. Editing an .md File
 Navigate to the docs directory.
 Find the .md file you want to edit.
+
 Make the required changes using Markdown syntax. 
 
 Example:

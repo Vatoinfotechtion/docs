@@ -132,19 +132,19 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  universalRententionConnectorSidebar: [
-    {
-      type: 'category',
-      label: 'Universal Retention Connector',
-      link: {
-        type: 'doc',
-        id: 'uniRetentionConn/index',
-      },
-      items: [
-        'uniRetentionConn/overview'
-      ],
-    },
-  ],
+  // universalRententionConnectorSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'Universal Retention Connector',
+  //     link: {
+  //       type: 'doc',
+  //       id: 'uniRetentionConn/index',
+  //     },
+  //     items: [
+  //       'uniRetentionConn/overview'
+  //     ],
+  //   },
+  // ],
   reportsSidebar: [
     {
       type: 'category',
