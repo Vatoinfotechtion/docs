@@ -1,4 +1,4 @@
-# Detailed Introduction
+# Detailed Introduction of i-ARM
 
 Dive deeper into the iARM platform and explore its powerful capabilities.
 
