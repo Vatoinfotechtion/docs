@@ -70,7 +70,7 @@ You can also ask the Databot general questions abouts records management, such a
 ### Q: How frequently are the datasets updated?
 A: Datasets are updated automatically based on the schedule your tenant's Power BI Admin has set up.
 
-![Image Placeholder for FAQ Section](#)
+
 
 ---
 
@@ -78,7 +78,7 @@ A: Datasets are updated automatically based on the schedule your tenant's Power 
 
 If you encounter issues or have additional questions, you can reach our support team:
 
-**Support Email:** support@enterpriseDatabot.com  
+**Support Email:** support@infotechtion.com  
 
 ---
 
