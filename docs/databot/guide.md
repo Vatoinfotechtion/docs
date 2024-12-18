@@ -28,10 +28,10 @@ To begin using the i-ARM Databot, login to your tenant's i-ARM, and select Datab
 Once you open the Databot, it will automatically connect to the available Power BI records management datasets. The Databot will list all available datasets, and you can choose the one you wish to interact with.
 
 ### Step 2: Selecting the Dataset
-Once the Databot presents the list of datasets, you can select the one that contains the records you need. 
+Once the Databot presents the list of datasets, you can select the one that contains the records you need, and begin or continue your conversation
 
 **Example Command:**  
-`"Select the records dataset for 2023 compliance"`
+`"How many Redundant, Obsolete, or Trivial files do I have?"`
 
 ![Image Placeholder for Dataset Selection Screen](#)
 
@@ -40,14 +40,16 @@ Once the Databot presents the list of datasets, you can select the one that cont
 ## 3. Interacting with the Databot
 
 ### Asking Questions
-The Databot can respond to a variety of questions about the records in your Power BI dataset. Here are a few examples:
+The Databot can respond to a variety of questions about the records in your Power BI dataset. Here are a few examples to try out with the Data Explorer report:
 
 - "How many records are in the dataset?"
-- "When was the last record updated?"
-- "What is the status of records for last quarter?"
+- "What are my most commonly applied record labels?"
+- "What are the top sensitivity classifications?"
 
-### Providing Commands
-Besides asking questions, you can issue direct commands to perform actions. For example, you can request to generate reports, export records, or track compliance without needing to leave the Databot.
+You can also view the DAX query the Databot created to gather the data, providing full transparency in how the Databot is arriving at its answers.
+
+You can also ask the Databot general questions abouts records management, such as useful terms, best practices, etc. 
+
 
 ---
 
@@ -55,23 +57,18 @@ Besides asking questions, you can issue direct commands to perform actions. For 
 
 ### Common Issues
 
-- **Issue: Unable to view records or datasets**  
-  **Solution:** Ensure the dataset is available and properly connected. If the issue persists, try refreshing the Databot interface.
+- **Issue: Unexpectedly not allowed to converse with the dataset**  
+  **Solution:** Check if the dataset has row-level security enabled, and that you are granted access. Please reach out to your tenant's Power BI admin for further assistance.
 
-- **Issue: Search results are not accurate**  
-  **Solution:** Refine your search criteria or consult with your administrator to ensure the dataset has been updated.
-
-![Image Placeholder for Troubleshooting Guide](#)
+- **Issue: Received data in tabular format instead of a chart**  
+  **Solution:** Prompt the Databot to give you the results in the desired format. You can converse with the Databot just like any other chatbot.
 
 ---
 
 ## 5. FAQ
 
-### Q: Can I export records directly from the Databot?
-A: Yes, the Databot supports exporting records into CSV or Excel formats. You can specify filters to customize your export.
-
 ### Q: How frequently are the datasets updated?
-A: Datasets are updated automatically based on your organization's schedule or real-time data input.
+A: Datasets are updated automatically based on the schedule your tenant's Power BI Admin has set up.
 
 ![Image Placeholder for FAQ Section](#)
 
@@ -82,9 +79,6 @@ A: Datasets are updated automatically based on your organization's schedule or r
 If you encounter issues or have additional questions, you can reach our support team:
 
 **Support Email:** support@enterpriseDatabot.com  
-**Phone Support:** 1-800-123-4567
-
-![Image Placeholder for Contact Support Information](#)
 
 ---
 
