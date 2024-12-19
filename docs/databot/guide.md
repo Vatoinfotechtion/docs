@@ -18,7 +18,7 @@ Welcome to the i-ARM Databot! This guide will walk you through how to use the Da
 
 To begin using the i-ARM Databot, login to your tenant's i-ARM, and select Databot in the top navigation bar.
 
-![Image Placeholder for Databot Interface](#)
+![Databot Interface](https://github.com/tahafanaswala-info/iarm-docs/blob/main/docs/databot/accessing.png)
 
 ---
 
@@ -30,10 +30,7 @@ Once you open the Databot, it will automatically connect to the available Power 
 ### Step 2: Selecting the Dataset
 Once the Databot presents the list of datasets, you can select the one that contains the records you need, and begin or continue your conversation
 
-**Example Command:**  
-`"How many Redundant, Obsolete, or Trivial files do I have?"`
-
-![Image Placeholder for Dataset Selection Screen](#)
+![Dataset Selection Screen](https://github.com/tahafanaswala-info/iarm-docs/blob/main/docs/databot/selecting.png)
 
 ---
 
@@ -42,11 +39,17 @@ Once the Databot presents the list of datasets, you can select the one that cont
 ### Asking Questions
 The Databot can respond to a variety of questions about the records in your Power BI dataset. Here are a few examples to try out with the Data Explorer report:
 
-- "How many records are in the dataset?"
-- "What are my most commonly applied record labels?"
-- "What are the top sensitivity classifications?"
+- `"How many records are in the dataset?"`
+- `"What are my most commonly applied record labels?"`
+- `"What are the top sensitivity classifications?"`
+
+Some datasets will have pre-configured prompts for you to select from, as seen below:
+![Prompt Recommendations](https://github.com/tahafanaswala-info/iarm-docs/blob/main/docs/databot/recommendations.png)
 
 You can also view the DAX query the Databot created to gather the data, providing full transparency in how the Databot is arriving at its answers.
+
+![Databot Interaction](https://github.com/tahafanaswala-info/iarm-docs/blob/main/docs/databot/interacting.png)
+
 
 You can also ask the Databot general questions abouts records management, such as useful terms, best practices, etc. 
 
