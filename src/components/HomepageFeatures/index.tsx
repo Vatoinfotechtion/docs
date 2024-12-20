@@ -1,101 +1,83 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { CiGrid42 } from "react-icons/ci";
+import { BsDatabase, BsGraphUp } from "react-icons/bs";
+import { TbFolderOpen, TbSTurnLeft } from "react-icons/tb";
+import { LuMonitorCog } from "react-icons/lu";
+import { GoShieldCheck } from "react-icons/go";
+import { PiPlugs } from "react-icons/pi";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  icon: React.JSX.Element;
   description: JSX.Element;
+  urlTo: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Overview',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <CiGrid42 />,
+    description: <>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/overview',
   },
   {
     title: 'Data Explorer',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <TbFolderOpen />,
+    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/data-explorer',
   },
   {
     title: 'My Data',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <BsDatabase />,
+    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/my-data',
   },
   {
     title: 'My Disposable Dashboard',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <LuMonitorCog />,
+    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/my-disposable-dashboard',
   },
   {
     title: 'Workspace Gov',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <GoShieldCheck />,
+    description: <>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/workspace-gov',
   },
   {
     title: 'Universal Retention',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <TbSTurnLeft />,
+    description: <>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/uniRetentionConn',
   },
   {
     title: 'PRM',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <BsGraphUp />,
+    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: 'docs/prm',
   },
   {
     title: 'Audit Log Sync',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      </>
-    ),
+    icon: <PiPlugs />,
+    description: <>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</>,
+    urlTo: '/docs/overview',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, icon, description, urlTo }: FeatureItem) {
   return (
-    
-      <div className={clsx('', styles.featureContainer)}>
-        <div className="text--center">
-          <Svg className={styles.featureSvg} role="img" />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <Heading as="h3">{title}</Heading>
-          <p>{description}</p>
-        </div>
+    <div className={clsx(styles.featureContainer)}>
+      <div className={styles.circleIcon}>{icon}</div>
+      <div className={styles.featureContent}>
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+        <a href={urlTo} className={styles.learnMoreLink}>
+          learn more
+        </a>
       </div>
-
+    </div>
   );
 }
 
@@ -103,11 +85,9 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.cardStyle}>
-        {
-          FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))
-        }
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
     </div>
   );
