@@ -5,25 +5,18 @@ const config: Config = {
   title: 'iARM Docs',
   tagline: 'Get Started With i-ARM Documentation',
   url: 'https://your-site.com', // Replace with your site's URL
-  baseUrl: '/', // Use '/' for local or hosted root-level setups
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  organizationName: 'YourOrg', // Replace with your GitHub org/user name
-  projectName: 'docusaurus-site', // Replace with your repo name
+  organizationName: 'Infotechtion', 
+  projectName: 'i-ARM Documentation', 
 
   i18n: {
     defaultLocale: 'en',
     locales: ['en'], // Add additional locales if required
   },
-
-  // customFields: {
-  //   homepageImage: {
-  //     src: 'img/headerLogo.svg',
-  //     alt: 'Header Logo',
-  //   },
-  // },
 
   presets: [
     [
@@ -35,7 +28,7 @@ const config: Config = {
           editUrl:
             'https://github.com/Infotechtion/docs/edit/main/', 
         },
-        blog: false, // Disable the blog if not needed
+        blog: false, 
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -51,12 +44,11 @@ const config: Config = {
         alt: 'Site Logo',
         src: 'img/logo-light.svg', 
         srcDark: 'img/logo-dark.svg', 
-        // herobanner: 'img/banner.svg',
       },
       items: [
         { to: '/docs/overview', label: 'Overview', position: 'left' },
         { to: '/docs/data-explorer', label: 'Data Explorer', position: 'left' },
-
+        { to: '/docs/databot/guide', label: 'DataBot', position: 'left' },
         {
           label: 'My Data',
           position: 'left', 
@@ -70,8 +62,6 @@ const config: Config = {
             
           ],
         },
-
-
         { to: '/docs/my-disposable-dashboard', label: 'My Disposable Dashboard', position: 'left' },
         { to: '/docs/workspace-gov', label: 'Workspace Gov', position: 'left' },
         { to: '/docs/prm', label: 'PRM', position: 'left' },
@@ -89,6 +79,7 @@ const config: Config = {
           items: [
             { label: 'Overview', to: '/docs/overview' },
             { label: 'Data Explorer', to: '/docs/data-explorer' },
+            { label: 'DataBot', to: '/docs/databot' },
             { label: 'My Data', to: '/docs/my-data' },
             { label: 'My Disposable Dashboard', to: '/docs/my-disposable-dashboard' },
             { label: 'Workspace Gov', to: '/docs/workspace-gov' },

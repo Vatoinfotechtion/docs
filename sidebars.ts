@@ -37,6 +37,19 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  dataBotSidebar: [
+    {
+      type: 'category',
+      label: 'DataBot',
+      link: {
+        type: 'doc',
+        id: 'databot/guide', 
+      },
+      items: [
+        'databot/privacy',
+      ],
+    }
+  ],
   myDataSidebar: [
     {
       type: 'category',
