@@ -10,6 +10,10 @@
   overflow: hidden;
   color: black;
   background: #CFFb8f;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 996px) {
@@ -22,4 +26,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  size: 3rem;
+}
+
+.hero__header {
+  display: flex; /* Makes the header a flex container */
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.hero__banner {
+  margin-right: 10px; /* Adds spacing between the icon and the title */
+}
+
+.hero__title {
+  display: flex;
+  align-items: center; /* Ensures the title aligns vertically with the icon */
 }

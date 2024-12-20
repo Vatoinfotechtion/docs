@@ -18,6 +18,13 @@ const config: Config = {
     locales: ['en'], // Add additional locales if required
   },
 
+  // customFields: {
+  //   homepageImage: {
+  //     src: 'img/headerLogo.svg',
+  //     alt: 'Header Logo',
+  //   },
+  // },
+
   presets: [
     [
       'classic',
@@ -44,6 +51,7 @@ const config: Config = {
         alt: 'Site Logo',
         src: 'img/logo-light.svg', 
         srcDark: 'img/logo-dark.svg', 
+        // herobanner: 'img/banner.svg',
       },
       items: [
         { to: '/docs/overview', label: 'Overview', position: 'left' },
@@ -74,7 +82,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
@@ -94,31 +102,32 @@ const config: Config = {
         {
           title: 'Sitemap',
           items: [
-            { label: 'Service', href: '#'},
-            { label: 'Solution', href: '#'},
-            { label: 'Success Stories', href: '#'}
+            { label: 'Service', href: 'https://www.infotechtion.com/services/'},
+            { label: 'Solution', href: 'https://www.infotechtion.com/solutions/'},
+            { label: 'Success Stories', href: 'https://infotechtion.com/success-stories/'}
           ]
         },
         {
           title: 'Learn More',
           items: [
-            { label: 'Insights', href: '#'},
-            { label: 'Partners', href: '#'},
-            { label: 'About Us', href: '#'}
+            { label: 'Insights', href: 'https://www.infotechtion.com/insights/'},
+            { label: 'Partners', href: 'https://www.infotechtion.com/?page_id=15'},
+            { label: 'About Us', href: 'https://infotechtion.com/about/'}
           ]
         },
         {
           title: 'Contact',
           items: [
-            { label: 'Contact Us', href: '#'},
-            { label: 'Privacy Policy', href: '#'},
-            { label: 'Copyright Statements', href: '#'}
+            { label: 'contact@infotechtion.com', href: '#'},
+            { label: 'Privacy Policy', href: 'https://infotechtion.com/privacy-policy'},
+            { label: 'Copyright Statements', href: 'https://infotechtion.com/copyright-statement/'}
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Infotechtion. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Infotechtion.`,
     },
   },
+  
 };
 
 export default config;
