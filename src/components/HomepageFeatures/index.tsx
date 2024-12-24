@@ -1,12 +1,9 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import { CiGrid42 } from "react-icons/ci";
-import { BsDatabase, BsGraphUp } from "react-icons/bs";
-import { TbFolderOpen, TbSTurnLeft } from "react-icons/tb";
-import { LuMonitorCog } from "react-icons/lu";
-import { GoShieldCheck } from "react-icons/go";
-import { PiPlugs } from "react-icons/pi";
+import { HiMiniTag } from "react-icons/hi2";
+import { PiNetworkFill } from "react-icons/pi";
+import { RiFileList2Line } from "react-icons/ri";
 
 type FeatureItem = {
   title: string;
@@ -17,52 +14,28 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Overview',
-    icon: <CiGrid42 />,
-    description: <>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/overview',
+    title: 'Records Lifecycle',
+    icon: <PiNetworkFill />,
+    description: <>Lifecycle disposition and achival of digital and physical data</>,
+    urlTo: 'docs/records-lifecycle/overview',
   },
   {
-    title: 'Data Explorer',
-    icon: <TbFolderOpen />,
-    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/data-explorer',
+    title: 'Data Discovery And Security',
+    icon: <HiMiniTag />,
+    description: <>AI powered discovery and classification of your sensitive data at scale</>,
+    urlTo: '/docs/data-discovery/overview',
   },
   {
-    title: 'My Data',
-    icon: <BsDatabase />,
-    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/my-data',
+    title: 'Digital WorkSpace Governance',
+    icon: <PiNetworkFill />,
+    description: <>Central provisioning, access, security, and lifecycle od digital workspaces</>,
+    urlTo: '/docs/digital-workspace/overview',
   },
   {
-    title: 'My Disposable Dashboard',
-    icon: <LuMonitorCog />,
-    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/my-disposable-dashboard',
-  },
-  {
-    title: 'Workspace Gov',
-    icon: <GoShieldCheck />,
-    description: <>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/workspace-gov',
-  },
-  {
-    title: 'Universal Retention',
-    icon: <TbSTurnLeft />,
-    description: <>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/uniRetentionConn',
-  },
-  {
-    title: 'PRM',
-    icon: <BsGraphUp />,
-    description: <>Lorem ipsum dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: 'docs/prm',
-  },
-  {
-    title: 'Audit Log Sync',
-    icon: <PiPlugs />,
-    description: <>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</>,
-    urlTo: '/docs/overview',
+    title: 'AI Governance',
+    icon: <RiFileList2Line />,
+    description: <>Prepare AI for adoption by data enhancing data security, privacy, compliance and hygiene</>,
+    urlTo: '/docs/ai-governance/guide',
   },
 ];
 

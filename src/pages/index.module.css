@@ -26,7 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  size: 3rem;
+  /* size: 3rem; */
+  /* margin-right: 10rem; */
 }
 
 .hero__header {

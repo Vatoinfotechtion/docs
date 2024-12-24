@@ -19,11 +19,20 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/overview">
-            getting started
-          </Link>
+          <div className='margin-right--md'>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/product-overview/Overview">
+              Product Overview
+            </Link>
+          </div>
+          <div>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/tech-docs/Overview">
+              Technical Documentation
+            </Link>
+          </div>
         </div>
       </div>
     </header>

@@ -1,197 +1,103 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const sidebars: SidebarsConfig = {
-  // Custom sidebar for "Overview" with a specific order
-  overviewSidebar: [
+  // Add your sidebars here
+  recordsLifecycleSidebar: [
     {
       type: 'category',
-      label: 'Overview',
+      label: 'Records Lifecycle',
       link: {
         type: 'doc',
-        id: 'overview/overview', // Default landing page for "Overview"
+        id: 'records-lifecycle/Overview', 
       },
       items: [
-        'overview/detailed-introduction', // Detailed Intro
-        'overview/glossary-taxonomy', // Glossary / Taxonomy
-        'overview/deployment-requirements', // Deployment Requirements
-        'overview/troubleshooting-faq', // Troubleshooting / FAQ
-      ],
-    },
-  ],
-  dataExplorerSidebar: [
-    {
-      type: 'category',
-      label: 'Data Explorer',
-      link: {
-        type: 'doc',
-        id: 'data-explorer/index', // Default landing page for "Data Explorer"
-      },
-      items: [
-        // 'data-explorer/detailed-intro',
-        // 'data-explorer/glossary-taxonomy',
-        // 'data-explorer/deployment-requirements',
-        // 'data-explorer/troubleshooting-faq',
-        'data-explorer/overview'
-      ],
-    },
-  ],
-  dataBotSidebar: [
-    {
-      type: 'category',
-      label: 'DataBot',
-      link: {
-        type: 'doc',
-        id: 'databot/guide', 
-      },
-      items: [
-        'databot/privacy',
+        'records-lifecycle/Overview',
+        'records-lifecycle/Getstarted',
+        'records-lifecycle/Usermanual',
+        'records-lifecycle/FAQ',
       ],
     }
   ],
-  myDataSidebar: [
+  dataDiscoverySidebar: [
     {
       type: 'category',
-      label: 'My Data',
+      label: 'Data Discovery',
       link: {
         type: 'doc',
-        id: 'my-data/index', // Default landing page for "My Data"
+        id: 'data-discovery/Overview', 
       },
       items: [
-        'my-data/overview',
-        // 'my-data/detailed-intro',
-        // 'my-data/glossary-taxonomy',
-        // 'my-data/deployment-requirements',
-        // 'my-data/troubleshooting-faq',
+        'data-discovery/Overview',
+        'data-discovery/Getstarted',
+        'data-discovery/Usermanual',
+        'data-discovery/FAQ',
       ],
-    },
+    }
   ],
-  dataIngestionSidebar: [
+  digitalWorkspaceSidebar: [
     {
       type: 'category',
-      label: 'Data Ingestion',
-      items: [
-        'my-data/data-ingestion',
-        'my-data/sharepoint',
-      ],
-    },
-  ],
-  myDisposableDashboardSidebar: [
-    {
-      type: 'category',
-      label: 'My Disposable Dashboard',
+      label: 'Digital Workspace',
       link: {
         type: 'doc',
-        id: 'my-disposable-dashboard/index',
+        id: 'digital-workspace/Overview', 
       },
       items: [
-        'my-disposable-dashboard/overview'
-        // 'my-disposable-dashboard/detailed-intro',
-        // 'my-disposable-dashboard/glossary-taxonomy',
-        // 'my-disposable-dashboard/deployment-requirements',
-        // 'my-disposable-dashboard/troubleshooting-faq',
+        'digital-workspace/Overview',
+        'digital-workspace/Getstarted',
+        'digital-workspace/Usermanual',
+        'digital-workspace/FAQ',
       ],
-    },
+    }
   ],
-  workspaceGovSidebar: [
+  aigovernanceSidebar: [
     {
       type: 'category',
-      label: 'Workspace Gov',
+      label: 'AI Governance',
       link: {
         type: 'doc',
-        id: 'workspace-gov/index',
+        id: 'ai-governance/guide', 
       },
       items: [
-        'workspace-gov/overview'
-        // 'workspace-gov/detailed-intro',
-        // 'workspace-gov/glossary-taxonomy',
-        // 'workspace-gov/deployment-requirements',
-        // 'workspace-gov/troubleshooting-faq',
+        'ai-governance/guide',
+        'ai-governance/privacy',
       ],
-    },
+    }
   ],
-  prmSidebar: [
+  techDocsSidebar: [
     {
       type: 'category',
-      label: 'PRM',
+      label: 'Technical Documentation',
       link: {
         type: 'doc',
-        id: 'prm/index',
+        id: 'tech-docs/Overview', 
       },
       items: [
-        'prm/overview'
-        // 'prm/detailed-intro',
-        // 'prm/glossary-taxonomy',
-        // 'prm/deployment-requirements',
-        // 'prm/troubleshooting-faq',
+        'tech-docs/Overview',
+        'tech-docs/Architecture',
+        'tech-docs/Targetoperatingsystem',
+        'tech-docs/ConfigurationDesign',
+        'tech-docs/DeploymentGuide',
       ],
-    },
+    }
   ],
-  auditLogSyncSidebar: [
+  productOverviewSidebar: [
     {
       type: 'category',
-      label: 'Audit Log Sync',
+      label: 'Product Overview',
       link: {
         type: 'doc',
-        id: 'audit-log-sync/index',
+        id: 'product-overview/Overview', 
       },
       items: [
-        'audit-log-sync/overview'
-        // 'audit-log-sync/detailed-intro',
-        // 'audit-log-sync/glossary-taxonomy',
-        // 'audit-log-sync/deployment-requirements',
-        // 'audit-log-sync/troubleshooting-faq',
+        'product-overview/Overview',
+        'product-overview/Usecase',
+        'product-overview/Casestudies',
+        'product-overview/FAQ',
       ],
-    },
+    }
   ],
-  // universalRententionConnectorSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'Universal Retention Connector',
-  //     link: {
-  //       type: 'doc',
-  //       id: 'uniRetentionConn/index',
-  //     },
-  //     items: [
-  //       'uniRetentionConn/overview'
-  //     ],
-  //   },
-  // ],
-  reportsSidebar: [
-    {
-      type: 'category',
-      label: 'Reports',
-      link: {
-        type: 'doc',
-        id: 'reports/index',
-      },
-      items: [
-        'reports/overview'
-        // 'reports/detailed-intro',
-        // 'reports/glossary-taxonomy',
-        // 'reports/deployment-requirements',
-        // 'reports/troubleshooting-faq',
-      ],
-    },
-  ],
-  administrationSidebar: [
-    {
-      type: 'category',
-      label: 'Administration',
-      link: {
-        type: 'doc',
-        id: 'administration/index',
-      },
-      items: [
-        // 'administration/detailed-intro',
-        // 'administration/glossary-taxonomy',
-        // 'administration/deployment-requirements',
-        // 'administration/troubleshooting-faq',
-        'administration/overview'
-      ],
-    },
-  ],
+  
 };
 
 export default sidebars;
