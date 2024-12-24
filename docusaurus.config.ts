@@ -2,8 +2,8 @@ import { Config } from '@docusaurus/types';
 
 
 const config: Config = {
-  title: 'iARM Docs',
-  tagline: 'Get Started With i-ARM Documentation',
+  title: 'i-ARM Docs',
+  tagline: 'Take Control with AI driven secuity, compliance and governance of your data',
   url: 'https://your-site.com', // Replace with your site's URL
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -39,35 +39,32 @@ const config: Config = {
   themeConfig: {
     themes: ['@docusaurus/theme-mermaid'],
     navbar: {
-      title: 'iARM Docs',
+      title: 'i-ARM Docs',
       logo: {
         alt: 'Site Logo',
         src: 'img/logo-light.svg', 
         srcDark: 'img/logo-dark.svg', 
       },
       items: [
-        { to: '/docs/overview', label: 'Overview', position: 'left' },
-        { to: '/docs/data-explorer', label: 'Data Explorer', position: 'left' },
-        { to: '/docs/databot/guide', label: 'DataBot', position: 'left' },
-        {
-          label: 'My Data',
-          position: 'left', 
-          to: '/docs/my-data', 
-          items: [
+        { to: 'docs/records-lifecycle/overview', label: 'Records Lifecycle', position: 'left' },
+        { to: '/docs/data-discovery/overview', label: 'Data Discovery', position: 'left' },
+        { to: '/docs/digital-workspace/overview', label: 'Digital Workspace', position: 'left' },
+        { to: '/docs/ai-governance/guide', label: 'AI Governance', position: 'left' },
 
-            {
-              label: 'Data Ingestion', 
-              to: '/docs/my-data/data-ingestion',
-            },
+        // create nested navbar using following snippit
+        // {
+        //   label: 'My Data',
+        //   position: 'left', 
+        //   to: '/docs/my-data', 
+        //   items: [
+
+        //     {
+        //       label: 'Data Ingestion', 
+        //       to: '/docs/my-data/data-ingestion',
+        //     },
             
-          ],
-        },
-        { to: '/docs/my-disposable-dashboard', label: 'My Disposable Dashboard', position: 'left' },
-        { to: '/docs/workspace-gov', label: 'Workspace Gov', position: 'left' },
-        { to: '/docs/prm', label: 'PRM', position: 'left' },
-        { to: '/docs/audit-log-sync', label: 'Audit Log Sync', position: 'left' },
-        { to: '/docs/reports', label: 'Reports', position: 'left' },
-        { to: '/docs/administration', label: 'Administration', position: 'left' },
+        //   ],
+        // },
 
       ],
     },
@@ -77,17 +74,10 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Overview', to: '/docs/overview' },
-            { label: 'Data Explorer', to: '/docs/data-explorer' },
-            { label: 'DataBot', to: '/docs/databot' },
-            { label: 'My Data', to: '/docs/my-data' },
-            { label: 'My Disposable Dashboard', to: '/docs/my-disposable-dashboard' },
-            { label: 'Workspace Gov', to: '/docs/workspace-gov' },
-            { label: 'PRM', to: '/docs/prm' },
-            { label: 'Audit Log Sync', to: '/docs/audit-log-sync' },
-            { label: 'Universal Retention Connector', to: '/docs/uniRetentionConn' },
-            { label: 'Reports', to: '/docs/reports' },
-            { label: 'Administration', to: '/docs/administration' },
+            { label: 'Records Lifecycle', to: '/docs/records-lifecycle' },
+            { label: 'Data Discovery And Security', to: '/docs/data-discovery' },
+            { label: 'Digital WorkSpace Governance', to: '/docs/digital-workspace' },
+            { label: 'AI Governance', to: '/docs/ai-governance' },
           ],
         },
         {
