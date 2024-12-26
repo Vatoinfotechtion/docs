@@ -3,17 +3,6 @@
 Welcome to the i-ARM Databot! This guide will walk you through how to use the Databot, enabling you to understand your enterprise content. Whether you're tracking compliance, auditing records, or generating reports, this Databot is designed to enhance your records management capabilities..
 
 ---
-
-## Table of Contents
-1. [Getting Started](#getting-started)
-2. [Connecting to Power BI Datasets](#connecting-to-power-bi-datasets)
-3. [Interacting with the Databot](#interacting-with-the-Databot)
-4. [Troubleshooting](#troubleshooting)
-5. [FAQ](#faq)
-6. [Contact Support](#contact-support)
-
----
-
 ## 1. Getting Started
 
 To begin using the i-ARM Databot, login to your tenant's i-ARM, and select Databot in the top navigation bar.
