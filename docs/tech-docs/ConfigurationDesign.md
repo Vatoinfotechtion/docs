@@ -1188,7 +1188,7 @@ On your machine, navigate to the **Windows Features (Turn Windows features on or
 
 The policy document shared earlier outlines (Azure policies) various security policies established as part of the Enterprise Scale Landing Zone. These policies are designed to enhance the overall security posture of the subscription, ensuring robust protection against potential threats. As a critical component of our architecture, the i-ARM services are required to comply with these security policies, reinforcing our commitment to safeguarding data and maintaining regulatory compliance.
 
-**<Note: additional firewall policies should be updated by the consumer cloud support team for review by the Infotechtion engagement team dedicated to the consumer.>**
+**Note:** additional firewall policies should be updated by the consumer cloud support team for review by the Infotechtion engagement team dedicated to the consumer.
 
 **The table below outlines the rules to be added in the connectivity subscription’s azure firewall**
 
