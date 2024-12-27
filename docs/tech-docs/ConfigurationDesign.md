@@ -1246,7 +1246,7 @@ This section provides an overview of the Power Automate configuration, which act
 
 When the power automate flows are imported in an environment other than the default power platform environment, then the labels should be created and managed using PowerShell only.
 
-<https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario>
+[https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario](<https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario>)
 
 # SharePoint Webpart
 
