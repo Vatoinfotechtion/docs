@@ -203,8 +203,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: User.Read | Delegate |
 | Microsoft Graph: RecordsManagement.ReadWrite.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientsecret |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-graphapi-prd | |
@@ -214,8 +214,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: User.Read | Delegate |
 | Microsoft Graph: User.Read.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-devopsconn-iarm-deploy-prd | |
@@ -226,8 +226,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | **RBAC** | **Scope** | **Role** |
 | rg-iarm-svc-regionabbr-prd | Contributor |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientsecret |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-notifications-prd | |
@@ -238,8 +238,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: Mail.Send | Application |
 | Microsoft Graph: User.ReadBasic.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-mydisppa-iarm-spoaccess-prd | |
@@ -251,8 +251,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | SharePoint: Sites.Read.All | Application |
 | SharePoint: Sites.FullControl.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-mydispconnspoaccess-prd | |
@@ -265,8 +265,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: Files.Read.All | Application |
 | SharePoint: Sites.Read.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-sql-iarm-sqlaccess-prd | |
@@ -276,8 +276,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: User.Read | Delegate |
 | **External Provider** | CREATE USER [spn-sql-iarm-sqlaccess-prd] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER [spn-sql-iarm-sqlaccess-prd]  ALTER ROLE db\_datawriter ADD MEMBER [spn-sql-iarm-sqlaccess-prd]  GRANT EXEC TO [spn-sql-iarm-sqlaccess-prd]  Note: A DB admin is required to login to SQL and run the above scripts | |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientsecret |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-prmprovisioning-prd | |
@@ -288,7 +288,7 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: Sites.FullControl.All | Application |
 | SharePoint: Sites.FullControl.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-prmbulkimport-prd | |
@@ -299,8 +299,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Microsoft Graph: TermStore.Read.All | Application |
 | SharePoint: Sites.Selected | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-prmsync-prd | |
@@ -313,8 +313,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | SharePoint: Sites.Read.All | Application |
 | SharePoint: Sites.ReadWrite.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientcert |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-wj-iarm-m365auditsync-prd | |
@@ -328,8 +328,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | Office 365 Management APIs: ActivityFeed.Read | Application |
 | Office 365 Management APIs: ActivityFeed.ReadDlp | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientsecret |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-agent-iarm-downloadarchiveblobs-prd | |
@@ -342,8 +342,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | kv-iarm-svc-regionabbr-prd | Key Vault Certificate User |
 | saiarmarchiveregionabbrprd | Storage Blob Data Reader |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientid |
-| kv-iarm-svc-regionabbr-prd | {spn name}-clientsecret |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-agent-iarm-scannerservice-prd | |
