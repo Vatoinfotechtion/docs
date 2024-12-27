@@ -24,11 +24,45 @@
 
 .buttons {
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* size: 3rem; */
-  /* margin-right: 10rem; */
+  align-items: center;
+  gap: 1rem; /* Adds space between the buttons */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
+.buttons .button {
+  width: 200px; /* Set fixed width for both buttons */
+  height: 50px; /* Set fixed height for both buttons */
+  text-align: center; /* Center align text */
+  box-sizing: border-box; /* Includes padding in width/height calculation */
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .buttons {
+    gap: 0.5rem; /* Reduce gap between buttons */
+  }
+
+  .buttons .button {
+    width: 180px; /* Adjust width for medium screens */
+    height: 45px; /* Adjust height */
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 576px) {
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Adjust spacing for vertical layout */
+    width: 100%; /* Buttons take full width */
+  }
+
+  .buttons .button {
+    width: 100%; /* Make buttons take full width */
+    height: 40px; /* Adjust height */
+  }
+}
+
 
 .hero__header {
   display: flex; /* Makes the header a flex container */

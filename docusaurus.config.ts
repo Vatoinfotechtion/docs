@@ -3,7 +3,7 @@ import { Config } from '@docusaurus/types';
 
 const config: Config = {
   title: 'i-ARM Docs',
-  tagline: 'Take Control with AI driven secuity, compliance and governance of your data',
+  tagline: 'Take Control with AI driven security, compliance and governance of your data.',
   url: 'https://your-site.com', // Replace with your site's URL
   baseUrl: '/',
   onBrokenLinks: 'warn',

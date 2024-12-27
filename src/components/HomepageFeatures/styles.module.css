@@ -20,18 +20,18 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 2rem 1.5rem;
-  text-align: left; 
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem; 
+  gap: 1rem;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 [data-theme='dark'] .featureContainer {
-  background: #464545; /* Dark background */
-  color: #e0e0e0; /* Light text */
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+  background: #464545;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -53,7 +53,7 @@
   font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 /* Content Styling */
@@ -92,9 +92,18 @@
   border-radius: 8px;
   margin-top: 2rem;
   transition: background-color 0.2s ease-in-out;
+  align-items: flex-end;
 }
 
-[data-theme='dark'] .learnMoreLink{
+@media (max-width: 1024px) and (min-height: 600px) {
+  .learnMoreLink {
+    font-size: 0.75rem;
+    padding: 0.6rem 2.5rem;
+    width: auto;
+  }
+}
+
+[data-theme='dark'] .learnMoreLink {
   background-color: #344d93;
   color: #e0e0e0;
 }
@@ -117,3 +126,26 @@
   }
 }
 
+/* Ensure a fixed size for the cards on the Nest Hub Max (1280x800 resolution) */
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .featureContainer {
+    height: 450px; /* Adjust height to fit the screen */
+    width: 330px;  /* Consistent width */
+  }
+
+  .cardStyle {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for Nest Hub Max size */
+  }
+}
+
+/* Adjust layout for devices with smaller screens */
+@media (max-width: 800px) {
+  .featureContainer {
+    height: auto; /* Allow flexibility in height */
+    width: 100%; /* Ensure responsiveness */
+  }
+
+  .cardStyle {
+    grid-template-columns: 1fr; /* Single column for very small devices */
+  }
+}

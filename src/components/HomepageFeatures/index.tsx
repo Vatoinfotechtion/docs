@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import { HiMiniTag } from "react-icons/hi2";
 import { PiNetworkFill } from "react-icons/pi";
 import { RiFileList2Line } from "react-icons/ri";
+import { ImCheckboxChecked } from "react-icons/im";
 
 type FeatureItem = {
   title: string;
@@ -15,26 +16,26 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Records Lifecycle',
-    icon: <PiNetworkFill />,
-    description: <>Lifecycle disposition and achival of digital and physical data</>,
+    icon: <ImCheckboxChecked />,
+    description: <>Govern the entire lifecycle, disposition, and archival of digital and physical data.</>,
     urlTo: 'docs/records-lifecycle/overview',
   },
   {
     title: 'Data Discovery And Security',
     icon: <HiMiniTag />,
-    description: <>AI powered discovery and classification of your sensitive data at scale</>,
+    description: <>Discover and classify all sensitive data with AI powered accuracy and scale.</>,
     urlTo: '/docs/data-discovery/overview',
   },
   {
     title: 'Digital WorkSpace Governance',
     icon: <PiNetworkFill />,
-    description: <>Central provisioning, access, security, and lifecycle od digital workspaces</>,
+    description: <>Central provisioning, access, security, and lifecycle of new and existing digital workspaces.</>,
     urlTo: '/docs/digital-workspace/overview',
   },
   {
     title: 'AI Governance',
     icon: <RiFileList2Line />,
-    description: <>Prepare AI for adoption by data enhancing data security, privacy, compliance and hygiene</>,
+    description: <>Secure AI for adoption and remediation of existing security, privacy, and compliance risks.</>,
     urlTo: '/docs/ai-governance/guide',
   },
 ];
@@ -47,7 +48,7 @@ function Feature({ title, icon, description, urlTo }: FeatureItem) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
         <a href={urlTo} className={styles.learnMoreLink}>
-          learn more
+          Learn More
         </a>
       </div>
     </div>
