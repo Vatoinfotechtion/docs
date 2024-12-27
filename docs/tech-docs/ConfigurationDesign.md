@@ -1343,11 +1343,13 @@ Azure Container Instances (ACI) allows you to run containers in the cloud withou
 
 **List of allowed IP addresses and domain URLs:**
 
-<https://learn.microsoft.com/en-us/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4>
+[Azure DevOps IP and URL Allow List](https://learn.microsoft.com/en-us/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4)
 
-<https://learn.microsoft.com/en-us/azure/container-registry/container-registry-firewall-access-rules#configure-client-firewall-rules-for-mcr>
+For more information on configuring client firewall rules for Azure Container Registry, refer to the official documentation: [Configure client firewall rules for MCR](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-firewall-access-rules#configure-client-firewall-rules-for-mcr)
 
-<https://learn.microsoft.com/en-us/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4#inbound-connections>
+For more information on configuring client firewall rules for Azure Container Registry, refer to the official documentation: [Configure client firewall rules for MCR](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-firewall-access-rules#configure-client-firewall-rules-for-mcr)
+
+For a list of allowed IP addresses and domain URLs, refer to the official documentation: [Azure DevOps IP and URL Allow List](https://learn.microsoft.com/en-us/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4#inbound-connections)
 
 ## Binary validation
 
