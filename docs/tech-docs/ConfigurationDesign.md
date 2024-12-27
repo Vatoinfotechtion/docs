@@ -468,9 +468,9 @@ This part highlights the importance of Entra ID / Azure Active Directory service
 | --- | --- | --- |
 | **Description** | Account used by the MPIP Scanner service for installing and scanning the Network File Shares or Azure File Shares | |
 | **License** | E5 license | |
-| **Other considerations** | There should be at least one sensitivity label policy published to this service account for the MPIP Scanner to start capturing Sensitive information types. The sensitivity label should also have send to audit attribute set to true for the data to be captured in M365 audit logs. Reference: <https://learn.microsoft.com/en-us/powershell/exchange/client-advanced-settings?view=exchange-ps#enableaudit> | |
+| **Other considerations** | There should be at least one sensitivity label policy published to this service account for the MPIP Scanner to start capturing Sensitive information types. The sensitivity label should also have send to audit attribute set to true for the data to be captured in M365 audit logs. Reference: [Enable Audit](https://learn.microsoft.com/en-us/powershell/exchange/client-advanced-settings?view=exchange-ps#enableaudit) | |
 | **Permissions** | **Scope** | **Role** |
-| sql-iarmmpip-svc-regionabbr-prd | Sysadmin  Reference: <https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements> |
+| sql-iarmmpip-svc-regionabbr-prd | Sysadmin  [Reference](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements) |
 | sql-iarmmpip-svc-regionabbr-prd | db\_owner |
 | Network/ Azure File Share (Mounted on Scanner VM) | Read Write access on the file share for scanning  (Write is only necessary if protection is being applied) |
 | Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
@@ -635,7 +635,7 @@ The section below details the subnets within the Azure Virtual Network for the i
 | subnet-iarm-funcapp-regionabbr-prd | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-funcapp-regionabbr-prd | This subnet ensures that serverless functions operate within a secure and isolated environment. |
 | subnet-iarm-pe-regionabbr-prd | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-pe-regionabbr-prd | This subnet secures private access to Azure services, ensuring that sensitive data is exchanged without being exposed to the public internet. |
 | subnet-iarm-workloads-regionabbr-prd | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-workloads-regionabbr-prd | This subnet isolates and secures virtual machines, enabling controlled access to VMs. |
-| AzureBastionSubnet | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-bastion-regionabbr-prd | The Bastion subnet enables secure remote access to Azure Virtual Machines (VMs) without exposing them to the public internet.  <https://learn.microsoft.com/en-us/azure/bastion/configuration-settings> |
+| AzureBastionSubnet | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-bastion-regionabbr-prd | The Bastion subnet enables secure remote access to Azure Virtual Machines (VMs) without exposing them to the public internet. [Learn more](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) |
 | subnet-iarm-container-regionabbr-prd | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-container-regionabbr-prd | This subnet enhances the network capabilities and security of container instances in Azure. |
 
 # Key Vault
@@ -648,7 +648,7 @@ Azure Key Vault is a critical component for the i-ARM solution, safeguarding sec
 
 **Note:** The key vault should have the IP addresses of the Power platform to be whitelisted. These IP addresses vary depending on the region where the power platform is hosted.
 
-**Reference:** <https://learn.microsoft.com/en-us/connectors/common/outbound-ip-addresses#power-platform>
+**Reference:** [Power Platform Outbound IP Addresses](https://learn.microsoft.com/en-us/connectors/common/outbound-ip-addresses#power-platform)
 
 | **Name** | kv-iarm-svc-regionabbr-prd | |
 | --- | --- | --- |
@@ -1214,7 +1214,7 @@ The policy document shared earlier outlines (Azure policies) various security po
 
 \*A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. This service tag needs to be updated based on the consumer azure region.
 
-[**https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags**](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags)
+[Available Service Tags](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags)
 
 # Powerplatform
 
@@ -1246,7 +1246,7 @@ This section provides an overview of the Power Automate configuration, which act
 
 When the power automate flows are imported in an environment other than the default power platform environment, then the labels should be created and managed using PowerShell only.
 
-[https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario](<https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario>)
+[Learn more](https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario)
 
 # SharePoint Webpart
 
