@@ -194,7 +194,7 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | **Description** | The service principal used for operations which relate to Azure function applications required for the functioning of the ‘My Data & My Disposal’ user interface people picker feature. | |
 | **Web Redirect** | https://func-iarm-mydata-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback  https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback  \*Pointing to the function apps created | |
 | **Expose an API** | **Scope** | **Authorized Client Applications** |
-| Application ID Uri: api://{ Client ID (spn-func-iarm-apiauth-prd) }/user\_impersonation  Scope Name: user\_impersonation  Who can consent? Admins and Users  Admin consent display name: user\_impersonation  Admin consent description: Access iarm apis  State: Enabled | { Client ID (spn-wapp-iarm-uidirectoryaccess-prd) } |
+| | Application ID Uri: api://\{ Client ID (spn-func-iarm-apiauth-prd) \}/user\_impersonation  Scope Name: user\_impersonation  Who can consent? Admins and Users  Admin consent display name: user\_impersonation  Admin consent description: Access iarm apis  State: Enabled | \{ Client ID (spn-wapp-iarm-uidirectoryaccess-prd) \} |
 
 | **Name** | spn-func-iarm-urclabelsync-prd | |
 | --- | --- | --- |
