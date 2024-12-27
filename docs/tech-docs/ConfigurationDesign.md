@@ -24,12 +24,12 @@ Below is the list of I-ARM resources which should have unique name
 
 | **Azure Component** | **Standard** |
 | --- | --- |
-| Application Registration | spn-<azureserviceabbr>-iarm-<purpose>-<env> |
-| Resource Group Name | rg-iarm-<purpose>-<regionabbr >-<env> |
-| Azure Services (Without Storage Accounts) | <azureserviceabbr>-iarm-<iarmmodule>-<regionabbr>-<env> |
-| Azure Storage Account | <azureserviceabbr>iarm<iarmmodule><regionabbr><env> **(This should always be less than 24 characters)** |
-| Security Groups | sg-<azureserviceabbr>-iarm-<purpose>-<env> |
-| Virtual Machine | <azureserviceabbr><iarm ><purpose><regionabbr><env> **(This should always be less than 15 characters)** |
+| Application Registration | spn-\<azureserviceabbr\>-iarm-\<purpose\>-\<env\> |
+| Resource Group Name | rg-iarm-\<purpose\>-\<regionabbr\>-\<env\> |
+| Azure Services (Without Storage Accounts) | \<azureserviceabbr\>-iarm-\<iarmmodule\>-\<regionabbr\>-\<env\> |
+| Azure Storage Account | \<azureserviceabbr\>iarm\<iarmmodule\>\<regionabbr\>\<env\> **(This should always be less than 24 characters)** |
+| Security Groups | sg-\<azureserviceabbr\>-iarm-\<purpose\>-\<env\> |
+| Virtual Machine | \<azureserviceabbr\>\<iarm\>\<purpose\>\<regionabbr\>\<env\> **(This should always be less than 15 characters)** |
 | General Names | Must include iarm to clearly identify a dedicated use of iarm. |
 
 ## Acronyms
@@ -85,30 +85,30 @@ Description automatically generated](data:image/png;base64...)
 
 | **Ref** | **Source Name** | **Target Name** | **Protocols** | **Data Gateway** | **VNet** | **Target’s Inbound Port** | **Firewall** | **Authentication method** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | MS Purview – i-ARM Power Automate | i-ARM SQL Data store | TCP / HTTPS: <confirmed during implementation> | Y | Source: N  Target: N | 1433 | Y –native | SQL Authentication |
-|  | i-ARM Function Apps | MS Purview | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Function Apps | i-ARM SQL Data store | TCP / HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 1433 | Y –native | Entra Managed Identity  (OAUTH) |
-|  | i-ARM Function Apps | Application Insights/Log Analytics | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Instrumentation Key |
-|  | i-ARM Function apps | SharePoint Online | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Power Automate | Key Vault | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
-|  | i-ARM Power Automate | Storage Account | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
-|  | i-ARM Power Automate | SharePoint Online | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Function Apps | Key Vault | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | Y –native | Entra Managed Identity  (OAUTH) |
-|  | i-ARM WebApp (App Service) | i-ARM Function apps | HTTPS: <confirmed during implementation> | N | Source: Y  Target: Y | 443 | N | Entra Managed Identity  (OAUTH) |
-|  | i-ARM WebApp (App Service) | Graph APIs  graph.microsoft.com/\* | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Function Apps | Graph APIs  graph.microsoft.com/\* | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Web Job (App Service) | Graph APIs  graph.microsoft.com/\* | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Web Job (App Service) | i-ARM SQL Data store | TCP / HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 1433 | Y –native | Entra Managed Identity  (OAUTH) |
-|  | i-ARM Web Job (App Service) | Key Vault | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | Y –native | Entra Managed Identity  (OAUTH) |
-|  | i-ARM Web Job (App Service) | Office Management API  manage.office.com/api/\* | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Function Apps | Office Management API  manage.office.com/api/\* | HTTPS: <confirmed during implementation> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | Infotechtion i-ARM DevOps | Resource Group | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
-|  | Power BI | i-ARM SQL Data store | TCP / HTTPS: <confirmed during implementation> | Y | Source: N  Target: N | 1433 | Y –native | SQL Authentication |
-|  | Landing Zone i-ARM Container Registry | Infotechtion Container registry | TCP / HTTPS: <confirmed during implementation> | N | Source: N Target: N | 443 | Y - native | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Container Instance | Landing Zone i-ARM Container Registry | TCP / HTTPS: <confirmed during implementation> | N | Source: Y Target: N | 443 | Y - native | Entra Managed Identity  (OAUTH) |
-|  | i-ARM Agent Services | Key Vault | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
-|  | i-ARM Agent Services | i-ARM SQL Data store | TCP / HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | Y –native | Dedicated Service Principal  (OAUTH) |
-|  | i-ARM Agent Services | Storage Account | HTTPS: <confirmed during implementation> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
+|  | MS Purview – i-ARM Power Automate | i-ARM SQL Data store | TCP / HTTPS: \<confirmed during implementation\> | Y | Source: N  Target: N | 1433 | Y –native | SQL Authentication |
+|  | i-ARM Function Apps | MS Purview | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Function Apps | i-ARM SQL Data store | TCP / HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 1433 | Y –native | Entra Managed Identity  (OAUTH) |
+|  | i-ARM Function Apps | Application Insights/Log Analytics | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Instrumentation Key |
+|  | i-ARM Function apps | SharePoint Online | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Power Automate | Key Vault | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
+|  | i-ARM Power Automate | Storage Account | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
+|  | i-ARM Power Automate | SharePoint Online | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Function Apps | Key Vault | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | Y –native | Entra Managed Identity  (OAUTH) |
+|  | i-ARM WebApp (App Service) | i-ARM Function apps | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: Y | 443 | N | Entra Managed Identity  (OAUTH) |
+|  | i-ARM WebApp (App Service) | Graph APIs  graph.microsoft.com/\* | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Function Apps | Graph APIs  graph.microsoft.com/\* | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Web Job (App Service) | Graph APIs  graph.microsoft.com/\* | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Web Job (App Service) | i-ARM SQL Data store | TCP / HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 1433 | Y –native | Entra Managed Identity  (OAUTH) |
+|  | i-ARM Web Job (App Service) | Key Vault | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | Y –native | Entra Managed Identity  (OAUTH) |
+|  | i-ARM Web Job (App Service) | Office Management API  manage.office.com/api/\* | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Function Apps | Office Management API  manage.office.com/api/\* | HTTPS: \<confirmed during implementation\> | N | Source: Y  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | Infotechtion i-ARM DevOps | Resource Group | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | N | Dedicated Service Principal  (OAUTH) |
+|  | Power BI | i-ARM SQL Data store | TCP / HTTPS: \<confirmed during implementation\> | Y | Source: N  Target: N | 1433 | Y –native | SQL Authentication |
+|  | Landing Zone i-ARM Container Registry | Infotechtion Container registry | TCP / HTTPS: \<confirmed during implementation\> | N | Source: N Target: N | 443 | Y - native | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Container Instance | Landing Zone i-ARM Container Registry | TCP / HTTPS: \<confirmed during implementation\> | N | Source: Y Target: N | 443 | Y - native | Entra Managed Identity  (OAUTH) |
+|  | i-ARM Agent Services | Key Vault | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
+|  | i-ARM Agent Services | i-ARM SQL Data store | TCP / HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Dedicated Service Principal  (OAUTH) |
+|  | i-ARM Agent Services | Storage Account | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
 | 25 | i-ARM Agent Services | Azure File Share and Network File Share | SMB | N | Source: N  Target: N | 445 | Y –native (Storage Account) | Entra Cloud Service Account |
 
 # Azure Governance
@@ -119,16 +119,16 @@ This section describes the deployment strategy for the i-ARM solution within the
 
 | **Parent** | Landing Zone |
 | --- | --- |
-| **Management Group** | <Consumer Landing Zone> |
-| **Azure Monitor** | <Consumer log analytics workspace for app events> |
+| **Management Group** | \<Consumer Landing Zone\> |
+| **Azure Monitor** | \<Consumer log analytics workspace for app events\> |
 
 ## Subscription
 
 This section outlines the deployment of i-ARM solution within an existing or dedicated Azure subscription in the specified tenancy. All solution components are consolidated within a single Azure resource group, facilitating streamlined management and organization of resources.
 
-| **Tenant** | <Consumer tenant name> (<Consumer tenant id>) |
+| **Tenant** | \<Consumer tenant name\> (\<Consumer tenant id\>) |
 | --- | --- |
-| **Subscription** | <Consumer subscription name> |
+| **Subscription** | \<Consumer subscription name\> |
 
 ## Subscription Resource Providers
 
@@ -375,35 +375,35 @@ This part highlights the importance of Entra ID / Azure Active Directory securit
 | **Description** | Read access to the azure subscription where i-ARM would be deployed. | |
 | **RBAC** | **Scope** | **Role** |
 | Subscription | Reader |
-| **Members** | <To be confirmed at the time of configuration> | |
+| **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-webappadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM persona performing administrative actions within i-ARM. | |
 | **RBAC** | **Scope** | **Role** |
 | **NA** |  |
-| **Members** | <To be confirmed at the time of configuration> | |
+| **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-sqlentraadministrators-prd | |
 | --- | --- | --- |
 | **Description** | Entra ID administrators accessing i-ARM Data Store | |
 | **RBAC** | **Scope** | **Role** |
 | **NA** |  |
-| **Members** | <To be confirmed at the time of configuration> | |
+| **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-recordsadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM Entra ID group required for the Records Administrator persona | |
 | **RBAC** | **Scope** | **Role** |
 | **NA** |  |
-| **Members** | <To be confirmed at the time of configuration> | |
+| **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-ediscoveryadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM Entra ID group required for eDiscovery Administrator persona | |
 | **RBAC** | **Scope** | **Role** |
 | **NA** |  |
-| **Members** | <To be confirmed at the time of configuration> | |
+| **Members** | \<To be confirmed at the time of configuration\> | |
 
 ## Service/User Accounts
 
@@ -534,7 +534,7 @@ This section highlights that the relevant PaaS services for the i-ARM solution a
 
 | **Name** | **Resource Group** | **Region** | **Address Space** | **Description** |
 | --- | --- | --- | --- | --- |
-| vnet-iarm-svc-regionabbr-prd | rg-iarm-svc-regionabbr-prd | <Consumer Azure region> | x.x.x.x/22[[1]](#footnote-2) | A Virtual Network that is essential for securing communication among PaaS services, managing traffic, and ensuring compliance. |
+| vnet-iarm-svc-regionabbr-prd | rg-iarm-svc-regionabbr-prd | \<Consumer Azure region\> | x.x.x.x/22 | A Virtual Network that is essential for securing communication among PaaS services, managing traffic, and ensuring compliance. |
 
 ## User Defined Route Tables
 
@@ -542,19 +542,19 @@ The i-arm solution currently operates using the default routing rules associated
 
 | **Name** | **Route Name** | **Address prefix** | **Next hope type** | **Next hope IP address** | **Attached Subnet** |
 | --- | --- | --- | --- | --- | --- |
-| rt-iarm-webapp-regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | < Connectivity Subscription Firewall Private IP Address> | nsg-iarm-webapp-regionabbr-prd |
+| rt-iarm-webapp-regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | \< Connectivity Subscription Firewall Private IP Address\> | nsg-iarm-webapp-regionabbr-prd |
 
 | **Name** | **Route Name** | **Address prefix** | **Next hope type** | **Next hope IP address** | **Attached Subnet** |
 | --- | --- | --- | --- | --- | --- |
-| rt-iarm-funcapp -regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | < Connectivity Subscription Firewall Private IP Address> | nsg-iarm-funcapp-regionabbr-prd |
+| rt-iarm-funcapp -regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | \<Connectivity Subscription Firewall Private IP Address\> | nsg-iarm-funcapp-regionabbr-prd |
 
 | **Name** | **Route Name** | **Address prefix** | **Next hope type** | **Next hope IP address** | **Attached Subnet** |
 | --- | --- | --- | --- | --- | --- |
-| rt-iarm-pe -regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | < Connectivity Subscription Firewall Private IP Address> | nsg-iarm-pe-regionabbr-prd |
+| rt-iarm-pe -regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | \< Connectivity Subscription Firewall Private IP Address\> | nsg-iarm-pe-regionabbr-prd |
 
 | **Name** | **Route Name** | **Address prefix** | **Next hope type** | **Next hope IP address** | **Attached Subnet** |
 | --- | --- | --- | --- | --- | --- |
-| rt-iarm-workloads-regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | < Connectivity Subscription Firewall Private IP Address> | nsg-iarm-workloads -regionabbr-prd |
+| rt-iarm-workloads-regionabbr-prd | To-Internet | 0.0.0.0/0 | Virtual appliance | \< Connectivity Subscription Firewall Private IP Address\> | nsg-iarm-workloads -regionabbr-prd |
 
 ## Network Security Groups
 
@@ -678,7 +678,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service is used to create and manage the compute resources required by the i-ARM web app supporting the user experience. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-webapp-regionabbr-prd |
@@ -687,7 +687,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required to synchronize retention labels from Microsoft Purview to i-ARM database. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -696,7 +696,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the business layer of the disposal dashboard and related workflows supporting the i-ARM webapp. This app service provides integration between the i-ARM web app and the i-ARM database. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -705,7 +705,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the business layer of the mydata supporting navigation and administration modules in the i-ARM webapp. This app service provides integration between the i-ARM web app and the i-ARM database. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -714,7 +714,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the bulk import functionality supporting the PRM module. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -723,7 +723,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the sync functionality supporting the PRM module. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -732,7 +732,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the M365 audit logs sync functionality to i-ARM Data Store. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-webapp-regionabbr-prd |
@@ -741,7 +741,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the M365 audit logs connector sync functionality to i-ARM Data Store. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -750,7 +750,7 @@ The App Service Plan for the i-ARM web app ensures a scalable and high-availabil
 | --- | --- |
 | **Description** | This app service hosts the compute resources required for the M365 disposal connector sync functionality to i-ARM Data Store. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Operating System** | Windows |
 | **Pricing Plan** | Standard S2 |
 | **Subnet** | subnet-iarm-funcapp-regionabbr-prd |
@@ -763,7 +763,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-urc-regionabbr-prd”. The purpose of this function app is to provide the logic for synchronizing the retention labels from MS Purview to i-ARM database. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan (asp-iarm-urc-regionabbr-prd) | |
@@ -781,7 +781,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-mydisp-regionabbr-prd”. This function app provides the logic for the workflows associated with the disposition process. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan (asp-iarm-mydisp-regionabbr-prd) | |
@@ -799,7 +799,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-mydata-regionabbr-prd”. This function app provides the logic for the navigation and administration module process. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan ( asp-iarm-mydata-regionabbr-prd) | |
@@ -817,7 +817,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-prmbulk-regionabbr-prd ”. This durable function app provides the logic for the bulk import functionality associated with the PRM bulk import process. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan ( asp-iarm-prmbulk-regionabbr-prd) | |
@@ -835,7 +835,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-prmsync-regionabbr-prd ”. This function app provides the logic for the sync functionality associated with the PRM sync process. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan ( asp-iarm-prmsync-regionabbr-prd) | |
@@ -853,7 +853,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “asp-iarm-m365auditconnector-regionabbr-prd”. This function app provides the logic for the fetching and performing data transformation of the m365 audit sync data captured. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan (asp-iarm-m365auditconnector-regionabbr-prd ) | |
@@ -871,7 +871,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | --- | --- | --- |
 | **Description** | This function app is associated with the app service “ asp-iarm-m365dispconnector-regionabbr-prd”. This function app provides the logic for the fetching and performing data transformation of the m365 audit sync data captured. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Deploy Type** | Code;.NET; 8.0 Isolated | |
 | **Operating System** | Windows | |
 | **Hosting** | App Service Plan (asp-iarm-m365auditconnector-regionabbr-prd ) | |
@@ -893,7 +893,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-mydata-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -906,7 +906,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-mydisp-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -919,7 +919,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-urc-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -932,7 +932,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-prmbulk-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -945,7 +945,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-prmsync-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -958,7 +958,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the app service ‘wj-iarm-m365auditsync-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -972,7 +972,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-m365auditconnector-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -985,7 +985,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is associated with the ‘func-iarm-m365dispconnector-regionabbr-prd‘ function app. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -998,7 +998,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is used for storing the SharePoint content that is approved for archival from my disposal dashboard review screen | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | RA-GZRS | |
 | **Network access** | Enabled from selected virtual networks and IP addresses\* | |
@@ -1012,7 +1012,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | --- | --- | --- |
 | **Description** | This storage account is used for downloading source instance registration templates & storing source instance registration files. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
@@ -1032,7 +1032,7 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | --- | --- | --- |
 | **Description** | This app service is associated with the App service plan “asp-iarm-ui-regionabbr-prd”. The purpose of this is to provide logic for the User interface related to all of the i-ARM portal features. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Publish** | Code; Node 18 LTS; Windows | |
 | **Hosting** | App Service Plan ( asp-iarm-ui-regionabbr-prd) | |
 | **Managed Identity** | Enabled (System Assigned) | |
@@ -1049,7 +1049,7 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | --- | --- | --- |
 | **Description** | This app service is associated with the App service plan “asp-iarm-m365auditsync-regionabbr-prd”. The purpose of this is to provide logic for syncing M365 audit log records to i-ARM Datastore. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Publish** | Code:.NET; 8.0 Isolated | |
 | **Hosting** | App Service Plan (asp-iarm-m365auditsync-regionabbr-prd) | |
 | **Managed Identity** | Enabled (System Assigned) | |
@@ -1076,7 +1076,7 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | --- | --- | --- |
 | **Description** | This is the database which holds all the data managed by i-ARM across all its functionalities. | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Service + Compute Tier** | General Purpose, Provisioned, 2 vCores. (The number of cores can be scaled up based on the workload demand) | |
 | **Workload Environment** | Production | |
 | **Database Zone Redundant** | Yes | |
@@ -1094,7 +1094,7 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | --- | --- | --- |
 | **Description** | This is the database which holds all the configuration data related to MPIP Scanner | |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd | |
-| **Region** | <Consumer Azure region> | |
+| **Region** | \<Consumer Azure region\> | |
 | **Service + Compute Tier** | General Purpose, Provisioned, 2 vCores. (The number of cores can be scaled up based on the workload demand) | |
 | **Workload Environment** | Production | |
 | **Database Zone Redundant** | Yes | |
@@ -1118,7 +1118,7 @@ This section provides an overview of the Log Analytics Workspace configuration, 
 | --- | --- |
 | **Description** | This workspace acts as a central repository for all the diagnostics logs |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 
 # Virtual Machine
 
@@ -1140,7 +1140,7 @@ The application gateway serves as an intermediary, facilitating secure connectio
 | --- | --- |
 | **Description** | The gateway provides connectivity between MS Purview Power automate flows, Power BI and i-ARM database. The gateway supports the registration of records eligible for disposal between MS Purview and i-ARM. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Location** | <Consumer Azure region> |
+| **Location** | \<Consumer Azure region\> |
 | **VM Size** | General Purpose D4ds\_v4 |
 | **Operating System** | Windows Server 2022 |
 | **Subnet** | subnet-iarm-workloads-regionabbr-prd |
@@ -1155,7 +1155,7 @@ The virtual machine is where the i-ARM Scanner Services will be installed. The s
 | --- | --- |
 | **Description** | The scanner service will scan the mounted & configured Network File Shares or Azure File Shares. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Location** | <Consumer Azure region> |
+| **Location** | \<Consumer Azure region\> |
 | **VM Size** | Standard\_D8as\_v4 (8 vcpus, 32 GiB memory) |
 | **Operating System** | Windows Server 2022 |
 | **Subnet** | subnet-iarm-workloads-regionabbr-prd |
@@ -1320,7 +1320,7 @@ Azure Container Registry is a service from Microsoft Azure that helps you store 
 | --- | --- |
 | **Description** | Azure Container Registry is used for storing and managing container images that can be deployed with other Azure services. |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **Pricing Plan** | Premium |
 
 ## Azure container instance
@@ -1331,7 +1331,7 @@ Azure Container Instances (ACI) allows you to run containers in the cloud withou
 | --- | --- |
 | **Description** | Azure Container Instances (ACI) is a fully managed service that allows you to run containers directly on the Microsoft Azure cloud without needing to manage the underlying infrastructure |
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
-| **Region** | <Consumer Azure region> |
+| **Region** | \<Consumer Azure region\> |
 | **SKU** | Standard |
 | **Image Source** | Azure Container Registry |
 | **Registry** | acriarmregionabbrprd |
