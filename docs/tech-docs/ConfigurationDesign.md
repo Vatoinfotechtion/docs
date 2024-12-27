@@ -1277,9 +1277,9 @@ The Physical Records Management Module within i-ARM leverages the modern Script 
 | **Description** | This webpart provides the capability to hide the OOTB page fields for better user interface. |
 | **Version** | 4.4.1.0 |
 
-# SharePoint Configuration
+## SharePoint Configuration
 
-**<A separate step by step document will be shared by the product team to perform the below configurations.>**
+**Note:** A separate step by step document will be shared by the product team to perform the below configurations.
 
 ## Content Type
 
@@ -1306,7 +1306,7 @@ The Infotechtion Azure DevOps code repository utilizes Git for version control, 
 
 **Note:**
 
-* During CI/CD pipeline deployments, the IPs of the Microsoft-hosted agents running the deployment jobs must be whitelisted to ensure successful deployments. It is essential that the consumer tenant allows for this IP whitelisting.
+During CI/CD pipeline deployments, the IPs of the Microsoft-hosted agents running the deployment jobs must be whitelisted to ensure successful deployments. It is essential that the consumer tenant allows for this IP whitelisting.
 
 All deployments in the consumer tenant for provisioning i-ARM resources will be managed exclusively through Bicep templates from Infotechtion's Azure DevOps. Additionally, Azure CLI commands will be utilized for configuring Container Registry and Container Instance activities. Deployments for the Azure Web App, Function App, and Web Job will also be managed from the same DevOps environment.
 
@@ -1372,7 +1372,7 @@ Once the package is deployed, the customer IT team can validate the binaries usi
 
 To validate the binaries from the Azure resource side, follow the following steps:
 
-1. Download the Deployment package
+**Download the Deployment package**
 
 * Navigate to customer managed Azure portal.
 * Go to i-ARM resource Group “rg-iarm-svc-regionabbr-prd”
@@ -1380,18 +1380,18 @@ To validate the binaries from the Azure resource side, follow the following step
   + [Function Apps](#_Function_App)
   + [Web Apps](#_App_Service)
 
-1. Extract the Package
+**Extract the Package**
 
 * The package would be compressed (e.g., in a .zip format), extracting the contents to a designated folder on the local system.
 
-1. Run the SHA-256 Validation Script
+**Run the SHA-256 Validation Script**
 
 * Open a terminal or command prompt on the local machine.
 * Navigate to the directory where the extracted binaries are located.
 * Execute the SHA-256 validation script provided by Infotechtion. This script will generate SHA-256 checksums for all binary files in the directory and compare them against the checksums listed in the release notes.
 
-1. Validation
+**Validation**
 
 * Ensure that all checksums match the release notes shared.
 
-1. To be confirmed during configuration based on alignment with the consumer cloud support. [↑](#footnote-ref-2)
+* To be confirmed during configuration based on alignment with the consumer cloud support.
