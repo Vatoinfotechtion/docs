@@ -771,7 +771,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insights** | appi-iarm-urc-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -789,7 +789,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-mydisp-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -807,7 +807,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-mydata-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -825,7 +825,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-prmbulk-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -843,7 +843,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-prmsync-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -861,7 +861,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365auditconnector-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -879,7 +879,7 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365dispconnector-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {function app name}-pe |
+| **Private Endpoint** | **Name** | \{function app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -897,7 +897,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -910,7 +910,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -923,7 +923,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -936,7 +936,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe  {storage account name}-queue-pe  {storage account name}-table-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe  \{storage account name\}-queue-pe  \{storage account name\}-table-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -949,7 +949,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -963,7 +963,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Data Storage**[ Queue] | queue-iarm-m365auditfullscantrigger-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -976,7 +976,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -989,7 +989,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Performance** | Standard (General Purpose V2) | |
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -1003,7 +1003,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | RA-GZRS | |
 | **Network access** | Enabled from selected virtual networks and IP addresses\* | |
 | **Data Storage**[ Container] | container-iarm-archived-files-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -1017,7 +1017,7 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Data Storage**[ Container] | container-iarm-manifest-files-regionabbr-prd  container-iarm-manifest-templates-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {storage account name}-blob-pe |
+| **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -1039,7 +1039,7 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-ui-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {web app name}-pe |
+| **Private Endpoint** | **Name** | \{web app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -1056,7 +1056,7 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | **Network access** | Disable Public Access | |
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365auditsync-regionabbr-prd | |
-| **Private Endpoint** | **Name** | {web app name}-pe |
+| **Private Endpoint** | **Name** | \{web app name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
@@ -1085,7 +1085,7 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | **Admin** | sg-svc-iarm-sqlentraadministrators-prd | |
 | **Managed Identity** | Enabled (System Assigned) | |
 | **Public Endpoint** | Disabled | |
-| **Private Endpoint** | **Name** | {sql server name}-pe |
+| **Private Endpoint** | **Name** | \{sql server name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.database.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
@@ -1103,7 +1103,7 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | **Admin** | sg-svc-iarm-sqlentraadministrators-prd | |
 | **Managed Identity** | Enabled (System Assigned) | |
 | **Public Endpoint** | Disabled | |
-| **Private Endpoint** | **Name** | {sql server name}-pe |
+| **Private Endpoint** | **Name** | \{sql server name\}-pe |
 | **Subnet** | subnet-iarm-pe-regionabbr-prd |
 | **Private DNS Zone** | privatelink.database.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
