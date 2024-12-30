@@ -186,8 +186,8 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | **Single-page app** | https://web-iarm-ui-regionabbr-prd.azurewebsites.net | |
 | **Token configuration** | Token type: ID  Optional Claim: login\_hint | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: Groupmember.Read.All | Delegate |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: Groupmember.Read.All | Delegate |
 
 | **Name** | spn-func-iarm-apiauth-prd | |
 | --- | --- | --- |
@@ -200,170 +200,170 @@ This section details the process and significance of Microsoft Entra / Azure Act
 | --- | --- | --- |
 | **Description** | The service principal is used by the i-ARM URC function app to sync the retention labels from Microsoft Purview to i-ARM Data Store. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: RecordsManagement.ReadWrite.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |             
+|         | Microsoft Graph: RecordsManagement.ReadWrite.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
+|         | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|         | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-graphapi-prd | |
 | --- | --- | --- |
 | **Description** | The service principal necessary for executing Microsoft Graph API calls from other APIs. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: User.Read.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: User.Read.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-devopsconn-iarm-deploy-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used for establishing the service connection from target environment to Infotechtion DevOps. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: User.Read | Delegate |
 | **RBAC** | **Scope** | **Role** |
-| rg-iarm-svc-regionabbr-prd | Contributor |
+|          | rg-iarm-svc-regionabbr-prd | Contributor |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-notifications-prd | |
 | --- | --- | --- |
 | **Description** | The service principal required to send any i-ARM notifications to stakeholders. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: Mail.Send | Application |
-| Microsoft Graph: User.ReadBasic.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: Mail.Send | Application |
+|         | Microsoft Graph: User.ReadBasic.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-mydisppa-iarm-spoaccess-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used for operations which relate to the Power Automate Flows required for the “My Disposal” Module of i-ARM. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: Sites.ReadWrite.All | Application |
-| SharePoint: Sites.Read.All | Application |
-| SharePoint: Sites.FullControl.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: Sites.ReadWrite.All | Application |
+|         | SharePoint: Sites.Read.All | Application |
+|         | SharePoint: Sites.FullControl.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-mydispconnspoaccess-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used for operations which relate to the M365 Audit Disposal Connector required for the “My Disposal” Module of i-ARM. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: Sites.Read.All | Application |
-| Microsoft Graph: Files.Read.All | Delegate |
-| Microsoft Graph: Files.Read.All | Application |
-| SharePoint: Sites.Read.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: Sites.Read.All | Application |
+|         | Microsoft Graph: Files.Read.All | Delegate |
+|         | Microsoft Graph: Files.Read.All | Application |
+|         | SharePoint: Sites.Read.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-sql-iarm-sqlaccess-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used by i-ARM internal services to authenticate with i-ARM SQL leveraging SPN based Entra authentication. This can be changed to use a service account to align with consumer architecture standards. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: User.Read | Delegate |
 | **External Provider** | CREATE USER [spn-sql-iarm-sqlaccess-prd] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER [spn-sql-iarm-sqlaccess-prd]  ALTER ROLE db\_datawriter ADD MEMBER [spn-sql-iarm-sqlaccess-prd]  GRANT EXEC TO [spn-sql-iarm-sqlaccess-prd]  Note: A DB admin is required to login to SQL and run the above scripts | |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-func-iarm-prmprovisioning-prd | |
 | --- | --- | --- |
 | **Description** | This service principal is used to provide access to specific SharePoint sites to the Sites.Selected permission for the “spn-func-iarm-prmbulkimport-prd” | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: Sites.FullControl.All | Application |
-| SharePoint: Sites.FullControl.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: Sites.FullControl.All | Application |
+|         | SharePoint: Sites.FullControl.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-prmbulkimport-prd | |
 | --- | --- | --- |
 | **Description** | This service principal is required to authenticate and communicate with SharePoint APIs for PRM Bulk Import functionality | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: TermStore.Read.All | Application |
-| SharePoint: Sites.Selected | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: TermStore.Read.All | Application |
+|         | SharePoint: Sites.Selected | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-func-iarm-prmsync-prd | |
 | --- | --- | --- |
 | **Description** | This service principal is required to authenticate and communicate with SharePoint APIs for PRM Sync functionality to i-ARM | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| SharePoint: TermStore.Read.All | Application |
-| SharePoint: TermStore.ReadWrite.All | Application |
-| SharePoint: Sites.Read.All | Application |
-| SharePoint: Sites.ReadWrite.All | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | SharePoint: TermStore.Read.All | Application |
+|         | SharePoint: TermStore.ReadWrite.All | Application |
+|         | SharePoint: Sites.Read.All | Application |
+|         | SharePoint: Sites.ReadWrite.All | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientcert |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-wj-iarm-m365auditsync-prd | |
 | --- | --- | --- |
 | **Description** | This service principal is required for syncing M365 Audit Logs data to i-ARM Data Store | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Graph: AuditLog.Read.All | Application |
-| Microsoft Graph: AuditLogsQuery-SharePoint.Read.All | Application |
-| Microsoft Graph: AuditLogsQuery.Read.All | Application |
-| Office 365 Management APIs: ActivityFeed.Read | Application |
-| Office 365 Management APIs: ActivityFeed.ReadDlp | Application |
+|         | Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: AuditLog.Read.All | Application |
+|         | Microsoft Graph: AuditLogsQuery-SharePoint.Read.All | Application |
+|         | Microsoft Graph: AuditLogsQuery.Read.All | Application |
+|         | Office 365 Management APIs: ActivityFeed.Read | Application |
+|         | Office 365 Management APIs: ActivityFeed.ReadDlp | Application |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-agent-iarm-downloadarchiveblobs-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used by the i-ARM agent for reading and downloading blobs stored in the archival storage account. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
+|         | Microsoft Graph: User.Read | Delegate |
 | **RBAC** | **Scope** | **Role** |
-| kv-iarm-svc-regionabbr-prd | Key Vault Secrets User |
-| kv-iarm-svc-regionabbr-prd | Key Vault Certificate User |
-| saiarmarchiveregionabbrprd | Storage Blob Data Reader |
+|          | kv-iarm-svc-regionabbr-prd | Key Vault Secrets User |
+|          | kv-iarm-svc-regionabbr-prd | Key Vault Certificate User |
+|          | saiarmarchiveregionabbrprd | Storage Blob Data Reader |
 | **Credentials** | **Key Vault** | **Secret Name** |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
-| kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientid |
+|                 | kv-iarm-svc-regionabbr-prd | \{spn name\}-clientsecret |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This information will be stored in the key vault. | |
 
 | **Name** | spn-agent-iarm-scannerservice-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used by the i-ARM Scanner agent to authenticate against KeyVault using the certificate installed on the VM. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
+| | Microsoft Graph: User.Read | Delegate |
 | **RBAC** | **Scope** | **Role** |
-| kv-iarm-svc-regionabbr-prd | Key Vault Secrets User |
-| kv-iarm-svc-regionabbr-prd | Key Vault Certificate User |
+| | kv-iarm-svc-regionabbr-prd | Key Vault Secrets User |
+| | kv-iarm-svc-regionabbr-prd | Key Vault Certificate User |
 | **Certificates & Secrets** | **Certificates:**  Upload a certificate (public key) with one of the following file types: .cer, .pem | |
 
 | **Name** | spn-agent-iarm-mpipscannerservice-prd | |
 | --- | --- | --- |
 | **Description** | The service principal used by the MPIP Scanner agent to capture sensitive information on files based on the sensitive information types in Microsoft purview portal. | |
 | **API** | **Permission** | **Type** |
-| Microsoft Graph: User.Read | Delegate |
-| Microsoft Information Protection Sync Service:  UnifiedPolicy.Tenant.Read | Application |
-| Azure Rights Management Services:  Content.DelegatedReader | Application |
-| Azure Rights Management Services:  Content.DelegatedWriter | Application |
+| | Microsoft Graph: User.Read | Delegate |
+| | Microsoft Information Protection Sync Service:  UnifiedPolicy.Tenant.Read | Application |
+| | Azure Rights Management Services:  Content.DelegatedReader | Application |
+| | Azure Rights Management Services:  Content.DelegatedWriter | Application |
 | **Certificates & Secrets** | **Client Secret:**  Create a client secret and capture the information in a secure place. This will be required while configuring the MPIP Scanner service on the Virtual Machine | |
 
 ## Group
@@ -374,35 +374,35 @@ This part highlights the importance of Entra ID / Azure Active Directory securit
 | --- | --- | --- |
 | **Description** | Read access to the azure subscription where i-ARM would be deployed. | |
 | **RBAC** | **Scope** | **Role** |
-| Subscription | Reader |
+| | Subscription | Reader |
 | **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-webappadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM persona performing administrative actions within i-ARM. | |
 | **RBAC** | **Scope** | **Role** |
-| **NA** |  |
+|          | **NA** |  |
 | **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-sqlentraadministrators-prd | |
 | --- | --- | --- |
 | **Description** | Entra ID administrators accessing i-ARM Data Store | |
 | **RBAC** | **Scope** | **Role** |
-| **NA** |  |
+|          | **NA** |  |
 | **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-recordsadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM Entra ID group required for the Records Administrator persona | |
 | **RBAC** | **Scope** | **Role** |
-| **NA** |  |
+| | **NA** |  |
 | **Members** | \<To be confirmed at the time of configuration\> | |
 
 | **Name** | sg-svc-iarm-ediscoveryadministrators-prd | |
 | --- | --- | --- |
 | **Description** | i-ARM Entra ID group required for eDiscovery Administrator persona | |
 | **RBAC** | **Scope** | **Role** |
-| **NA** |  |
+| | **NA** |  |
 | **Members** | \<To be confirmed at the time of configuration\> | |
 
 ## Service/User Accounts
@@ -414,7 +414,7 @@ This part highlights the importance of Entra ID / Azure Active Directory service
 | **Description** | Account required for importing and configuring the power automate flows. This account should also be added as a Connection Creator in the data gateway  **Note:** If the labels in the Microsoft Purview Compliance portal were created with an account different from the one importing the flow, the flows must be shared with the account that created the labels. Additionally, that account should have an E5 license along with the Power Automate Premium Per User Plan.  If the Power Automate flows are imported into an environment other than the default Power Platform environment, the labels should only be created and managed using PowerShell. [Learn more](https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario)| |
 | **License** | E5 license with Power Automate Premium Per User Plan (Any plan that supports premium connectors) | |
 | **Permissions** | **Scope** | **Role** |
-| Power Automate Environment | Environment Maker Role |
+| | Power Automate Environment | Environment Maker Role |
 |  | On-Premises Data Gateway (Power Platform Admin Center) | Connection Creator |
 
 | **Name** | To be Confirmed during engagement | |
@@ -422,7 +422,7 @@ This part highlights the importance of Entra ID / Azure Active Directory service
 | **Description** | Account identified as a Gateway Admin for the data gateway that is installed and configured | |
 | **License** | E5 license | |
 | **Permissions** | **Scope** | **Role** |
-| Power Automate Environment | Environment Maker Role |
+| | Power Automate Environment | Environment Maker Role |
 |  | On-Premises Data Gateway (Power Platform Admin Center) | Gateway Admin |
 
 | **Name** | To be Confirmed during engagement | |
@@ -430,39 +430,39 @@ This part highlights the importance of Entra ID / Azure Active Directory service
 | **Description** | Account required to sync the label policies and labels from purview compliance portal. This account would be added to the custom role group created in purview compliance center | |
 | **License** | E5 license | |
 | **Permissions** | **Scope** | **Role** |
-| Microsoft Purview Compliance Portal | Create a custom role group with the below roles in Microsoft Purview Compliance Center  View-Only Retention Management  View-Only Record Management |
+| | Microsoft Purview Compliance Portal | Create a custom role group with the below roles in Microsoft Purview Compliance Center  View-Only Retention Management  View-Only Record Management |
 
 | **Name** | To be Confirmed during engagement | |
 | --- | --- | --- |
 | **Description** | Account identified for publishing Power BI reports | |
 | **License** | E5 license | |
 | **Permissions** | **Scope** | **Role** |
-| Power BI Workspace | Owner |
-| Azure SQL Database | db\_datareader |
+| | Power BI Workspace | Owner |
+| | Azure SQL Database | db\_datareader |
 
 | **Name** | To be Confirmed during engagement | |
 | --- | --- | --- |
 | **Description** | Account from which the notification emails would be sent | |
 | **License** | E3/E5 | |
 | **RBAC** | **Scope** | **Role** |
-| **NA** | **NA** |
+|          | **NA** | **NA** |
 
 | **Name** | To be Confirmed during engagement | |
 | --- | --- | --- |
 | **Description** | Account used by the windows service for reading and downloading blobs | |
 | **License** | E5 license | |
 | **Permissions** | **Scope** | **Role** |
-| Azure Storage Account  (saiarmarchiveregionabbrprd) | Storage Blob Data Reader |
-| Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
+| | Azure Storage Account  (saiarmarchiveregionabbrprd) | Storage Blob Data Reader |
+| | Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
 
 | **Name** | To be Confirmed during engagement | |
 | --- | --- | --- |
 | **Description** | Account used by the windows service for scanning the Network File Shares or Azure File Shares | |
 | **License** | E5 license | |
 | **Permissions** | **Scope** | **Role** |
-| Azure Storage Account  (mounting must be done using the Storage Account access Key) | NA |
-| Network File Share | Read Write access on the file share for scanning  (Write is only necessary if Immutability Feature is enabled) |
-| Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
+| | Azure Storage Account  (mounting must be done using the Storage Account access Key) | NA |
+| | Network File Share | Read Write access on the file share for scanning  (Write is only necessary if Immutability Feature is enabled) |
+| | Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
 
 | **Name** | To be Confirmed during engagement | |
 | --- | --- | --- |
@@ -470,10 +470,10 @@ This part highlights the importance of Entra ID / Azure Active Directory service
 | **License** | E5 license | |
 | **Other considerations** | There should be at least one sensitivity label policy published to this service account for the MPIP Scanner to start capturing Sensitive information types. The sensitivity label should also have send to audit attribute set to true for the data to be captured in M365 audit logs. Reference: [Enable Audit](https://learn.microsoft.com/en-us/powershell/exchange/client-advanced-settings?view=exchange-ps#enableaudit) | |
 | **Permissions** | **Scope** | **Role** |
-| sql-iarmmpip-svc-regionabbr-prd | Sysadmin  [Reference](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements) |
-| sql-iarmmpip-svc-regionabbr-prd | db\_owner |
-| Network/ Azure File Share (Mounted on Scanner VM) | Read Write access on the file share for scanning  (Write is only necessary if protection is being applied) |
-| Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
+| | sql-iarmmpip-svc-regionabbr-prd | Sysadmin  [Reference](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements) |
+| | sql-iarmmpip-svc-regionabbr-prd | db\_owner |
+| | Network/ Azure File Share (Mounted on Scanner VM) | Read Write access on the file share for scanning  (Write is only necessary if protection is being applied) |
+| | Azure Key Vault  (kv-iarm-svc-regionabbr-prd) | * Key Vault Secrets User * Key Vault Certificate User |
 
 ## RBAC Roles
 
@@ -489,21 +489,21 @@ RBAC (Role-Based Access Control) on Azure is a system for managing access to Azu
 | **Azure Subscription Reader** | sg-sub-iarm-reader-prd | Reader | Group | Entra ID Security Group |
 | **Azure Resource Group** | spn-devopsconn-iarm-deploy-prd | Contributor | Service Principal | Direct |
 | **Azure Key Vault** | sg-sub-iarm-reader-prd | Key Vault Secrets User | Group | Entra ID Security Group |
-| Key Vault Certificate User | Group | Entra ID Security Group |
-| spn-agent-iarm-downloadarchiveblobs-prd | Key Vault Secrets User | Service Principal | Direct |
-| Key Vault Certificate User | Service Principal | Direct |
-| spn-agent-iarm-scannerservice-prd | Key Vault Secrets User | Service Principal | Direct |
-| Key Vault Certificate User | Service Principal | Direct |
-| spn-devopsconn-iarm-deploy-prd | Key Vault Administrator | Service Principal | Direct |
-| * func-iarm-urc-regionabbr-prd * func-iarm-mydisp-regionabbr-prd * func-iarm-mydata-regionabbr-prd * func-iarm-prmbulk-regionabbr-prd * func-iarm-prmsync-regionabbr-prd * wj-iarm-m365auditsync-regionabbr-prd * func-iarm-m365auditconnector-regionabbr-prd * func-iarm-m365dispconnector-regionabbr-prd | Key Vault Certificate User | Managed Identity | Direct |
-| * func-iarm-urc-regionabbr-prd * func-iarm-mydisp-regionabbr-prd * func-iarm-mydata-regionabbr-prd * func-iarm-prmbulk-regionabbr-prd * func-iarm-prmsync-regionabbr-prd * wj-iarm-m365auditsync-regionabbr-prd * func-iarm-m365auditconnector-regionabbr-prd * func-iarm-m365dispconnector-regionabbr-prd | Key Vault Secrets User | Managed Identity | Direct |
-| [Service Account Importing the PowerAutomate Flows] | Key Vault Certificate User | User | Direct |
-| Key Vault Secrets User | User | Direct |
-| [Service Account reading and downloading blobs] | Key Vault Certificate User | User | Direct |
-| Key Vault Secrets User | User | Direct |
-| Dataverse (Common Data Service) | Key Vault Secrets User | Enterprise Application | Direct |
+| | Key Vault Certificate User | Group | Entra ID Security Group |
+| | spn-agent-iarm-downloadarchiveblobs-prd | Key Vault Secrets User | Service Principal | Direct |
+| | Key Vault Certificate User | Service Principal | Direct |
+| | spn-agent-iarm-scannerservice-prd | Key Vault Secrets User | Service Principal | Direct |
+| | Key Vault Certificate User | Service Principal | Direct |
+| | spn-devopsconn-iarm-deploy-prd | Key Vault Administrator | Service Principal | Direct |
+| | * func-iarm-urc-regionabbr-prd * func-iarm-mydisp-regionabbr-prd * func-iarm-mydata-regionabbr-prd * func-iarm-prmbulk-regionabbr-prd * func-iarm-prmsync-regionabbr-prd * wj-iarm-m365auditsync-regionabbr-prd * func-iarm-m365auditconnector-regionabbr-prd * func-iarm-m365dispconnector-regionabbr-prd | Key Vault Certificate User | Managed Identity | Direct |
+| | * func-iarm-urc-regionabbr-prd * func-iarm-mydisp-regionabbr-prd * func-iarm-mydata-regionabbr-prd * func-iarm-prmbulk-regionabbr-prd * func-iarm-prmsync-regionabbr-prd * wj-iarm-m365auditsync-regionabbr-prd * func-iarm-m365auditconnector-regionabbr-prd * func-iarm-m365dispconnector-regionabbr-prd | Key Vault Secrets User | Managed Identity | Direct |
+| | [Service Account Importing the PowerAutomate Flows] | Key Vault Certificate User | User | Direct |
+| | Key Vault Secrets User | User | Direct |
+| | [Service Account reading and downloading blobs] | Key Vault Certificate User | User | Direct |
+| | Key Vault Secrets User | User | Direct |
+| | Dataverse (Common Data Service) | Key Vault Secrets User | Enterprise Application | Direct |
 | **Azure SQL Database**  [sql-iarm-svc-regionabbr-prd] | * func-iarm-urc-regionabbr-prd * func-iarm-mydisp-regionabbr-prd * func-iarm-mydata-regionabbr-prd * func-iarm-prmbulk-regionabbr-prd * func-iarm-prmsync-regionabbr-prd * wj-iarm-m365auditsync-regionabbr-prd * func-iarm-m365auditconnector-regionabbr-prd * func-iarm-m365dispconnector-regionabbr-prd | db\_datareader  db\_datawriter | Managed Identity | Direct |
-| spn-sql-iarm-sqlaccess-prd | db\_datareader  db\_datawriter | Service Principal | Direct |
+| | spn-sql-iarm-sqlaccess-prd | db\_datareader  db\_datawriter | Service Principal | Direct |
 | **Azure SQL Database**  [sql-iarmmpip-svc-regionabbr-prd] | [Service Account identified for MPIP Scanner installation and configuration] | Sysadmin  sb\_owner | User | Direct |
 | **Azure Storage Account**  [saiarmprmbulkregionabbrprd] | func-iarm-prmbulk-regionabbr-prd | * Storage Blob Data Contributor * Storage Queue Data Contributor * Storage Table Data Contributor | Managed Identity | Direct |
 | **Azure Storage Account**  [saiarmmydispregionabbrprd] | func-iarm-mydisp-regionabbr-prd | Storage Blob Data Contributor | Managed Identity | Direct |
@@ -514,14 +514,14 @@ RBAC (Role-Based Access Control) on Azure is a system for managing access to Azu
 | **Azure Storage Account**  [saiarm365connregionabbrprd] | func-iarm-m365auditconnector-regionabbr-prd | Storage Blob Data Contributor | Managed Identity | Direct |
 | **Azure Storage Account**  [saiarmdispconregionabbrprd] | func-iarm-m365dispconnector-regionabbr-prd | * Storage Blob Data Contributor * Storage Queue Data Contributor * Storage Table Data Contributor | Managed Identity | Direct |
 | **Azure Storage Account**  [saiarmarchiveregionabbrprd] | [Service Account importing the Power Automate Flows] | Storage Blob Data Contributor | User | Direct |
-| [Service Account reading and downloading blobs] | Storage Blob Data Reader | User | Direct |
-| [spn-agent-iarm-downloadarchiveblobs-prd] | Storage Blob Data Reader | Service Principal | Direct |
+| | [Service Account reading and downloading blobs] | Storage Blob Data Reader | User | Direct |
+| | [spn-agent-iarm-downloadarchiveblobs-prd] | Storage Blob Data Reader | Service Principal | Direct |
 | **Azure Storage Account**  [saiarmdiappregionabbrprd] | func-iarm-mydata-regionabbr-prd | Storage Blob Data Contributor | Managed Identity | Direct |
 | **Azure VM** | sg-sub-iarm-reader-prd | Reader | Group | Entra ID Security Group |
 | **Azure Bastion** | sg-sub-iarm-reader-prd | Reader | Group | Entra ID Security Group |
 | **Power Platform** | [Service Account Importing the Power Automate Flows] | Environment Maker Role | User | Direct |
-| [Service Account Importing the Power Automate Flows] | Connection Creator | User | Direct |
-| [Service Account for Gateway Admin] | Gateway Admin | User | Direct |
+| | [Service Account Importing the Power Automate Flows] | Connection Creator | User | Direct |
+| | [Service Account for Gateway Admin] | Gateway Admin | User | Direct |
 | **Power BI** | [Service Account for Publishing Power BI Reports] | Power BI Workspace Owner | User | Direct |
 | **M365 Purview Compliance Portal** | [Service Account for syncing label and label policies from Microsoft Purview Compliance Portal] | View-Only Retention Management  View-Only Record Management | User | Direct |
 | **Azure Container Instance** | User managed Identity (ADD Name) | ACR Role | User Managed Identity | Direct |
@@ -562,68 +562,68 @@ The section below outlines the Network Security Groups (NSGs) applied within the
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-webapp-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-webapp-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-funcapp-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-funcapp-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-pe-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-pe-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-workloads-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-workloads-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-bastion-regionabbr-prd | Inbound | AllowHttpsInbound | 443 | 120 | Internet | Any | Allow | Allows inbound HTTPS traffic from the internet to any destination. |
-| Inbound | AllowGatewayManagerInbound | 443 | 130 | GatewayManager | Any | Allow | Allows inbound traffic from the Gateway Manager on port 443 to any destination. |
-| Inbound | AllowAzureLoadBalancerInbound | 443 | 140 | AzureLoadBalancer | Any | Allow | Allows inbound traffic from the Azure Load Balancer on port 443 to any destination. |
-| Inbound | AllowBastionHostCommunication8080 | 8080 | 150 | VirtualNetwork | VirtualNetwork | Allow | Allows communication between resources within the virtual network on port 8080. |
-| Inbound | AllowBastionHostCommunication5701 | 8080 | 151 | VirtualNetwork | VirtualNetwork | Allow | Allows communication between resources within the virtual network on port 8080. |
-| Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowSshOutbound | 22 | 100 | Any | VirtualNetwork | Allow | Allows outbound SSH traffic on port 22 to the virtual network. |
-| Outbound | AllowRdpOutbound | 3389 | 101 | Any | VirtualNetwork | Allow | Allows outbound RDP traffic on port 3389 to the virtual network. |
-| Outbound | AllowAzureCloudOutbound | 443 | 110 | Any | AzureCloud | Allow | Allows outbound HTTPS traffic on port 443 to Azure Cloud services. |
-| Outbound | AllowBastionCommunication8080 | 8080 | 120 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound communication on port 8080 within the virtual network. |
-| Outbound | AllowBastionCommunication5701 | 5701 | 121 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound communication on port 5701 within the virtual network. |
-| Outbound | AllowHttpOutbound | 80 | 130 | Any | Internet | Allow | Allows outbound HTTP traffic on port 80 to the internet. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-bastion-regionabbr-prd | Inbound | AllowHttpsInbound | 443 | 120 | Internet | Any | Allow | Allows inbound HTTPS traffic from the internet to any destination. |
+| | Inbound | AllowGatewayManagerInbound | 443 | 130 | GatewayManager | Any | Allow | Allows inbound traffic from the Gateway Manager on port 443 to any destination. |
+| | Inbound | AllowAzureLoadBalancerInbound | 443 | 140 | AzureLoadBalancer | Any | Allow | Allows inbound traffic from the Azure Load Balancer on port 443 to any destination. |
+| | Inbound | AllowBastionHostCommunication8080 | 8080 | 150 | VirtualNetwork | VirtualNetwork | Allow | Allows communication between resources within the virtual network on port 8080. |
+| | Inbound | AllowBastionHostCommunication5701 | 8080 | 151 | VirtualNetwork | VirtualNetwork | Allow | Allows communication between resources within the virtual network on port 8080. |
+| | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowSshOutbound | 22 | 100 | Any | VirtualNetwork | Allow | Allows outbound SSH traffic on port 22 to the virtual network. |
+| | Outbound | AllowRdpOutbound | 3389 | 101 | Any | VirtualNetwork | Allow | Allows outbound RDP traffic on port 3389 to the virtual network. |
+| | Outbound | AllowAzureCloudOutbound | 443 | 110 | Any | AzureCloud | Allow | Allows outbound HTTPS traffic on port 443 to Azure Cloud services. |
+| | Outbound | AllowBastionCommunication8080 | 8080 | 120 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound communication on port 8080 within the virtual network. |
+| | Outbound | AllowBastionCommunication5701 | 5701 | 121 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound communication on port 5701 within the virtual network. |
+| | Outbound | AllowHttpOutbound | 80 | 130 | Any | Internet | Allow | Allows outbound HTTP traffic on port 80 to the internet. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 | **Name** | **Inbound/**  **Outbound** | **Rule Name** | **Port/**  **Protocol** | **Priority** | **Source** | **Destination** | **Action** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| nsg-iarm-container-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
-| Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
-| Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
-| Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
-| Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
-| Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
+| | nsg-iarm-container-regionabbr-prd | Inbound | AllowVnetInBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows traffic between resources within the same virtual network. |
+| | Inbound | AllowAzureLoadBalancerInBound | Any | 65001 | AzureLoadBalancer | Any | Allow | Allows traffic from the Azure load balancer to the resources. |
+| | Inbound | DenyAllInBound | Any | 65500 | Any | Any | Deny | Denies all inbound traffic by default. |
+| | Outbound | AllowVnetOutBound | Any | 65000 | VirtualNetwork | VirtualNetwork | Allow | Allows outbound traffic between resources within the same virtual network. |
+| | Outbound | AllowInternetOutBound | Any | 65001 | Any | Internet | Allow | Allows outbound traffic to the internet. |
+| | Outbound | DenyAllOutBound | Any | 65500 | Any | Any | Deny | Denies all outbound traffic by default. |
 
 ## Subnets
 
@@ -660,8 +660,8 @@ Azure Key Vault is a critical component for the i-ARM solution, safeguarding sec
 | **Resource Access** | Not required | |
 | **Network Access** | Enabled from selected virtual networks and IP addresses\* | |
 | **Private Endpoint** | **Name** | kv-iarm-svc-regionabbr-prd-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.vaultcore.azure.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.vaultcore.azure.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 \* An [azure policy exemption](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure) rule needs to be created in the consumer azure portal to exempt the “kv-iarm-svc-regionabbr-prd” key vault from the “[Deny-PublicPaaSEndpoints](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Deny-PublicPaaSEndpoints.html)” policy to allow configuring the Key Vault firewall with “**Enabled from selected virtual networks and IP addresses**”. This is necessary for Power Automate to read secrets from the “kv-iarm-svc-regionabbr-prd” Key Vault. Since Power Automate is a cloud service, it initiates requests from the public internet and does not operate within the same private network as the key vault.
@@ -772,8 +772,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insights** | appi-iarm-urc-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -790,8 +790,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-mydisp-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -808,8 +808,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-mydata-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -826,8 +826,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-prmbulk-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -844,8 +844,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-prmsync-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -862,8 +862,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365auditconnector-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -880,8 +880,8 @@ This section details the configurations for the Azure Function Apps, which are i
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365dispconnector-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{function app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -898,8 +898,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmmydispregionabbrprd | |
@@ -911,8 +911,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmurcregionabbrprd | |
@@ -924,8 +924,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmprmbulkregionabbrprd | |
@@ -937,8 +937,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe  \{storage account name\}-queue-pe  \{storage account name\}-table-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmprmsyncregionabbrprd | |
@@ -950,8 +950,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarm365syncregionabbrprd | |
@@ -964,8 +964,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Network access** | Disable Public Access | |
 | **Data Storage**[ Queue] | queue-iarm-m365auditfullscantrigger-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarm365connregionabbrprd | |
@@ -977,8 +977,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmdispconregionabbrprd | |
@@ -990,8 +990,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Redundancy** | ZRS | |
 | **Network access** | Disable Public Access | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net  privatelink.queue.core.windows.net  privatelink.table.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmarchiveregionabbrprd | |
@@ -1004,8 +1004,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Network access** | Enabled from selected virtual networks and IP addresses\* | |
 | **Data Storage**[ Container] | container-iarm-archived-files-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | saiarmdiappuksothprd | |
@@ -1018,8 +1018,8 @@ This section outlines the configurations for the Azure Storage Accounts associat
 | **Network access** | Disable Public Access | |
 | **Data Storage**[ Container] | container-iarm-manifest-files-regionabbr-prd  container-iarm-manifest-templates-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{storage account name\}-blob-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.blob.core.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.blob.core.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 \* An [azure policy exemption](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure) rule needs to be created in the consumer azure portal to exempt the “saiarmarchiveregionabbrprd” storage account from the “[Deny-PublicPaaSEndpoints](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Deny-PublicPaaSEndpoints.html)” policy to allow configuring the Storage account firewall with “**Enabled from selected virtual networks and IP addresses**”. This is necessary for Power Automate to create blobs within the “saiarmarchiveregionabbrprd” storage account. Since Power Automate is a cloud service, it initiates requests from the public internet and does not operate within the same private network as the storage account.
@@ -1040,8 +1040,8 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-ui-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{web app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -1057,8 +1057,8 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | **Network Injection** | Enabled; vnet-iarm-regionabbr-prd (app) | |
 | **Application Insight** | appi-iarm-m365auditsync-regionabbr-prd | |
 | **Private Endpoint** | **Name** | \{web app name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.azurewebsites.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.azurewebsites.net |
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
@@ -1086,8 +1086,8 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | **Managed Identity** | Enabled (System Assigned) | |
 | **Public Endpoint** | Disabled | |
 | **Private Endpoint** | **Name** | \{sql server name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.database.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.database.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 | **Name** | sql-iarmmpip-svc-regionabbr-prd | |
@@ -1104,8 +1104,8 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | **Managed Identity** | Enabled (System Assigned) | |
 | **Public Endpoint** | Disabled | |
 | **Private Endpoint** | **Name** | \{sql server name\}-pe |
-| **Subnet** | subnet-iarm-pe-regionabbr-prd |
-| **Private DNS Zone** | privatelink.database.windows.net |
+| | **Subnet** | subnet-iarm-pe-regionabbr-prd |
+| | **Private DNS Zone** | privatelink.database.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 # Azure Monitoring
