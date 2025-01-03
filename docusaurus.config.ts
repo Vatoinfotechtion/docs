@@ -46,7 +46,7 @@ const config: Config = {
         srcDark: 'img/logo-dark.svg', 
       },
       items: [
-        { to: 'docs/records-lifecycle/overview', label: 'Records Lifecycle', position: 'left' },
+        { to: '/docs/records-lifecycle/overview', label: 'Records Lifecycle', position: 'left' },
         { to: '/docs/data-discovery/overview', label: 'Data Discovery', position: 'left' },
         { to: '/docs/digital-workspace/overview', label: 'Digital Workspace', position: 'left' },
         { to: '/docs/ai-governance/guide', label: 'AI Governance', position: 'left' },
@@ -74,10 +74,10 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Records Lifecycle', to: '/docs/records-lifecycle' },
-            { label: 'Data Discovery And Security', to: '/docs/data-discovery' },
-            { label: 'Digital WorkSpace Governance', to: '/docs/digital-workspace' },
-            { label: 'AI Governance', to: '/docs/ai-governance' },
+            { label: 'Records Lifecycle', to: '/docs/records-lifecycle/overview' },
+            { label: 'Data Discovery And Security', to: '/docs/data-discovery/overview' },
+            { label: 'Digital WorkSpace Governance', to: '/docs/digital-workspace/overview' },
+            { label: 'AI Governance', to: '/docs/ai-governance/guide' },
           ],
         },
         {
@@ -99,7 +99,7 @@ const config: Config = {
         {
           title: 'Contact',
           items: [
-            { label: 'contact@infotechtion.com', href: '#'},
+            { label: 'contact@infotechtion.com', href: 'mailto:contact@infotechtion.com'},
             { label: 'Privacy Policy', href: 'https://infotechtion.com/privacy-policy'},
             { label: 'Copyright Statements', href: 'https://infotechtion.com/copyright-statement/'}
           ]
