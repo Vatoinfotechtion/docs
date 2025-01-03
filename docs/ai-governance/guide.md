@@ -1,6 +1,6 @@
 # User Guide for i-ARM Databot
 
-Welcome to the i-ARM Databot! This guide will walk you through how to use the Databot, enabling you to understand your enterprise content. Whether you're tracking compliance, auditing records, or generating reports, this Databot is designed to enhance your records management capabilities..
+Welcome to the i-ARM Databot! This guide will walk you through how to use the Databot, enabling you to understand your enterprise content. Whether you're tracking compliance, auditing records, or generating reports, this Databot is designed to enhance your records management capabilities.
 
 ---
 ## 1. Getting Started
