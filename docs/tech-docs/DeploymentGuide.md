@@ -199,7 +199,7 @@ Repeat these steps for each of the following service accounts:
 | | | | Network/ Azure File Share (Mounted on Scanner VM) | Read Write access on the file share for scanning (Write is only necessary if protection is being applied) |
 | | | | Azure Key Vault (kv-iarm-svc-regionabbr-prd) | - Key Vault Secrets User- Key Vault Certificate User |
 
-Ref: <https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements>
+[Ref:](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements)
 
 ### App Registration Creation
 
