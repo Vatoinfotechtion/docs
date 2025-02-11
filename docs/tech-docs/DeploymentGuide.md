@@ -597,15 +597,15 @@ Steps to Add Certificate to Key Vault:
 
 | **#** | **Key Vault Certificate** | **CN/Subject** | **Associated Application** |
 | --- | --- | --- | --- |
-| 1 | spn-wj-iarm-di-spn-prd-clientcert | iarm-di-spn-prd.<client domain>.com | All |
-| 2 | spn-func-iarm-graphapi-prd-clientcert | iarm-graphapi-prd.<client domain>.com | My Data, Data Ingestion |
-| 3 | spn-func-iarm-notifications-prd-clientcert | iarm-notifications-prd.<client domain>.com | My Data, Data Ingestion |
+| 1 | spn-wj-iarm-di-spn-prd-clientcert | iarm-di-spn-prd.<"client" domain>.com | All |
+| 2 | spn-func-iarm-graphapi-prd-clientcert | iarm-graphapi-prd.<"client" domain>.com | My Data, Data Ingestion |
+| 3 | spn-func-iarm-notifications-prd-clientcert | iarm-notifications-prd.<"client" domain>.com | My Data, Data Ingestion |
 | 4 | spn-func-iarm-prmsync-prd-clientcert | iarm-prmsync-prd.<client domain>.com | PRM-Sync |
-| 5 | spn-func-iarm-prmbulkimport-prd-clientcert | iarm-prmbulkimport-prd.<client domain>.com | PRM-Bulk |
-| 6 | spn-mydisppa-iarm-spoaccess-prd-clientcert | iarm-spoaccess-prd.<client domain>.com | My Disposal |
-| 7 | spn-func-iarm-mydispconnspoaccess-prd-clientcert | iarm-mydispconnspoaccess-prd.<client domain>.com | My Disposal |
-| 8 | spn-func-iarm-prmprovisioning-prd-clientcert | iarm-prmprovisioning-prd.<client domain>.com | PRM-SFx |
-| 9 | spn-di-iarm-dropzone-prd-clientcert | iarm-dropzone-prd.<client domain>.com | Data Ingestion |
+| 5 | spn-func-iarm-prmbulkimport-prd-clientcert | iarm-prmbulkimport-prd.<"client" domain>.com | PRM-Bulk |
+| 6 | spn-mydisppa-iarm-spoaccess-prd-clientcert | iarm-spoaccess-prd.<"client" domain>.com | My Disposal |
+| 7 | spn-func-iarm-mydispconnspoaccess-prd-clientcert | iarm-mydispconnspoaccess-prd.<"client" domain>.com | My Disposal |
+| 8 | spn-func-iarm-prmprovisioning-prd-clientcert | iarm-prmprovisioning-prd.<"client" domain>.com | PRM-SFx |
+| 9 | spn-di-iarm-dropzone-prd-clientcert | iarm-dropzone-prd.<"client" domain>.com | Data Ingestion |
 
 #### Adding Certificate to the App Registration
 
