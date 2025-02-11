@@ -1642,7 +1642,7 @@ Steps for to Validate Environment Variables in Function App:
 | VITE\_ADMIN\_GROUP | Object ID of the **sg-svc-iarm-recordsadministrators-prd** Entra ID Group |
 | VITE\_API\_SCOPE | API Scope value of the **spn-func-iarm-apiauth-prd** App Registrations |
 | VITE\_CLIENT\_ID | Application (client) ID of **spn-wapp-iarm-uidirectoryaccess-prd** App Registrations |
-| VITE\_CLIENT\_LOGO | <Add Client Logo URL> |
+| VITE\_CLIENT\_LOGO | "Add Client Logo URL" |
 | VITE\_DATABOT\_HOST | [Ref:](https:// web-iarm-chatbot-regionabbr-prd.azurewebsites.net)  ***\*Pointing to the Databot Web App created*** |
 | VITE\_DEFAULT\_IDLE\_TIMEOUT\_MINUTES | 15 |
 | VITE\_DISPOSITION\_ENDPOINT\_V2 | [Ref:](https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/api)***\*Pointing to the My Disposal function apps created*** |
