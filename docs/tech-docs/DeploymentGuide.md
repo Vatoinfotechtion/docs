@@ -1,3 +1,5 @@
+## Deployment Guide
+
 ## Acronyms
 
 | **Acronym** | **Description** |
@@ -55,7 +57,7 @@ The pre-infrastructure guide is essential as it outlines the necessary steps to 
 
 ### I-ARM Deployment Runbook
 
-Download the i-ARM deployment runbook from this link [i-ARM\_Runbook.xlsx](https://infotechtiongroup.sharepoint.com/%3Ax%3A/r/sites/AdvancedGovernanceSolutions/Shared%20Documents/General/I-ARM/Deployment/i-ARM_Runbook.xlsx?d=w18f2baa87458470e887f924f75de7a39&csf=1&web=1&e=mo6tY7) for an easy tracking of your deployment activities.
+Download the i-ARM deployment runbook from this link [i-ARM\_Runbook.xlsx](DeploymentGuideImages/i-ARM_Runbook.xlsx) for an easy tracking of your deployment activities.
 
 ### Register Resource Providers
 
