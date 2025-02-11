@@ -671,19 +671,19 @@ To execute the script and access the database, it is necessary to add the **sg-s
 #### Run Script for sql-service-principle-access
 
 1. **Add SQL-Auth Service Principal**: The SQL-Auth service principal should be added to the SQL DB as an external provider. Run the script below by logging in as an Entra ID user to SQL.
-2. **Update App Registration Name**: Replace <spn-name> with the actual SQL-Auth App Registration Name in your Tenant. For example, use **sg-svc-iarm-sqlentraadministrators-prd**.
+2. **Update App Registration Name**: Replace "spn-name" with the actual SQL-Auth App Registration Name in your Tenant. For example, use **sg-svc-iarm-sqlentraadministrators-prd**.
 
-| CREATE USER [<spn-name>] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER [<spn-name>]  ALTER ROLE db\_datawriter ADD MEMBER [<spn-name>]  GRANT EXEC TO [<spn-name>] |
+| CREATE USER ["spn-name"] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER ["spn-name"]  ALTER ROLE db\_datawriter ADD MEMBER ["spn-name"]  GRANT EXEC TO ["spn-name"] |
 | --- |
 
 #### Run Script for managed-identity-access
 
 1. **Add Managed Identity**: For providing SQL DB access to the Managed Identity as an external provider, run the script below by logging in as an Entra ID user to SQL.
-2. **Update Identity Name**: Replace <identity-name> with the Function App and Web Job name. We have multiple Function Apps, repeat the script for each identity of Funcation App.
+2. **Update Identity Name**: Replace "identity-name" with the Function App and Web Job name. We have multiple Function Apps, repeat the script for each identity of Funcation App.
 
-**Example**: For My Data, replace <identity-name> with func-iarm-mydata-regionabbr-prd.
+**Example**: For My Data, replace "identity-name" with func-iarm-mydata-regionabbr-prd.
 
-| CREATE USER [<identity-name>] FROM EXTERNAL PROVIDER;  ALTER ROLE db\_datareader ADD MEMBER [<identity-name>];  ALTER ROLE db\_datawriter ADD MEMBER [<identity-name>];  GRANT EXEC TO [<identity-name>];  GO |
+| CREATE USER ["identity-name"] FROM EXTERNAL PROVIDER;  ALTER ROLE db\_datareader ADD MEMBER ["identity-name"];  ALTER ROLE db\_datawriter ADD MEMBER ["identity-name"];  GRANT EXEC TO ["identity-name"];  GO |
 | --- |
 
 ### Configure My Data Module
