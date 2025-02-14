@@ -1,5 +1,3 @@
-## Deployment Guide
-
 ## Acronyms
 
 | **Acronym** | **Description** |
