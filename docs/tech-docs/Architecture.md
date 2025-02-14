@@ -397,7 +397,6 @@ standard Microsoft Graph APIs.
 
 The diagram below provides a high-level as-is architecture of the
 existing FileSite and ARM solutions within the B’nk's environment.
-
 <img src="./ArchitectureImages/image1.png" style="width:7.24985in;height:3.64167in"
 alt="A diagram of a computer network Description automatically generated" />
 
@@ -407,10 +406,10 @@ The diagram below provides a high-level overview of how the i-ARM
 product fits into the broader ecosystem, interacting with multiple
 external systems within/out of BoE IT environment to fulfil its role as
 a comprehensive data and records management solution.
-
+<p align="center">
 <img src="./ArchitectureImages/image2.png" style="width:7.26875in;height:6.56875in"
 alt="A diagram of a system Description automatically generated" />
-
+</p>
 Here is an explanation of each component and its role within the
 architecture:
 
@@ -453,7 +452,7 @@ platform that allows users to visualize data, share insights, and
 collaborate on reports. It receives dashboards and reports created using
 the i-ARM data stores
 
-- .
+<!-- - . -->
 
 ### Transition Architecture diagram 
 
@@ -462,10 +461,10 @@ ARM and FileSite will be replaced. The focus for this iteration of the
 High-Level design is on the implementation of the i-ARM component and
 the integration with the Banks M365 tenant and the SPO and Purview
 components. This is implementation is highlighted below in the diagram.
-
+<p align="center">
 <img src="./ArchitectureImages/image3.png" style="width:6.7524in;height:3.38828in" />
-
-### Previous Input
+</p>
+<!-- ##Previous Input -->
 
 | **Source** | **Type** | **Architecture Comment** |
 |----|----|----|
@@ -546,8 +545,8 @@ The primary logical components of the system are shown as below
   - Reporting System: Provides the cloud-based analytics platform to
     publish reports.
 
-**  
-**
+<!-- **  
+** -->
 
 <img src="./ArchitectureImages/image4.png" style="width:7.20903in;height:6.44048in"
 alt="A diagram of a system Description automatically generated" />
