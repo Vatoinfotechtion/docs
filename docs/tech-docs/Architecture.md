@@ -17,8 +17,8 @@ delivery costs.
 
 | Status          | DRAFT                  |                    |                |
 |-----------------|------------------------|--------------------|----------------|
-| Author          | Rakesh Jain            | Date               | 30/05/2024     |
-| Sponsoring Area | Secretary’s Department | Business Sponsor   | Seb Walsh      |
+| Author          | i-arm product engineering            | Date               | 30/05/2024     |
+| Sponsoring Area | Secretary’s Department | Business Sponsor   | i-arm product engineering      |
 | Version         | 1.0                    | Document Reference | \[ID-version\] |
 
 ### Contacts
@@ -31,18 +31,18 @@ delivery costs.
 <thead>
 <tr>
 <th>Programme &amp; Portfolio Manager</th>
-<th>Nicolette Usher</th>
+<th>i-arm product engineering</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th><p>Primary Stakeholder</p>
 <p>(Representing the request)</p></th>
-<td>Kelly Clark, Project Manager</td>
+<td>i-arm product engineering</td>
 </tr>
 <tr>
 <th>Accountable Architect</th>
-<td>David Parrott, Rakesh Jain</td>
+<td>i-arm product engineering</td>
 </tr>
 <tr>
 <th>Accountable Business Analyst</th>
@@ -67,9 +67,9 @@ delivery costs.
 
 | Version | Date | Author | Summary of Change |
 |----|----|----|----|
-| 1.0 | 30/05/2024 | Rakesh Jain | Final draft submitted for review |
-| 2.0 | 12/06/24 | Rakesh Jain/Colinda Latour | Updated Template with changes from comments. |
-| 3.0 | 14/06/24 | Rakesh Jain/Molly Brean/Colinda Latour | Updated with additional collateral on decisions, risks & dependencies. |
+| 1.0 | 30/05/2024 | i-arm product engineering | Final draft submitted for review |
+| 2.0 | 12/06/24 | i-arm product engineering | Updated Template with changes from comments. |
+| 3.0 | 14/06/24 | i-arm product engineering | Updated with additional collateral on decisions, risks & dependencies. |
 
 ### Approvals
 
@@ -115,7 +115,7 @@ delivery costs.
 </tr>
 <tr>
 <th>Infotechtion</th>
-<td>Colinda Latour / Molly Brean</td>
+<td>i-arm product engineering</td>
 <td>Information Governance Lead / Technical Specialist</td>
 <td><mark>☐</mark></td>
 <td>☐</td>
@@ -215,7 +215,7 @@ completion of the project, such as:
 
 - The actual migration process
 
-- tInetgartion with the Banks implementation of Preservuica for the
+- Integration with the Banks implementation of Preservuica for the
   digital preservation of documents.
 
 As such it is a platform design, further high-level designs will need to
@@ -661,8 +661,8 @@ system for managing data and records.
 > deployment artifacts are well-tested, thereby minimizing any margin of
 > error or issues arising from unforeseen errors.
 
-10. **  
-    **
+<!-- 10. **  
+    ** -->
 
 **External Systems and Dependencies of i-ARM**
 
@@ -1676,9 +1676,9 @@ the solution\]
 <th><strong>Service Ownership</strong></th>
 <th><p>[Clear definition of the service owners – business owner,
 technical owner, service owner]</p>
-<p>Technical Owner: Digital Workplace</p>
-<p>Service Owner: David Patterson</p>
-<p>Business Owner: Jo Frampton</p></th>
+<p>Technical Owner: i-arm product engineering</p>
+<p>Service Owner: i-arm product engineering</p>
+<p>Business Owner: i-arm product engineering</p></th>
 </tr>
 </thead>
 <tbody>
