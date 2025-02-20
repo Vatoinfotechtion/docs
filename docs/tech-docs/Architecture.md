@@ -13,154 +13,6 @@ non-functional requirements alignment & final delivery scope for
 traceability as well as all necessary information to drive accurate
 delivery costs.
 
-# Summary
-
-| Status          | DRAFT                  |                    |                |
-|-----------------|------------------------|--------------------|----------------|
-| Author          | i-arm product engineering            | Date               | 30/05/2024     |
-| Sponsoring Area | Secretary’s Department | Business Sponsor   | i-arm product engineering      |
-| Version         | 1.0                    | Document Reference | \[ID-version\] |
-
-### Contacts
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 49%" />
-</colgroup>
-<thead>
-<tr>
-<th>Programme &amp; Portfolio Manager</th>
-<th>i-arm product engineering</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th><p>Primary Stakeholder</p>
-<p>(Representing the request)</p></th>
-<td>i-arm product engineering</td>
-</tr>
-<tr>
-<th>Accountable Architect</th>
-<td>i-arm product engineering</td>
-</tr>
-<tr>
-<th>Accountable Business Analyst</th>
-<td>[BA name]</td>
-</tr>
-</tbody>
-</table>
-
-### References 
-
-| Statement of Business Need | \[Insert SOBN link\] |
-|----|----|
-| Initial Technology Assessment (ITA) | \[Insert ITA link\] |
-| Architecture Approach | \[Insert Architecture Approach link\] |
-| Proposition Document | \[Insert approved Proposition Document link if relevant\] |
-| Solution Blueprint | \[Insert approved Solution Blueprint link if relevant\] |
-| Technical Options | \[Insert approved Technical Options link if relevant\] |
-| Business Requirements Document | \[Insert BRD link\] |
-| Other link description | \[Insert other link (any other relevant material that has informed this engagement)\] |
-
-### Document History
-
-| Version | Date | Author | Summary of Change |
-|----|----|----|----|
-| 1.0 | 30/05/2024 | i-arm product engineering | Final draft submitted for review |
-| 2.0 | 12/06/24 | i-arm product engineering | Updated Template with changes from comments. |
-| 3.0 | 14/06/24 | i-arm product engineering | Updated with additional collateral on decisions, risks & dependencies. |
-
-### Approvals
-
-| Architecture Design Authority – Peer review and challenge: | \[Insert date of ADA submission, and link to ADA meeting notes\] |
-|----|----|
-| Architecture Review Board - Governance: | \[Insert date of ARB approval and link to ARB outcomes\] |
-| Primary Stakeholder Acceptance: | \[Insert acceptance email from primary stakeholder\] |
-| Date Finalised: | \[Insert the date that this deliverable was finalised and ready for handover\] |
-
-# Stakeholders
-
-<table>
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 29%" />
-<col style="width: 27%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-</colgroup>
-<thead>
-<tr>
-<th><p>R- Responsible</p>
-<p>(Author)</p></th>
-<th><p>A-Accountable</p>
-<p>(Sign off completed document)</p></th>
-<th><p>C-Consulted</p>
-<p>(Contribute expertise)</p></th>
-<th colspan="4"><p>I-Informed</p>
-<p>(Document emailed after sign-off)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Area</th>
-<td>Name / Mailbox</td>
-<td>Role</td>
-<td>R</td>
-<td>A</td>
-<td>C</td>
-<td>I</td>
-</tr>
-<tr>
-<th>Infotechtion</th>
-<td>i-arm product engineering</td>
-<td>Information Governance Lead / Technical Specialist</td>
-<td><mark>☐</mark></td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-</tr>
-<tr>
-<th>Bank</th>
-<td></td>
-<td></td>
-<td>☐</td>
-<td>☐</td>
-<td><mark>☐</mark></td>
-<td>☐</td>
-</tr>
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-</tr>
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-</tr>
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-<td>☐</td>
-</tr>
-</tbody>
-</table>
-
 # Architecture Overview
 
 <span id="_Toc145519981" class="anchor"></span>The Bank’s physical
@@ -201,8 +53,8 @@ for the design:
 
 - The implementation of the Online Reporting Platform for i-ARM.
 
-. It does not cover other aspects which will be required for the
-completion of the project, such as:
+- It does not cover other aspects which will be required for the
+  completion of the project, such as:
 
 - The connectivity back to on-premise required for the migration of
   documents
@@ -262,8 +114,6 @@ Included in Scope for this HLD version:
 - Deployment in BoE Azure Environment: i-ARM will be deployed on the BoE
   Azure cloud platform, utilizing Az’re's infrastructure services to
   ensure scalability, security, and high availability.
-
-- 
 
 i-ARM is a pre-packaged solution offered as a dedicated service with its
 own API layer for proprietary actions. Additionally, integration with
