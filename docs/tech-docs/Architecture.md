@@ -164,7 +164,7 @@ The primary logical components of the system are shown as below
     *   Release Management: Manages deployment pipelines for continuous integration and delivery of the i-ARM solution.
     *   Microsoft Purview (Compliance Portal) - Manages governance policies and ensures compliance with data retention and classification standards.
 
-![Image](ArchitectureImages/2.png)
+![Image](ArchitectureImages/2.jpg)
 
 ## Application Building Blocks
 
@@ -385,7 +385,7 @@ i-ARM data model uses indexes to ensure queries are executed in efficient manner
 
 The data flow diagram shows how data moves through the i-ARM system across different modules.
 
-![Image](ArchitectureImages/6.png)
+![Image](ArchitectureImages/6.jpg)
 
 The section below explains the general flow of the data within i-ARM
 
@@ -426,7 +426,7 @@ The section below explains the general flow of the data within i-ARM
 
 The data flow diagram shows how data moves through the PRM, SharePoint and i-ARM
 
-![Image](ArchitectureImages/7.png)
+![Image](ArchitectureImages/7.jpg)
 
 The section below explains the general flow of the data within PRM, SharePoint and i-ARM
 
