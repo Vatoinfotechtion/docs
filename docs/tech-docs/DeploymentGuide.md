@@ -1,3 +1,5 @@
+## Deployment Guide
+
 ## Acronyms
 
 | **Acronym** | **Description** |
@@ -55,7 +57,7 @@ The pre-infrastructure guide is essential as it outlines the necessary steps to 
 
 ### I-ARM Deployment Runbook
 
-Download the i-ARM deployment runbook from this link [i-ARM\_Runbook.xlsx](https://infotechtiongroup.sharepoint.com/%3Ax%3A/r/sites/AdvancedGovernanceSolutions/Shared%20Documents/General/I-ARM/Deployment/i-ARM_Runbook.xlsx?d=w18f2baa87458470e887f924f75de7a39&csf=1&web=1&e=mo6tY7) for an easy tracking of your deployment activities.
+Download the i-ARM deployment runbook from this link [i-ARM\_Runbook.xlsx](DeploymentGuideImages/i-ARM_Runbook.xlsx) for an easy tracking of your deployment activities.
 
 ### Register Resource Providers
 
@@ -67,7 +69,7 @@ The below resource providers need to be registered in your Azure subscription be
 
 Steps to Register a Resource Provider:
 
-1. **Log into Azure Portal**: Go to https://portal.azure.com and log in.
+1. **Log into Azure Portal**: Go to [Ref:](https://portal.azure.com) and log in.
 2. **Go to Subscriptions**: In the Azure portal, search for Subscriptions in the search bar or go directly to Subscriptions under All Services.
 3. **In the subscription blade**: Look for the "Resource providers" option in the settings menu.
 4. **In the Resource providers pane**: You will see a list of available providers and their registration status.
@@ -116,7 +118,7 @@ This section guides you through creating necessary security groups in Microsoft 
 
 Steps to Create Entra ID Security Group:
 
-1. **Sign in to the Azure portal**: Go to https://portal.azure.com and log in with at least a User Administrator role.
+1. **Sign in to the Azure portal**: Go to [Ref:](https://portal.azure.com) and log in with at least a User Administrator role.
 2. **Navigate to Azure Active Directory**: In the left-hand menu, select "Microsoft Entra ID".
 3. **Go to Groups**: Under the "Manage" section, click on "Groups".
 4. **Create a New Group**: Click on "New group".
@@ -166,7 +168,7 @@ Service accounts would be used for various automated processes within the i-ARM 
 
 Steps to create Service Account:
 
-1. **Sign in to the Microsoft 365 admin center**: Go to https://admin.microsoft.com and log in with a Global Administrator account.
+1. **Sign in to the Microsoft 365 admin center**: Go to [Ref:](https://admin.microsoft.com) and log in with a Global Administrator account.
 2. **Navigate to Users**: In the left-hand menu, click on "Users" and then select "Active users".
 3. **Add a User**: Click on "Add a user".
 4. **Fill in User Details**:
@@ -199,7 +201,7 @@ Repeat these steps for each of the following service accounts:
 | | | | Network/ Azure File Share (Mounted on Scanner VM) | Read Write access on the file share for scanning (Write is only necessary if protection is being applied) |
 | | | | Azure Key Vault (kv-iarm-svc-regionabbr-prd) | - Key Vault Secrets User- Key Vault Certificate User |
 
-Ref: <https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements>
+[Ref:](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs#sql-server-requirements)
 
 ### App Registration Creation
 
@@ -209,7 +211,7 @@ Steps to create and configure app registrations in Azure, which are necessary fo
 
 Step to create App Registrations:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 ![Image](DeploymentGuideImages/3.jpg)
 2. **Search for App Registrations**: Use the search bar to find "App Registrations" and click on it.
 3. **Create a New Registration**: Click on "+ New registration" at the top of the page.
@@ -259,7 +261,7 @@ API permissions is crucial for enabling secure and authorized access to various 
 
 Steps to Add API Permissions to an App Registration:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find "App Registrations" and click on it.
 3. **Select Your App Registration**: Click on the app registration you want to configure.
 4. **Go to API Permissions**: In the left-hand menu, click on "API permissions".
@@ -288,7 +290,7 @@ Exposing an API is essential for enabling secure and authorized access to your a
 
 Steps to Expose API to an App Registration:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find "App Registrations" and click on it.
 3. **Select Your App Registration**: Click on the **spn-func-iarm-apiauth-prd** app registration.
 4. **Go to Expose an API**: In the left-hand menu, click on "Expose an API".
@@ -327,7 +329,7 @@ Steps to Expose API to an App Registration:
 
 Steps to Add Token:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find "App Registrations" and click on it.
 3. **Select your application**: Find and select **spn-wapp-iarm-uidirectoryaccess-prd** from the list of registered applications.
 4. **Go to Token configuration**: Under the **Manage** section, select **Token configuration**.
@@ -345,7 +347,7 @@ Generating a secret is a key step in securing your application's access credenti
 
 Steps to Generating a Secret:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find "App Registrations" and click on it.
 3. **Select Your App Registration**: Click on the app registration you want to configure.
 4. **Navigate to Certificates & Secrets**:
@@ -447,14 +449,14 @@ Add a redirect URL to the App Registration as specified in the table below by fo
 
 | **App Registration Name** | **Addition Configuration** |
 | --- | --- |
-| spn-wapp-iarm-uidirectoryaccess-prd | **Platform:**  Single Page Application  URI: https://web-iarm-ui-regionabbr-prd.azurewebsites.net  ***\*Pointing to the UI Web App ( iARM portal) created*** |
-| spn-func-iarm-apiauth-prd | **Platform:**  Web Redirect URIs:  https://func-iarm-mydata-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback  https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback  ***\*Pointing to the My Data & My Disposal function apps created*** |
+| spn-wapp-iarm-uidirectoryaccess-prd | **Platform:**  Single Page Application  URI: [Ref:](https://web-iarm-ui-regionabbr-prd.azurewebsites.net)  ***\*Pointing to the UI Web App ( iARM portal) created*** |
+| spn-func-iarm-apiauth-prd | **Platform:**  Web Redirect URIs:  [Ref:](https://func-iarm-mydata-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback)  [Ref:](https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/.auth/login/aad/callback)  ***\*Pointing to the My Data & My Disposal function apps created*** |
 
 ##### Adding Redirect URL for the Web App (For UI App Registrations)
 
 Steps to Add redirect URL for Web App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find “App Registrations” and click on it.
 3. **Select Your App Registration**: Click on the **spn-wapp-iarm-uidirectoryaccess-prd** app registration.
 4. **Go to Authentication**: In the left-hand menu, click on **Authentication**.
@@ -477,7 +479,7 @@ Steps to Add redirect URL for Web App:
 
 Steps to Add redirect URL for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to App Registrations**: Use the search bar to find “App Registrations” and click on it.
 3. **Select Your App Registration**: Click on the **spn-func-iarm-apiauth-prd** app registration.
 4. **Go to Authentication**: In the left-hand menu, click on **Authentication**.
@@ -486,7 +488,7 @@ Steps to Add redirect URL for Function App:
 
 ![Image](DeploymentGuideImages/20.jpg)
 
-7. **Add the Redirect URI**: Enter the below redirect URI as https://web-iarm-ui-regionabbr-prd.azurewebsites.net  
+7. **Add the Redirect URI**: Enter the below redirect URI as [Ref:](https://web-iarm-ui-regionabbr-prd.azurewebsites.net)  
 
 * **Note:** Replace regionabbr with the appropriate region abbreviation or Function app name as per your standards for your deployment.
 
@@ -525,7 +527,7 @@ The iARM Product utilizes Key Vault for securely storing secrets essential to th
 
 Steps to Add Secret to Key Vault:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Key Vault**: At the top of the portal, you'll see a search bar. Start typing the name of the Key Vault (kv-iarm-svc-regionabbr-prd) and select it from the results.
 
 ![Image](DeploymentGuideImages/24.jpg)
@@ -571,7 +573,7 @@ Steps to Add Secret to Key Vault:
 
 Steps to Add Certificate to Key Vault:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Key Vault**: At the top of the portal, you'll see a search bar. Start typing the name of the Key Vault (kv-iarm-svc-regionabbr-prd) and select it from the results.
 
 ![Image](DeploymentGuideImages/27.jpg)
@@ -595,15 +597,15 @@ Steps to Add Certificate to Key Vault:
 
 | **#** | **Key Vault Certificate** | **CN/Subject** | **Associated Application** |
 | --- | --- | --- | --- |
-| 1 | spn-wj-iarm-di-spn-prd-clientcert | iarm-di-spn-prd.<"client" domain>.com | All |
-| 2 | spn-func-iarm-graphapi-prd-clientcert | iarm-graphapi-prd.<"client" domain>.com | My Data, Data Ingestion |
-| 3 | spn-func-iarm-notifications-prd-clientcert | iarm-notifications-prd.<"client" domain>.com | My Data, Data Ingestion |
-| 4 | spn-func-iarm-prmsync-prd-clientcert | iarm-prmsync-prd.<"client" domain>.com | PRM-Sync |
-| 5 | spn-func-iarm-prmbulkimport-prd-clientcert | iarm-prmbulkimport-prd.<"client" domain>.com | PRM-Bulk |
-| 6 | spn-mydisppa-iarm-spoaccess-prd-clientcert | iarm-spoaccess-prd.<"client" domain>.com | My Disposal |
-| 7 | spn-func-iarm-mydispconnspoaccess-prd-clientcert | iarm-mydispconnspoaccess-prd.<"client" domain>.com | My Disposal |
-| 8 | spn-func-iarm-prmprovisioning-prd-clientcert | iarm-prmprovisioning-prd.<"client" domain>.com | PRM-SFx |
-| 9 | spn-di-iarm-dropzone-prd-clientcert | iarm-dropzone-prd.<"client" domain>.com | Data Ingestion |
+| 1 | spn-wj-iarm-di-spn-prd-clientcert | iarm-di-spn-prd."client domain".com | All |
+| 2 | spn-func-iarm-graphapi-prd-clientcert | iarm-graphapi-prd."client domain".com | My Data, Data Ingestion |
+| 3 | spn-func-iarm-notifications-prd-clientcert | iarm-notifications-prd."client domain".com | My Data, Data Ingestion |
+| 4 | spn-func-iarm-prmsync-prd-clientcert | iarm-prmsync-prd."client domain".com | PRM-Sync |
+| 5 | spn-func-iarm-prmbulkimport-prd-clientcert | iarm-prmbulkimport-prd."client domain".com | PRM-Bulk |
+| 6 | spn-mydisppa-iarm-spoaccess-prd-clientcert | iarm-spoaccess-prd."client domain".com | My Disposal |
+| 7 | spn-func-iarm-mydispconnspoaccess-prd-clientcert | iarm-mydispconnspoaccess-prd."client domain".com | My Disposal |
+| 8 | spn-func-iarm-prmprovisioning-prd-clientcert | iarm-prmprovisioning-prd."client domain".com | PRM-SFx |
+| 9 | spn-di-iarm-dropzone-prd-clientcert | iarm-dropzone-prd."client domain".com | Data Ingestion |
 
 #### Adding Certificate to the App Registration
 
@@ -639,7 +641,7 @@ To execute the script and access the database, it is necessary to add the **sg-s
 
 #### Assign Set Admin to the SQL Server
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Search SQL Server Instance**: Use the search bar to find **sql-iarm-svc-regionabbr-prd** Azure SQL Server instance (which is provisioned for iARM Application) and select it.
 3. **Go to Settings**: In the left navigation pane, click on the **Settings** section.
 4. **Select Microsoft Entra ID**: Click on **Microsoft Entra ID** in the Settings blade.
@@ -670,19 +672,19 @@ To execute the script and access the database, it is necessary to add the **sg-s
 #### Run Script for sql-service-principle-access
 
 1. **Add SQL-Auth Service Principal**: The SQL-Auth service principal should be added to the SQL DB as an external provider. Run the script below by logging in as an Entra ID user to SQL.
-2. **Update App Registration Name**: Replace <spn-name> with the actual SQL-Auth App Registration Name in your Tenant. For example, use **sg-svc-iarm-sqlentraadministrators-prd**.
+2. **Update App Registration Name**: Replace "spn-name" with the actual SQL-Auth App Registration Name in your Tenant. For example, use **sg-svc-iarm-sqlentraadministrators-prd**.
 
-| CREATE USER [<spn-name>] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER [<spn-name>]  ALTER ROLE db\_datawriter ADD MEMBER [<spn-name>]  GRANT EXEC TO [<spn-name>] |
+| CREATE USER ["spn-name"] FROM EXTERNAL PROVIDER  ALTER ROLE db\_datareader ADD MEMBER ["spn-name"]  ALTER ROLE db\_datawriter ADD MEMBER ["spn-name"]  GRANT EXEC TO ["spn-name"] |
 | --- |
 
 #### Run Script for managed-identity-access
 
 1. **Add Managed Identity**: For providing SQL DB access to the Managed Identity as an external provider, run the script below by logging in as an Entra ID user to SQL.
-2. **Update Identity Name**: Replace <identity-name> with the Function App and Web Job name. We have multiple Function Apps, repeat the script for each identity of Funcation App.
+2. **Update Identity Name**: Replace "identity-name" with the Function App and Web Job name. We have multiple Function Apps, repeat the script for each identity of Funcation App.
 
-**Example**: For My Data, replace <identity-name> with func-iarm-mydata-regionabbr-prd.
+**Example**: For My Data, replace "identity-name" with func-iarm-mydata-regionabbr-prd.
 
-| CREATE USER [<identity-name>] FROM EXTERNAL PROVIDER;  ALTER ROLE db\_datareader ADD MEMBER [<identity-name>];  ALTER ROLE db\_datawriter ADD MEMBER [<identity-name>];  GRANT EXEC TO [<identity-name>];  GO |
+| CREATE USER ["identity-name"] FROM EXTERNAL PROVIDER;  ALTER ROLE db\_datareader ADD MEMBER ["identity-name"];  ALTER ROLE db\_datawriter ADD MEMBER ["identity-name"];  GRANT EXEC TO ["identity-name"];  GO |
 | --- |
 
 ### Configure My Data Module
@@ -691,7 +693,7 @@ To execute the script and access the database, it is necessary to add the **sg-s
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Data Function App (func-iarm-mydata-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -704,7 +706,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Data Function App (func-iarm-mydata-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -738,7 +740,7 @@ Prerequisites: To configure Function Application authentication, the user must h
 
 Steps for to Configure Function Application Authentication:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Data Function App (func-iarm-mydata-regionabbr-prd) and select it.
 3. **Go to Authentication**: In the left-hand menu, click on **Authentication** under the **Settings** section.
 4. **Add Identity Provider**: Click on **Add identity provider**.
@@ -778,7 +780,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Data Function App (func-iarm-mydata-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -830,7 +832,7 @@ The client secrets will be automatically created when the function app authentic
 
 Prerequisites: To upload Source Manifest Templates, you need to have **Storage Blob Data Contributor** access over the targeted storage account.
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your Azure account credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your Azure account credentials.
 2. **Navigate to Storage Accounts**: In the search box, type **Storage accounts** and select it from the results.
 3. **Select the Blob Container**: From the list of storage accounts, select the blob container that we have provisioned for Data Ingestion app storage (saiarmdiappregionabbrprd).
 4. **Go to Container**: On the storage account page, in the left menu under **Data Explorer**, select **Container**.
@@ -848,7 +850,7 @@ Prerequisites: To upload Source Manifest Templates, you need to have **Storage B
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Disposal Function App (func-iarm-mydisp-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -861,7 +863,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Disposal Function App (func-iarm-mydisp-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -891,7 +893,7 @@ Prerequisites: To configure Function Application authentication, the user must h
 
 Steps for to Configure Function Application Authentication:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find My Disposal Function App (func-iarm-mydisp-regionabbr-prd) and select it.
 3. **Go to Authentication**: In the left-hand menu, click on **Authentication** under the **Settings** section.
 4. **Add Identity Provider**: Click on **Add identity provider**.
@@ -931,7 +933,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find find My Disposal Function App (func-iarm-mydisp-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -991,7 +993,7 @@ The client secrets will be automatically created when the function app authentic
 
 Steps for to Validate System Assigned Identity for Web App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find Data Ingestion Web Job (wj-iarm-di-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1004,7 +1006,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find Data Ingestion Web Job (wj-iarm-di-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1038,7 +1040,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find Data Ingestion Web Job (wj-iarm-di-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1086,7 +1088,7 @@ Steps for to Validate Environment Variables in Function App:
 
 We need to grant the **Storage Account Contributor** role to spn-wj-iarm-di-spn-prd service principal (SPN) for regulated and non-regulated repository storage accounts.
 
-1. **Log in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Log in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Storage Account**: Use the search bar to find regulated storage account (saiarmdiregregionabbrprd) and select it.
 3. **Go to Access Control (IAM)**: In the left-hand menu under the **Settings** section, click on **Access control (IAM)**.
 4. **Add Role Assignment**: Click on the **+ Add** button and select **Add role assignment**.
@@ -1100,7 +1102,7 @@ We need to grant the **Storage Account Contributor** role to spn-wj-iarm-di-spn-
 
 We need to grant the **Storage Blob Data Contributor** role to the spn-di-iarm-dropzone-prd SPN for the Dropzone repository storage account.
 
-1. **Log in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Log in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Storage Account**: Use the search bar to find Dropzone storage account (saiarmdidroperegionabbrprd) and select it.
 3. **Go to Access Control (IAM)**: In the left-hand menu under the **Settings** section, click on **Access control (IAM)**.
 4. **Add Role Assignment**: Click on the **+ Add** button and select **Add role assignment**.
@@ -1115,7 +1117,7 @@ We need to grant the **Storage Blob Data Contributor** role to the spn-di-iarm-d
 
 Prerequisites: To upload Source Manifest Templates, you need to have **Storage Blob Data Contributor** access over the targeted storage account.
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your Azure account credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your Azure account credentials.
 2. **Navigate to Storage Accounts**: In the search box, type **Storage accounts** and select it from the results.
 3. **Select the Blob Container**: From the list of storage accounts, select the blob container that we have provisioned for Data Ingestion app storage (saiarmdiappregionabbrprd).
 4. **Go to Container**: On the storage account page, in the left menu under **Data Explorer**, select **Container**.
@@ -1133,7 +1135,7 @@ Prerequisites: To upload Source Manifest Templates, you need to have **Storage B
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find URC Function App (func-iarm-urc-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1146,7 +1148,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find URC Function App (func-iarm-urc-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1176,7 +1178,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find find URC Function App (func-iarm-urc-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1241,7 +1243,7 @@ Steps for to Validate Environment Variables in Function App:
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Bulk Function App (func-iarm-prmbulk-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1254,7 +1256,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Bulk Function App (func-iarm-prmbulk-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1286,7 +1288,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find find PRM Bulk Function App (func-iarm-prmbulk-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1342,7 +1344,7 @@ Steps for to Validate Environment Variables in Function App:
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Sync Function App (func-iarm-prmsync-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1355,7 +1357,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find find PRM Sync Function App (func-iarm-prmsync-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1385,7 +1387,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Sync Function App (func-iarm-prmsync-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1439,7 +1441,7 @@ Steps for to Validate Environment Variables in Function App:
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find M365Adit Sync Web Job (wj-iarm-m365auditsync-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1452,7 +1454,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find M365Adit Sync Web Job (wj-iarm-m365auditsync-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1482,7 +1484,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Web App**: Use the search bar to find M365Adit Sync Web Job (wj-iarm-m365auditsync-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1497,7 +1499,7 @@ Steps for to Validate Environment Variables in Function App:
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find M365Adit Connector Function App (func-iarm-m365auditconnector-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1510,7 +1512,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find M365Adit Connector Function App (func-iarm-m365auditconnector-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1540,7 +1542,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Sync Function App (func-iarm-prmsync-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1577,7 +1579,7 @@ Steps for to Validate Environment Variables in Function App:
 
 Steps for to Validate System Assigned Identity for Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find WPH Function App (func-iarm-wph-regionabbr-prd)and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Enable System Assigned Identity**: Ensure that the **System assigned** option is set to **On**.
@@ -1590,7 +1592,7 @@ Prerequisites: For performing role assignment to the managed identity user at le
 
 Steps for to Assign roles to managed identity:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find WPH Function App (func-iarm-wph-regionabbr-prd) and select it.
 3. **Go to Identity**: In the left-hand menu, click on **Identity** under the **Settings** section.
 4. **Click on the Azure Role Assignments Button**: Click on the **Azure role assignments** button.
@@ -1619,7 +1621,7 @@ Prerequisites: To validate app settings, the user must have at least **Contribut
 
 Steps for to Validate Environment Variables in Function App:
 
-1. **Sign in to the Azure Portal**: Navigate to https://portal.azure.com and log in with your credentials.
+1. **Sign in to the Azure Portal**: Navigate to [Ref:](https://portal.azure.com) and log in with your credentials.
 2. **Navigate to Your Function App**: Use the search bar to find PRM Sync Function App (func-iarm-prmsync-regionabbr-prd) and select it.
 3. **Go to Environmental Variables**: In the left-hand menu, under the **Settings** section, click on **Environmental variables**.
 4. **Show Values**: If required, click on **Show values** to display the current values of the environmental variables for validation.
@@ -1641,19 +1643,19 @@ Steps for to Validate Environment Variables in Function App:
 | VITE\_ADMIN\_GROUP | Object ID of the **sg-svc-iarm-recordsadministrators-prd** Entra ID Group |
 | VITE\_API\_SCOPE | API Scope value of the **spn-func-iarm-apiauth-prd** App Registrations |
 | VITE\_CLIENT\_ID | Application (client) ID of **spn-wapp-iarm-uidirectoryaccess-prd** App Registrations |
-| VITE\_CLIENT\_LOGO | <Add Client Logo URL> |
-| VITE\_DATABOT\_HOST | https:// web-iarm-chatbot-regionabbr-prd.azurewebsites.net  ***\*Pointing to the Databot Web App created*** |
+| VITE\_CLIENT\_LOGO | "Add Client Logo URL" |
+| VITE\_DATABOT\_HOST | [Ref:](https:// web-iarm-chatbot-regionabbr-prd.azurewebsites.net)  ***\*Pointing to the Databot Web App created*** |
 | VITE\_DEFAULT\_IDLE\_TIMEOUT\_MINUTES | 15 |
-| VITE\_DISPOSITION\_ENDPOINT\_V2 | https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/api***\*Pointing to the My Disposal function apps created*** |
-| VITE\_DISPOSITION\_HOST | https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net***\*Pointing to the My Disposal function apps created*** |
+| VITE\_DISPOSITION\_ENDPOINT\_V2 | [Ref:](https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net/api)***\*Pointing to the My Disposal function apps created*** |
+| VITE\_DISPOSITION\_HOST | [Ref:](https://func-iarm-mydisp-regionabbr-prd.azurewebsites.net)***\*Pointing to the My Disposal function apps created*** |
 | VITE\_E\_DISCOVERY\_GROUP | Object ID of the **sg-svc-iarm-ediscoveryadministrators-prd** Entra ID Group |
-| VITE\_FILESHARE\_ENDPOINT\_V2 | https://func-iarm-mydata-regionabbr-prd.azurewebsites.net/api  ***\*Pointing to the My Data function apps created*** |
-| VITE\_FILESHARE\_HOST | https://func-iarm-mydata-regionabbr-prd.azurewebsites.net  ***\*Pointing to the My Data function apps created*** |
-| VITE\_GRAPH\_ENDPOINT | https://graph.microsoft.com/v1.0 |
+| VITE\_FILESHARE\_ENDPOINT\_V2 | [Ref:](https://func-iarm-mydata-regionabbr-prd.azurewebsites.net/api)  ***\*Pointing to the My Data function apps created*** |
+| VITE\_FILESHARE\_HOST | [Ref:](https://func-iarm-mydata-regionabbr-prd.azurewebsites.net)  ***\*Pointing to the My Data function apps created*** |
+| VITE\_GRAPH\_ENDPOINT | [Ref:](https://graph.microsoft.com/v1.0) |
 | VITE\_IDLE\_PROMPT\_START\_MINUTES | 1 |
 | VITE\_INSTRUMENTATION\_KEY | Application Insight Key for the UI Web App |
-| VITE\_LOGOUT\_REDIRECT\_URI | https://web-iarm-ui-regionabbr-prd.azurewebsites.net/logged-out  ***\*Pointing to the UI Web App ( iARM portal) created*** |
-| VITE\_REDIRECT\_URI | https://web-iarm-ui-regionabbr-prd.azurewebsites.net***\*Pointing to the UI Web App ( iARM portal) created*** |
+| VITE\_LOGOUT\_REDIRECT\_URI | [Ref:](https://web-iarm-ui-regionabbr-prd.azurewebsites.net/logged-out)  ***\*Pointing to the UI Web App ( iARM portal) created*** |
+| VITE\_REDIRECT\_URI | [Ref:](https://web-iarm-ui-regionabbr-prd.azurewebsites.net)***\*Pointing to the UI Web App ( iARM portal) created*** |
 | VITE\_TENANT\_ID | Value of Tenant ID. |
 
 1. Setup value of variable group and link it to the IARM-UI release pipeline and create it.
