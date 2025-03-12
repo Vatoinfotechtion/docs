@@ -3,9 +3,8 @@ A target operating model (TOM) defines how a business or organization operates t
 The i-ARM operating model will cover Shared Responsibility Model, Skills Requirements, Microsoft Certifications Recommendations, Workflow to Manage Product Feature Release and Hotfixes, Service Request Management, and Failover Modes and Possible Resolutions. These ensure clarity in roles, essential skills, structured workflows, efficient service request handling, and robust failover strategies for operational continuity.
 
 ## Shared Responsibility Model
-The shared responsibility model for i-ARM delineates the responsibilities between the cloud service provider (Microsoft Azure) and the customer (i-ARM). The model ensures clarity in roles to maintain security, compliance, and operational efficiency. 
-
-Download the i-ARM deployment runbook from this link [Shared-Responsibility-Activities.xlsx](TargetOperatingModelFiles/Shared-Responsibility-Activities.xlsx) for an easy tracking of your deployment activities.
+The shared responsibility model for i-ARM delineates the responsibilities between the cloud service provider (Microsoft Azure) and the customer (i-ARM). The model ensures clarity in roles to maintain security, compliance, and operational efficiency. Link
+[Shared-Responsibility-Activities.xlsx](TargetOperatingModelFiles/Shared-Responsibility-Activities.xlsx) 
 
 
 ## Skills Requirements
