@@ -3,23 +3,10 @@ A target operating model (TOM) defines how a business or organization operates t
 The i-ARM operating model will cover Shared Responsibility Model, Skills Requirements, Microsoft Certifications Recommendations, Workflow to Manage Product Feature Release and Hotfixes, Service Request Management, and Failover Modes and Possible Resolutions. These ensure clarity in roles, essential skills, structured workflows, efficient service request handling, and robust failover strategies for operational continuity.
 
 ## Shared Responsibility Model
-The shared responsibility model for i-ARM delineates the responsibilities between the cloud service provider (Microsoft Azure) and the customer (i-ARM). The model ensures clarity in roles to maintain security, compliance, and operational efficiency.
+The shared responsibility model for i-ARM delineates the responsibilities between the cloud service provider (Microsoft Azure) and the customer (i-ARM). The model ensures clarity in roles to maintain security, compliance, and operational efficiency. 
 
-| Responsibility Area | Infotechtion i-ARM Support | Consumer Cloud Support | Consumer Modern Workplace | Consumer Governance & Compliance |
-| --- | --- | --- | --- | --- |
-| Azure Management Group and Subscription Organization | Not Applicable | Management and Support responsibility | Not Applicable | Not Applicable |
-| Azure landing zone | Review policies and rules, advise on any changes to enable i-ARM deployment. | Managing policies and rules for the security of landing zone. | Not Applicable | Not Applicable |
-| i-ARM subscription Management | Provide subscription configurations. | Configuration and Management of subscription. | Not Applicable | Not Applicable |
-| i-ARM resource Group Management | Configuration and Management of i-ARM services and binaries deployed in the resource group. | Configuration and management of shared services and connectivity. | Not Applicable | Not Applicable |
-| Connectivity Subscription | • Review existing or new connectivity rules to assess impact to i-ARM services. • Provide Azure firewall rules required for connecting i-ARM service in/outbound connection • Investigate and report connectivity issues impacting i-ARM services as reported via support ticket. | • Configure firewall rules, VNet peering • Troubleshoot and Resolve connectivity issues impacting i-ARM services. | • Investigate and report connectivity issues impacting i-ARM services to i-ARM support and Cloud support. | Not Applicable |
-| Network Infrastructure | Provide rules and exceptions required to be configured to allow communication between i-ARM services and endpoints. | Ensuring network connectivity and security. Configuring network settings and VPNs. | • Investigate and report connectivity issues impacting i-ARM services to i-ARM support and Cloud support. | Not Applicable |
-| Virtual Machines (Data Gateway) | Managing i-ARM component configuration on VMs. | IAC template based new VM deployment | Not Applicable | Not Applicable |
-| Identity and Access | Provide documentation of identities required by i-ARM. | Creation and management of i-ARM specific identities and RBAC. | Authorise use of RBAC and services requested for access by i-ARM. | Not Applicable |
-| Security Monitoring | Enable i-ARM services integration with Azure Monitor service associated with i-ARM resource group. | Integrate Azure Monitor with Management subscription for monitoring. | Regular review i-ARM resource group Azure Monitor for critical errors and report to i-ARM support. | Not Applicable |
-| Microsoft Purview | Configure and monitor Sync of i-ARM with Microsoft Purview labels and policies, disposition events and audit log via API connectivity. | Not Applicable | Coordinate issue resolution with Microsoft related to Microsoft services impacting the i-ARM service. | Review and report issues related to i-ARM integration with MS Purview. |
-| Microsoft365 Endpoints | Support investigation and qualification of an issue attributed to i-ARM vs Microsoft service. | Not Applicable | Coordinate issue resolution with Microsoft related to Microsoft services impacting the i-ARM service. | Not Applicable. |
-| Managed / Unmanaged Devices / Users | Not Applicable | Not Applicable | Investigate and assign responsibility for issues related to end user computing. | Not Applicable. |
-| Information and Data | Not Applicable | Not Applicable | Data integrity and availability in M365 platform. | Data classification policies and enforcement. |
+Download the i-ARM deployment runbook from this link [Shared-Responsibility-Activities.xlsx](TargetOperatingModelFiles/Shared-Responsibility-Activities.xlsx) for an easy tracking of your deployment activities.
+
 
 ## Skills Requirements
 The following skills are essential for the support staff managing the Azure subscription for i-ARM:
