@@ -482,7 +482,7 @@ The Historic View table presents the following column details.
 | 12   | **Actioned By**     | The name of the reviewer who took the action. |
 
 
-Historic View/Log: Filtering
+**Historic View/Log: Filtering**
 
 The table can become quite large, and it is useful to apply filters to
 narrow down the search for information. The filters work by selecting
@@ -493,7 +493,7 @@ the appropriate value in the selection box or drop-down menu.
   </p>
 
 
-#### High-Level Item-Level Workflow
+**High-Level Item-Level Workflow**
 
 The following diagram show the overall all workflow of labelling and
 disposition to help identify the likely sequence of events or where a
@@ -504,7 +504,7 @@ document may be in the process.
   </p>
 
 
-#### List of Item-Level Statuses
+**List of Item-Level Statuses**
 
 The following list provides the definitions for each status **an item
 can have** in the My Disposal Dashboard:
@@ -524,13 +524,13 @@ can have** in the My Disposal Dashboard:
 | 11   | **Error Occurred**       | The item could not be found at the source location. |
 
 
-#### Email Notifications
+**Email Notifications**
 
 See \[Note: if the email notifications for Business and Archive Reviewer
 are exactly the same except the name of the role, combined the 2 email
 sections in this doc into 1 and move to the common UI section\]
 
-##### Email Notification
+**Email Notification**
 
 | **#** | **Item**     | **Description** |
 |-------|-------------|--------------------------------------------------|
@@ -541,7 +541,7 @@ sections in this doc into 1 and move to the common UI section\]
 | 5     | **Subject**  | Review records for Disposal |
 
 
-##### Email Content
+**Email Content** 
 
 <p align="center">
   <img src="UserManualImages/Picture40.png" width="300px">
