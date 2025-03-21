@@ -263,28 +263,17 @@ most out of the My Disposal Dashboard.
 
 #### User Roles and Permissions
 
-  -------------------------------------------------------------------------
-   \#  Role              Description
-  ---- ----------------- --------------------------------------------------
-   1   **End User**      End Users will only have access to source instance
-                         in which user is added as member.
+ | **#** | **Role**              | **Description**                                                        |
+|------|----------------------|------------------------------------------------------------------------|
+| 1    | **End User**         | End Users will only have access to the source instance in which the user is added as a member. |
+| 2    | **Business Reviewer** | Can take actions on records where they have been designated as a Business Reviewer in My Disposal Dashboard. |
+| 3    | **Archive Reviewer**  | Can take actions on records where they have been designated as an Archive Reviewer in My Disposal Dashboard. |
+| 4    | **iARM Administrator** | Admins can edit Disposal Settings, Container Settings, and update Business and Archive Reviewers. |
 
-   2   **Business        Can take actions on records where they have been
-       Reviewer**        designated as a Business Reviewer in My Disposal
-                         Dashboard.
 
-   3   **Archive         Can take actions on records where they have been
-       Reviewer**        designated as an Archive Reviewer in My Disposal
-                         Dashboard.
-
-   4   **iARM            Admins can edit Disposal Settings, Container
-       Administrator**   Settings, and Update Business and Archive
-                         Reviewers.
-  -------------------------------------------------------------------------
-
-![A screenshot of a computer screen AI-generated content may be
-incorrect.](media/image1.png){width="6.445400262467191in"
-height="2.5335859580052493in"}
+<p align="center">
+  <img src="UserManualImages/Picture28.png">
+  </p>
 
 #### Key Features and Capabilities
 
