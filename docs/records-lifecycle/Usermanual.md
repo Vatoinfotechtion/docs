@@ -334,37 +334,22 @@ most out of the My Disposal Dashboard.
     Azure Storage or other preservation solutions after disposition to
     optimize storage and maintain compliance.
 
-#### Definitions
+**Definitions** 
 
 14. The table below defines the terms present in iARM's My Disposal
     Dashboard.
 
-15. 
 
-  ----------------------------------------------------------------------------
-   \#  Term              Description
-  ---- ----------------- -----------------------------------------------------
-   1   **Source**        Cloud hosted storage space which is required to be
-                         scanned and managed in iARM.
+  | **#** | **Term**            | **Description**                                                      |
+|------|-------------------|----------------------------------------------------------------------|
+| 1    | **Source**        | Cloud-hosted storage space that needs to be scanned and managed in iARM. |
+| 2    | **Source Instance** | A subset of source data to be scanned and managed in iARM at a given interval. |
+| 3    | **Disposition**   | The type of action that occurs to a file when the retention period expires. Generally, disposition is deletion, but it can include other actions. |
+| 4    | **Label**         | Labels contain policies for file/data that include file plan details (retention duration, etc.) and actions (dispose, etc.). |
+| 6    | **Retention**     | Number of days the data will be kept before it is marked for disposition. |
+ 
 
-   2   **Source          A subset of source data to be scanned and managed in
-       Instance**        iARM at a given interval.
-
-   3   **Disposition**   The type of action that occurs to a file when the
-                         retention period expires, generally disposition is
-                         deletion, but it can be other actions.
-
-   4   **Label**         Labels contain policies for file/data that include
-                         file plan details (retention duration, etc.) and
-                         actions (dispose, etc.).
-
-   6   **Retention**     Number of days the data will be kept before it is
-                         marked for disposition.
-  ----------------------------------------------------------------------------
-
-16. 
-
-### My Disposal Dashboard: Common Functionality (All User Roles)
+**My Disposal Dashboard: Common Functionality (All User Roles)**
 
 **My Disposal Dashboard** serves as a centralized hub for selecting,
 reviewing, and approving disposition and archiving activities,
@@ -375,56 +360,52 @@ their source locations, along with all SharePoint sites where the users
 hold a **Business Reviewer** or **Archive Reviewer** role, ensuring
 comprehensive oversight of pending actions.
 
-My Disposal Dashboard -- Common Experience
+**My Disposal Dashboard -- Common Experience**
 
 Regardless of the role a user represents in the disposition process,
 there will some screens that are universal. To review records, there are
 three views that are relevant and selectable.
 
-![](media/image2.png){width="6.378958880139982in"
-height="0.7756069553805774in"}
+<p align="center">
+  <img src="UserManualImages/Picture29.png">
+  </p>
 
-> ![A screenshot of a review records box AI-generated content may be
-> incorrect.](media/image3.png){width="3.535207786526684in"
-> height="0.825in"}
+<p align="center">
+  <img src="UserManualImages/Picture30.png">
+  </p>
 
-  -----------------------------------------------------------------------
-   \#  Tab              Description
-  ---- ---------------- -------------------------------------------------
-   1   **Business       This tab provides the list of all of files
-       Reviewer**       awaiting review and approval by the Business
-                        Reviewer to be dispositioned.
+| **#** | **Tab**             | **Description**                                                      |
+|------|------------------|----------------------------------------------------------------------|
+| 1    | **Business Reviewer** | This tab provides a list of all files awaiting review and approval by the Business Reviewer to be dispositioned. |
+| 2    | **Archive Reviewer**  | This tab provides a list of all files awaiting review and approval by the Archive Reviewer to be dispositioned. |
+| 3    | **Historic**          | This tab provides a historical account of actions completed by Business Reviewers and Archive Reviewers. |
 
-   2   **Archive        This tab provides the list of all of files
-       Reviewer**       awaiting review and approval by the Archive
-                        Reviewer to be dispositioned.
 
-   3   **Historic**     This tab provides a historical account of actions
-                        completed by Business Reviewers and Archive
-                        Reviewers.
-  -----------------------------------------------------------------------
-
-User Interface: Business Reviewer -- My Disposal Dashboard Overview
+**User Interface: Business Reviewer -- My Disposal Dashboard Overview**
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when accessing the My Disposal
 Dashboard.
 
-![](media/image5.svg){width="7.493055555555555in" height="3.6375in"}
+<p align="center">
+  <img src="UserManualImages/Picture32.svg">
+  </p>
 
-My Disposal Dashboard -- Manage Columns
+**My Disposal Dashboard -- Manage Columns**
 
 Columns can be turned on and off or reconfigured to meet the user's
 preferences.
 
-![](media/image7.svg){width="7.377083333333333in"
-height="3.2465277777777777in"}
+<p align="center">
+  <img src="UserManualImages/Picture33.svg">
+  </p>
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when managing or changing columns.
 
-![](media/image9.svg){width="7.353472222222222in"
-height="3.9027777777777777in"}
+<p align="center">
+  <img src="UserManualImages/Picture34.svg">
+  </p>
 
 My Disposal Dashboard -- Filtering
 
@@ -434,60 +415,33 @@ for bulk decisions or more granular reviews.
 
 Selecting the funnel icon brings up the following screens for filtering.
 
-  -------------------------------------------------------------------------------------------------------------------------
-  **Filtering files can be accessed by clicking on the icon   ![A black and white funnel Description automatically
-  in the upper right corner.**                                generated](media/image10.png){width="0.42810476815398074in"
-                                                              height="0.360087489063867in"}
-  ----------------------------------------------------------- -------------------------------------------------------------
+|         |     |
+|------------|-------------|
+|Filtering files can be accessed by clicking on the icon in the upper right corner.| <img src="UserManualImages/Picture35.png"> |
 
-  -------------------------------------------------------------------------------------------------------------------------
-
-Once filters are selected and highlighted, click the Apply button to run
-that filter, or click Reset to start over.
+Once filters are selected and highlighted, click the Apply button to run that filter, or click Reset to start over.
 
 **The filter panel allows users to find files by:**
 
-+---+--------------+---------------------------------------------------+
-| \ | Filter       | Description                                       |
-| # |              |                                                   |
-+:=:+==============+===================================================+
-| 1 | **Expiry     | It is used to filter out files according to       |
-|   | Date**       | expiry date of files.\                            |
-|   |              | It is not applicable on folders as folder do not  |
-|   |              | have expiry date.                                 |
-+---+--------------+---------------------------------------------------+
-| 2 | **Modified   | It is used to filter items according to date at   |
-|   | Date**       | which file was last modified.                     |
-+---+--------------+---------------------------------------------------+
-| 3 | **File       | It is used to filter according to file name. It   |
-|   | Name**       | can be used in two ways:                          |
-|   |              |                                                   |
-|   |              | -   **Contains** **-** selecting this will filter |
-|   |              |     out items which contains input given by user  |
-|   |              |     in name input field.                          |
-|   |              |                                                   |
-|   |              | -   **Exact** **-** selecting this will filter    |
-|   |              |     out items which has exact string input given  |
-|   |              |     by user in name input field.                  |
-+---+--------------+---------------------------------------------------+
-| 4 | **Retention  | It is used to filter items according to retention |
-|   | Label**      | labels applied to them.                           |
-+---+--------------+---------------------------------------------------+
-| 5 | **Modified   | It is used to filter items according to user who  |
-|   | By**         | has modified the items.                           |
-+---+--------------+---------------------------------------------------+
-| 6 | **Workspace  | It is used to filer items according to the        |
-|   | Type**       | workspace                                         |
-+---+--------------+---------------------------------------------------+
-| 7 | **Site       | It is used to filter items based on location      |
-|   | Name**       |                                                   |
-+---+--------------+---------------------------------------------------+
+| **#** | **Filter**          | **Description**                                                |
+|------|------------------|------------------------------------------------------------|
+| 1    | **Expiry Date**     | Filters files based on their expiry date. Not applicable to folders as they do not have an expiry date. |
+| 2    | **Modified Date**   | Filters items based on the date they were last modified. |
+| 3    | **File Name**       | Filters items based on their file name. It has two options:  |
+|      |                    | - **Contains**: Filters items containing the input string.  |
+|      |                    | - **Exact**: Filters items matching the exact input string. |
+| 4    | **Retention Label** | Filters items based on the retention labels applied to them. |
+| 5    | **Modified By**     | Filters items based on the user who last modified them. |
+| 6    | **Workspace Type**  | Filters items based on the workspace type. |
+| 7    | **Site Name**       | Filters items based on their location. |
+
 
 The following picture shows the filtering selection panel.
 
-![A screenshot of a computer Description automatically
-generated](media/image11.png){width="3.167361111111111in"
-height="3.888888888888889in"}
+<p align="center">
+  <img src="UserManualImages/Picture36.png">
+  </p>
+
 
 My Disposal Dashboard -- Sorting, Refresh and Load More
 
@@ -505,61 +459,28 @@ access to the item. Otherwise, the item will be presented.
 To see and review all past actions, the Historic View table provides the
 critical names, dates and actions.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image12.png){width="6.768055555555556in"
-height="2.8875in"}
+<p align="center">
+  <img src="UserManualImages/Picture37.png">
+  </p>
+
 
 The Historic View table presents the following column details.
 
-  ------------------------------------------------------------------------
-   \#  Column             Description
-  ---- ------------------ ------------------------------------------------
-   1   **Site Name**      The name of the site where the actioned file
-                          came from
+  | **#** | **Column**          | **Description** |
+|------|------------------|--------------------------------------------------------------|
+| 1    | **Site Name**      | The name of the site where the actioned file came from. |
+| 2    | **File Name**      | The name of the file that was actioned. |
+| 3    | **Retention Label** | The label applied to the document, triggering retention and disposition. |
+| 4    | **Workspace Type**  | The type of workspace the file came from. Could be any workspace connected through iARM. |
+| 5    | **Modified By**     | The user who last modified the file, useful for identifying knowledgeable persons or resolving issues. |
+| 6    | **Modified Date**   | The date the file was last modified, a common retention period trigger. Whether retention is based on Modified or Created date depends on policy. |
+| 7    | **Created Date**    | The date the file was created, helping determine when the retention period starts. Retention basis depends on policy. |
+| 8    | **Expiry Date**     | The date calculated by adding the retention period to the Created/Modified date or event-based trigger. This is when the disposition action occurs. |
+| 9    | **Path (Link)**     | A link to the file in its current location (if not disposed). Access permissions are required to view the file. |
+| 10   | **Status**          | Indicates whether the file is disposed, in progress, or relabeled. |
+| 11   | **Actioned Date**   | The date on which the status was applied. |
+| 12   | **Actioned By**     | The name of the reviewer who took the action. |
 
-   2   **File Name**      The name of the file actioned
-
-   3   **Retention        The Label that was applies to that document
-       Label**            causing the retention and disposition to occur
-
-   4   **Workspace Type** The type of workspace from where the file came.
-                          This could be any workspace that has been
-                          connected to through iARM.
-
-   5   **Modified By**    The user name of the person who last modified
-                          the file. This can be useful for identifying the
-                          person most knowledgeable about the type of
-                          content or to resolve any issues.
-
-   6   **Modified Date**  The date the file was last modified, which is a
-                          common trigger for the retention period. Whether
-                          the retention is based on Modified or Created
-                          date will depend on the policy.
-
-   7   **Created Date**   The date the file was created, another field
-                          that helps identify when a retention period
-                          should begin. Whether the retention is based on
-                          Modified or Created date will depend on the
-                          policy.
-
-   8   **Expiry Date**    A date calculated from adding the retention
-                          period to the Create or Modified, or event-based
-                          trigger. This is the date the disposition action
-                          will occur.
-
-   9   **Path (Link)**    A link the file in its current location if
-                          available (not disposed). Appropriate access is
-                          required to see the file.
-
-   10  **Status**         Shows the status of the file to indicate if it
-                          has been disposed of, if it is in progress of
-                          disposition, or if it has been relabeled.
-
-   11  **Actioned Date**  Shows the date on which the status was applied
-
-   12  **Actioned By**    The name of the reviewer logged in when the
-                          action was taken
-  ------------------------------------------------------------------------
 
 Historic View/Log: Filtering
 
@@ -567,9 +488,10 @@ The table can become quite large, and it is useful to apply filters to
 narrow down the search for information. The filters work by selecting
 the appropriate value in the selection box or drop-down menu.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image13.png){width="3.21875in"
-height="4.1506944444444445in"}
+<p align="center">
+  <img src="UserManualImages/Picture38.png">
+  </p>
+
 
 #### High-Level Item-Level Workflow
 
@@ -577,63 +499,30 @@ The following diagram show the overall all workflow of labelling and
 disposition to help identify the likely sequence of events or where a
 document may be in the process.
 
-![](media/image14.emf)
+<p align="center">
+  <img src="UserManualImages/Picture39.png">
+  </p>
+
 
 #### List of Item-Level Statuses
 
 The following list provides the definitions for each status **an item
 can have** in the My Disposal Dashboard:
 
-+---+----------------+------------------------------------------------+
-| \ | Status         | Description                                    |
-| # |                |                                                |
-+:=:+================+================================================+
-| 1 | **Ready for    | The item has been approved for disposal, by    |
-|   | Disposal**     | either a Business or Archive Approver.         |
-+---+----------------+------------------------------------------------+
-| 2 | **Disposal     | iARM has sent a disposal request to Microsoft  |
-|   | In-Progress**  | Purview, triggering the SharePoint disposal    |
-|   |                | workflow. The item is now actively being       |
-|   |                | disposed of.                                   |
-+---+----------------+------------------------------------------------+
-| 3 | **Disposed**   | iARM has confirmed that the item has been      |
-|   |                | disposed, based on the following scenarios:    |
-|   |                |                                                |
-|   |                | -   Non-records are moved to the SharePoint    |
-|   |                |     Site Library's 1^st^ stage recycle bin.    |
-|   |                |                                                |
-|   |                | -   Declared records are moved from the 1^st^  |
-|   |                |     stage to the 2^nd^ stage recycle bin.      |
-+---+----------------+------------------------------------------------+
-| 4 | **Pending      | The item is awaiting review by an Archive      |
-|   | Archive        | Reviewer.                                      |
-|   | Review**       |                                                |
-+---+----------------+------------------------------------------------+
-| 5 | **Ready for    | The item has been approved for archival, by an |
-|   | Archival**     | Archive Approver.                              |
-+---+----------------+------------------------------------------------+
-| 6 | **Archived**   | iARM has imported the item into the iARM       |
-|   |                | Records Repository, where it can be found in   |
-|   |                | the 'My Data' component of iARM.               |
-+---+----------------+------------------------------------------------+
-| 7 | **Ready for    | A Business Approver has selected a different   |
-|   | Relabel**      | retention label for the item, by a Business    |
-|   |                | Reviewer.                                      |
-+---+----------------+------------------------------------------------+
-| 8 | **Relabel      | iARM has sent a relabel request to Microsoft   |
-|   | In-Progress**  | Purview. The item is now undergoing            |
-|   |                | relabeling, a process that can take up to 14   |
-|   |                | days.                                          |
-+---+----------------+------------------------------------------------+
-| 9 | **Relabeled**  | The relabeling process has been completed.     |
-+---+----------------+------------------------------------------------+
-| 1 | **Extended**   | The item's retention expiration date has been  |
-| 0 |                | changed to a date in the future, by a Business |
-|   |                | Approver.                                      |
-+---+----------------+------------------------------------------------+
-| 1 | **Error        | The item could not be found at the source      |
-| 1 | Occurred**     | location.                                      |
-+---+----------------+------------------------------------------------+
+| **#**  | **Status**            | **Description** |
+|------|--------------------|--------------------------------------------------------------|
+| 1    | **Ready for Disposal**   | The item has been approved for disposal by either a Business or Archive Approver. |
+| 2    | **Disposal In-Progress** | iARM has sent a disposal request to Microsoft Purview, triggering the SharePoint disposal workflow. The item is actively being disposed of. |
+| 3    | **Disposed**             | iARM has confirmed the item has been disposed of, based on the following scenarios: <br> - Non-records are moved to the SharePoint Site Library's 1st stage recycle bin. <br> - Declared records move from the 1st stage to the 2nd stage recycle bin. |
+| 4    | **Pending Archive Review** | The item is awaiting review by an Archive Reviewer. |
+| 5    | **Ready for Archival**   | The item has been approved for archival by an Archive Approver. |
+| 6    | **Archived**             | iARM has imported the item into the iARM Records Repository, where it can be found in the 'My Data' component of iARM. |
+| 7    | **Ready for Relabel**    | A Business Approver has selected a different retention label for the item. |
+| 8    | **Relabel In-Progress**  | iARM has sent a relabel request to Microsoft Purview. The item is undergoing relabeling, a process that can take up to 14 days. |
+| 9    | **Relabeled**            | The relabeling process has been completed. |
+| 10   | **Extended**             | The item's retention expiration date has been changed to a future date by a Business Approver. |
+| 11   | **Error Occurred**       | The item could not be found at the source location. |
+
 
 #### Email Notifications
 
@@ -643,33 +532,25 @@ sections in this doc into 1 and move to the common UI section\]
 
 ##### Email Notification
 
-+---+-------------+----------------------------------------------------+
-| \ | Item        | Description                                        |
-| # |             |                                                    |
-+:=:+=============+====================================================+
-| 1 | **Trigger** | For Business and Archive Reviewers that have       |
-|   |             | records to review, a separate email is sent to     |
-|   |             | each Business and Archive Reviewer each day.       |
-+---+-------------+----------------------------------------------------+
-| 2 | **          | Once per day.                                      |
-|   | Frequency** |                                                    |
-+---+-------------+----------------------------------------------------+
-| 3 | **Sender**  | Differs per organization.                          |
-+---+-------------+----------------------------------------------------+
-| 4 | **          | To: \[Business Reviewer\] or \[Archive Reviewer\]  |
-|   | Recipient** |                                                    |
-|   |             | Cc: n/a                                            |
-+---+-------------+----------------------------------------------------+
-| 5 | **Subject** | Review records for Disposal                        |
-+---+-------------+----------------------------------------------------+
+| **#** | **Item**     | **Description** |
+|-------|-------------|--------------------------------------------------|
+| 1     | **Trigger**  | For Business and Archive Reviewers that have records to review, a separate email is sent to each Business and Archive Reviewer daily. |
+| 2     | **Frequency** | Once per day. |
+| 3     | **Sender**   | Differs per organization. |
+| 4     | **Recipient** | **To:** [Business Reviewer] or [Archive Reviewer] <br> **Cc:** n/a |
+| 5     | **Subject**  | Review records for Disposal |
+
 
 ##### Email Content
 
-*\[Organization Logo\]*
+<p align="center">
+  <img src="UserManualImages/Picture40.png" width="300px">
+  </p>
 
-### My Disposal Dashboard: Business Review (BR)
 
-#### BR: Intent of the Role
+<h2>My Disposal Dashboard: Business Review (BR)</h2>
+
+**BR: Intent of the Role**
 
 The **Business Reviewer** role is responsible for evaluating and
 reviewing items for compliance, retention, and disposal in line with
@@ -692,49 +573,33 @@ of non-compliance or excessive data retention.
 The following table shows the actions available in each tool that the
 Business Reviewer is able to make.
 
-  ----------------------------------------------------------------------------
-   **\#**  **iARM Component**       **Action**
-  -------- ------------------------ ------------------------------------------
-   **1**   **My Disposal            Approve disposal of single or multiple
-           Dashboard**              files
+  | **#**  | **iARM Component**          | **Action** |
+|--------|-----------------------------|--------------------------------------------------|
+| 1      | **My Disposal Dashboard**   | Approve disposal of single or multiple files. |
+| 2      | **My Disposal Dashboard**   | Relabel retention label for single or multiple files. |
+| 3      | **My Disposal Dashboard**   | Extend retention of single or multiple files. |
+| 4      | **My Disposal Dashboard**   | Can see actions performed in the historic tab. |
+| 5      | **My Disposal Dashboard**   | Use all filters, seeing data only for sites they are set up for. |
+| 6      | **My Disposal Dashboard**   | Manage columns of my disposal dashboard. |
+| 7      | **Overview**                | Access the overview section and can see data for all users. |
+| 8      | **Reports**                 | Access all sub-parts of the reports section and can see data for all users. |
+| 9      | **Request a Space**         | User can access Request a Space. |
+| 10     | **Data Explorer**           | User can access Data Explorer. |
 
-   **2**   **My Disposal            Relabel retention label for single or
-           Dashboard**              multiple files
+<br>
 
-   **3**   **My Disposal            Extend retention of single or multiple
-           Dashboard**              files
-
-   **4**   **My Disposal            Can see actions performed in historic tab
-           Dashboard**              
-
-   **5**   **My Disposal            Use all filters, seeing data only for
-           Dashboard**              sites they are set up for
-
-   **6**   **My Disposal            Manage columns of my disposal dashboard
-           Dashboard**              
-
-   **7**   **Overview**             Access overview section and can see data
-                                    for all users
-
-   **8**   **Reports**              Access all sub-parts of reports section
-                                    and can see data for all users
-
-   **9**   **Request a space**      User can access Request a Space
-
-   **10**  **Data explorer**        User can access Data Explorer
-  ----------------------------------------------------------------------------
-
-#### BR: Workflows (Dispose, Extend, Relabel)
+**BR: Workflows (Dispose, Extend, Relabel)**
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application.
 
-![A diagram of a business flow AI-generated content may be
-incorrect.](media/image17.png){width="6.111940069991251in"
-height="4.093115704286964in"}
+<p align="center">
+  <img src="UserManualImages/Picture41.png">
+  </p>
 
-#### BR: Dashboard
+
+**BR: Dashboard**
 
 As above, the Business Review table shows the items accessible by the
 business reviewer. The business reviewer is someone designated as having
@@ -742,24 +607,26 @@ sufficient knowledge of documents related to their business function
 that they can make decisions about disposition activities. They do not
 need to be the owner of the files.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image18.png){width="6.578163823272091in"
-height="3.4833333333333334in"}
+<p align="center">
+  <img src="UserManualImages/Picture42.png">
+  </p>
+
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when performing a review
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image19.png){width="7.139535214348206in"
-height="3.233581583552056in"}
+<p align="center">
+  <img src="UserManualImages/Picture43.png">
+  </p>
 
 ##### BR: How to Approve File Records for Disposal
 
 The following steps should be taken to filter, sort and select records
 for review or disposition.
 
-![](media/image21.svg){width="7.29982283464567in"
-height="3.2791568241469817in"}
+<p align="center">
+  <img src="UserManualImages/Picture44.svg">
+  </p>
 
 ###### BR: Workflow and Status after Approving File Records for Disposal
 
@@ -767,16 +634,17 @@ The diagram below illustrates the workflow of decisions and file
 statuses available to the Business Reviewer within the application after
 approval.
 
-![](media/image22.emf)
-
+<p align="center">
+  <img src="UserManualImages/Picture45.png">
+  </p>
 ##### BR: How to Extend File Records
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when extending file retention
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image23.png){width="6.868055555555555in"
-height="3.2417749343832023in"}
+<p align="center">
+  <img src="UserManualImages/Picture46.png">
+  </p>
 
 ###### BR: Workflow and Status [after Extending]{.underline} File Record(s)
 
@@ -784,16 +652,18 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application after extending the retention period on files.
 
-![](media/image24.emf)
+<p align="center">
+  <img src="UserManualImages/Picture47.png">
+  </p>
 
 ##### BR: How to Relabel File Records
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when relabeling file records
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image25.png){width="7.021977252843395in"
-height="3.1357228783902014in"}
+<p align="center">
+  <img src="UserManualImages/Picture48.png">
+  </p>
 
 ###### BR: Workflow and Status [after Relabeling]{.underline} File Record(s)
 
@@ -801,13 +671,15 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application after Relabeling files.
 
-![](media/image26.emf)
+<p align="center">
+  <img src="UserManualImages/Picture49.png">
+  </p>
 
 ### My Disposal Dashboard: Archive Review (AR)
 
 \[Organization Logo\]
 
-#### AR: Intent of the Role
+**AR: Intent of the Role**
 
 The **Archive Reviewer** role in Infotechtion\'s iARM My Disposal
 Dashboard is responsible for evaluating and reviewing items for
@@ -826,70 +698,53 @@ data retention.
 **The Archiver Reviewer role/workflow can be enabled or disabled
 according to the business need.**
 
-#### AR: User Role Capabilities
+**AR: User Role Capabilities**
 
-  -----------------------------------------------------------------------------
-  **\#**   **iARM            **Action**
-           Component**       
-  -------- ----------------- --------------------------------------------------
-  **1**    **My Disposal     Approve disposal of single or multiple files
-           Dashboard**       
+| **#**  | **iARM Component**         | **Action** |
+|--------|----------------------------|--------------------------------------------------|
+| 1      | **My Disposal Dashboard**  | Approve disposal of single or multiple files. |
+| 2      | **My Disposal Dashboard**  | Approve archival of single or multiple files. |
+| 3      | **My Disposal Dashboard**  | View actions performed in the historic tab. |
+| 4      | **My Disposal Dashboard**  | Use all dashboard filters and see data only for sites they are configured for. |
+| 5      | **My Disposal Dashboard**  | Manage columns of my disposal dashboard. |
+| 6      | **Overview**               | Access the overview section and see data for all users. |
+| 7      | **Reports**                | Access all sub-parts of the reports section and see data for all users. |
+| 8      | **Request a Space**        | User can access Request a Space. |
+| 9      | **Data Explorer**          | User can access Data Explorer. |
 
-  **2**    **My Disposal     Approve archival of single or multiple files
-           Dashboard**       
 
-  **3**    **My Disposal     View actions performed in historic tab
-           Dashboard**       
-
-  **4**    **My Disposal     Use all dashboard filters and see data only for
-           Dashboard**       sites which they are configured
-
-  **5**    **My Disposal     Manage columns of my disposal dashboard
-           Dashboard**       
-
-  **6**    **Overview**      Access overview section and can see data for all
-                             users
-
-  **7**    **Reports**       Access all sub-parts of reports section and can
-                             see data for all users
-
-  **8**    **Request a       User can access Request a Space
-           space**           
-
-  **9**    **Data explorer** User can access Data Explorer
-  -----------------------------------------------------------------------------
-
-#### AR: Workflows (Archive, Dispose)
+**AR: Workflows (Archive, Dispose)**
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application for archival and disposition.
 
-![](media/image27.png){width="3.149253062117235in"
-height="3.938604549431321in"}
+<p align="center">
+  <img src="UserManualImages/Picture50.png">
+  </p>
 
-#### AR: Dashboard
+**AR: Dashboard**
 
 The Archive Reviewer is presented with a similar table of items
 available for archive.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image28.png){width="6.768055555555556in"
-height="2.995138888888889in"}
+<p align="center">
+  <img src="UserManualImages/Picture51.png">
+  </p>
 
 The table can become quite large, and it is useful to apply filters to
 narrow down the search for information. The filters work by selecting
 the appropriate value in the selection box or drop-down menu.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image29.png){width="6.768055555555556in"
-height="3.0in"}
+<p align="center">
+  <img src="UserManualImages/Picture52.png">
+  </p>
 
-##### AR: How to Approve File Records for Archival
+**AR: How to Approve File Records for Archival**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image30.png){width="7.1in"
-height="3.286111111111111in"}
+<p align="center">
+  <img src="UserManualImages/Picture53.png">
+  </p>
 
 AR: Workflow and Status [after Approving File Records for
 Archival]{.underline}
@@ -898,116 +753,90 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application after approving the archival or records.
 
-![](media/image31.emf)
+<p align="center">
+  <img src="UserManualImages/Picture54.png">
+  </p>
 
-##### AR: How to Approve File Records for Disposal
+**AR: How to Approve File Records for Disposal**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image32.png){width="7.1in" height="3.1625in"}
+<p align="center">
+  <img src="UserManualImages/Picture55.png">
+  </p>
 
-AR: Workflow and Status after Approving File Records for Disposal
+**AR: Workflow and Status after Approving File Records for Disposal**
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application after record disposal review.
 
-![](media/image33.emf)
+<p align="center">
+  <img src="UserManualImages/Picture56.png">
+  </p>
 
-### My Disposal Dashboard: Administration
+<h2>My Disposal Dashboard: Administration</h2>
 
 **The following administrator settings are specific to the My Disposal
 Dashboard.**
 
-![](media/image34.png){width="7.1in" height="0.7680555555555556in"}
+<p align="center">
+  <img src="UserManualImages/Picture57.png">
+  </p>
 
-  ------------------------------------------------------------------------
-   \#  Component           Description
-  ---- ------------------- -----------------------------------------------
-   1   **Disposal          This is where the Information Disposal
-       Settings**          Assessment feature is configured; specifically,
-                           the (1) Frequency of Checks (Days), and (2)
-                           Notification Email (Days).
+  | **#**  | **Component**             | **Description** |
+|--------|---------------------------|-------------------------------------------------------------|
+| 1      | **Disposal Settings**      | Configures the Information Disposal Assessment feature, specifically: (1) Frequency of Checks (Days) and (2) Notification Email (Days). |
+| 2      | **Update Reviewers**       | Used to add/remove business and archive reviewers from a particular site in the disposal dashboard. |
+| 3      | **Container Settings**     | Configures the Container Disposal Assessment feature, specifically: (1) Frequency of Checks (Days) and (2) Period While Empty (Days). |
+| 4      | **Data Type Configuration** | Specifies Data Types to be excluded from the Retention Policy. Data types should be in a comma-separated format (e.g., dll, msi, mdf, ldf, ps1, css, js, sass, ts, 7z, exe, mdl). |
 
-   2   **Update            It is used to add/remove business reviewer and
-       Reviewers**         archive reviewer from a particular site in my
-                           disposal dashboard.
 
-   3   **Container         This is where the Container Disposal Assessment
-       Settings**:         feature is configured; specifically, the (1)
-                           Frequency of Checks (Days), and (2) Period
-                           While Empty (Days).
-
-   4   **Data Type         This is where to specify any Data Types that
-       Configuration**     are to be excluded from the Retention Policy.
-                           Data Types are to be provided in
-                           comma-separated format. Example data types are:
-                           dll, msi, mdf, ldf, ps1, css, js, sass, ts,
-                           7z,exe, mdl
-  ------------------------------------------------------------------------
-
-#### Admin: Disposal Settings
+**Admin: Disposal Settings**
 
 The following configurations can be made to the time the disposition
 review activities occur.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image35.png){width="5.512504374453194in"
-height="2.886910542432196in"}
+<p align="center">
+  <img src="UserManualImages/Picture58.png">
+  </p>
 
-  -----------------------------------------------------------------------
-   \#  Configuration        Description
-  ---- -------------------- ---------------------------------------------
-   1   **Frequency of       The number of days between times that the
-       Checks (days)**      tool will check for disposition activities to
-                            occur. The time can be extended so that
-                            reviews are only required when there are
-                            significant actions to take.
+ | **#**  | **Configuration**            | **Description** |
+|--------|------------------------------|----------------------------------------------------------------|
+| 1      | **Frequency of Checks (days)** | The number of days between disposition activity checks. This interval can be extended to reduce the frequency of reviews, ensuring they only occur when significant actions are required. |
+| 2      | **Notification Email (days)**  | The number of days between email notifications sent to users, regardless of the number of items to be reviewed. |
 
-   2   **Notification Email The number of days between email
-       (days)**             notifications that are sent to users
-                            regardless of the number of items to be
-                            reviewed.
-  -----------------------------------------------------------------------
 
-#### Admin: Update Reviewers
+**Admin: Update Reviewers**
 
 When business and archive reviewers are added or deleted, the assignment
 of their review activities can be adjusted through this configuration
 screen. Add a name by typing in the text box. Reviewers can be removed
 by clicking on the x next to their name.
 
-![A screenshot of a search engine AI-generated content may be
-incorrect.](media/image36.png){width="6.768055555555556in"
-height="2.1180555555555554in"}
+<p align="center">
+  <img src="UserManualImages/Picture59.png">
+  </p>
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image37.png){width="5.312391732283465in"
-height="2.2157677165354333in"}
+<p align="center">
+  <img src="UserManualImages/Picture60.png">
+  </p>
 
-in
 
-#### Admin: Container Settings
+
+**Admin: Container Settings**
 
 This is where the Container Disposal Assessment feature is configured;
 specifically, the (1) Frequency of Checks (Days), and (2) Period While
 Empty (Days).
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image38.png){width="6.101714785651794in"
-height="2.9963888888888888in"}
+<p align="center">
+  <img src="UserManualImages/Picture61.png">
+  </p>
 
-  ------------------------------------------------------------------------
-   \#  Configuration         Description
-  ---- --------------------- ---------------------------------------------
-   1   **Frequency of checks Sets the number of days between when iARM
-       (days)**              checks M365 for item level updates (e.g.
-                             confirmation that an item has been disposed,
-                             archived, or relabeled).
+ | **#**  | **Configuration**          | **Description** |
+|--------|----------------------------|----------------------------------------------------------------|
+| 1      | **Frequency of checks (days)** | Sets the number of days between when iARM checks M365 for item-level updates (e.g., confirmation that an item has been disposed, archived, or relabeled). |
+| 2      | **Period while empty (days)** | Sets the number of days between when iARM checks M365 for item-level updates if the last update produced zero results. |
 
-   2   **Period while empty  Sets the number of days between when iARM
-       (days)**              checks M365 for item level updates in the
-                             event the last update produced zero results.
-  ------------------------------------------------------------------------
 
 #### Admin: Data Type Configuration
 
@@ -1016,9 +845,9 @@ Retention Policy. Data Types are to be provided in comma-separated
 format. Example data types are: dll, msi, mdf, ldf, ps1, css, js, sass,
 ts, 7, exe, mdl.
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](media/image39.png){width="6.346260936132984in"
-height="2.7231069553805773in"}
+<p align="center">
+  <img src="UserManualImages/Picture62.png">
+  </p>
 
 
 
@@ -1029,7 +858,7 @@ have been copied from the source location. It also provides the ability
 to view enriched metadata extracted from the data source.
 
 <p align="center">
-  <img src="UserManualImages/Picture7.png">
+  <img src="UserManualImages/Picture6.png">
   </p>
 
 ### My Data: Regulatory Compliant File Records Repository
@@ -1188,11 +1017,11 @@ that show the overall state of the records management program within the
 organization.
 
 <p align="center">
-  <img src="UserManualImages/Picture30.png">
+  <img src="UserManualImages/Picture63.png">
   </p>
 
 <p align="center">
-  <img src="UserManualImages/Picture31.png">
+  <img src="UserManualImages/Picture64.png">
   </p>
 
 | #  | Feature                | Description |
@@ -1215,10 +1044,10 @@ configure the iARM product and perform admin activities. It is only
 accessible to **Administrators**.
 
 <p align="center">
-  <img src="UserManualImages/Picture32.png">
+  <img src="UserManualImages/Picture65.png">
   </p>
 <p align="center">
-  <img src="UserManualImages/Picture33.png">
+  <img src="UserManualImages/Picture66.png">
   </p>
 
 ### Disposal Settings
@@ -1228,11 +1057,11 @@ configured; specifically, the (1) Frequency of Checks (Days)\*, and (2)
 Notification Email (Days)\*.
 
 <p align="center">
-  <img src="UserManualImages/Picture34.png">
+  <img src="UserManualImages/Picture67.png">
   </p>
 
 <p align="center">
-  <img src="UserManualImages/Picture35.png">
+  <img src="UserManualImages/Picture68.png">
   </p>
 
 ### Add Edit Reviewers
@@ -1283,34 +1112,34 @@ Site.
     b.  **Select 'Administration'** from the top horizontal menu.
 
     <p align="center">
-  <img src="UserManualImages/Picture36.png">
+  <img src="UserManualImages/Picture69.png">
   </p>
 
 <p align="center">
-  <img src="UserManualImages/Picture37.png">
+  <img src="UserManualImages/Picture70.png">
   </p>
 
     c.  **Select Source Instance Config.**
 
     <p align="center">
-  <img src="UserManualImages/Picture38.png">
+  <img src="UserManualImages/Picture71.png">
   </p>
 
 <p align="center">
-  <img src="UserManualImages/Picture39.png">
+  <img src="UserManualImages/Picture72.png">
   </p>
 
     d.  On the Source Instance configuration form, **select a Source
         from the drop-down list**, in this case 'SharePoint Online'.
 
   <p align="center">
-  <img src="UserManualImages/Picture40.png">
+  <img src="UserManualImages/Picture73.png">
   </p>
 
     e.  **Select the Source Instance Type.**
 
   <p>
-  <img src="UserManualImages/Picture41.png">
+  <img src="UserManualImages/Picture74.png">
   </p>
 
 
@@ -1325,7 +1154,7 @@ f.  **Select 'Download a template'** - this will download a template
     Manifest File, into the local machine's downloads folder.
 
 <p>
-  <img src="UserManualImages/Picture42.png">
+  <img src="UserManualImages/Picture75.png">
   </p>
 
 
@@ -1541,7 +1370,7 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
 
     ii. Upload file - After selecting the file, click open
   <p align="center">
-  <img src="UserManualImages/Picture43.png">
+  <img src="UserManualImages/Picture76.png">
   </p>
 
     iii. **Manifest File Validation** -- At upload, iARM will validate
@@ -1550,7 +1379,7 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
 
 
 <p align="center">
-  <img src="UserManualImages/Picture44.png">
+  <img src="UserManualImages/Picture77.png">
   </p>
 
  If the source instance is unsuccessful, an error message will display
@@ -1558,7 +1387,7 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
  to troubleshoot how to resolve.
 
 <p align="center">
-  <img src="UserManualImages/Picture45.png">
+  <img src="UserManualImages/Picture78.png">
   </p>
  When the XML file is uploaded, the data from the XML file for Primary
  and Secondary Owners will display as shown below and can be edited
@@ -1569,7 +1398,7 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
  Administration component of iARM.
 
 <p align="center">
-  <img src="UserManualImages/Picture46.png">
+  <img src="UserManualImages/Picture79.png">
   </p>
 
 3.  **Select 'Submit' to finalize the setup of the new the SharePoint
@@ -1633,7 +1462,7 @@ Records copy errors** from a SharePoint Site source to the regulatory
 records repository in iARM:
 
 <p align="center">
-  <img src="UserManualImages/Picture47.png">
+  <img src="UserManualImages/Picture80.png">
   </p>
 
 **File Records Copy Error process and workflow:**
@@ -1676,7 +1505,7 @@ The message and configuration of the **email notification is intended to
 be customized** as needed by the organization using iARM.
 
 <p align="center">
-  <img src="UserManualImages/Picture48.png">
+  <img src="UserManualImages/Picture81.png">
   </p>
 
 > Example
@@ -1684,7 +1513,7 @@ be customized** as needed by the organization using iARM.
 > CSV file attached to the Email Notification
 
 <p align="center">
-  <img src="UserManualImages/Picture49.png">
+  <img src="UserManualImages/Picture82.png">
   </p>
 
 ##### Columns and Data provided in the CSV File
@@ -1720,7 +1549,7 @@ To resolve this issue, you can:
 **Visuals for both resolution paths are shown below:**
 
 <p align="center">
-  <img src="UserManualImages/Picture50.png">
+  <img src="UserManualImages/Picture83.png">
   </p>
 
 ### Container Settings
@@ -1730,13 +1559,13 @@ configured; specifically, the (1) Frequency of Checks (Days), and (2)
 Period While Empty (Days).
 
 <p align="center">
-  <img src="UserManualImages/Picture51.png">
+  <img src="UserManualImages/Picture84.png">
   </p>
 
 Data Type Configuration
 
 <p align="center">
-  <img src="UserManualImages/Picture52.png">
+  <img src="UserManualImages/Picture85.png">
   </p>
 
 
