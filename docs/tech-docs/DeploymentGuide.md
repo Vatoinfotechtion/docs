@@ -1,4 +1,3 @@
-
 ## Acronyms
 
 | **Acronym** | **Description** |
