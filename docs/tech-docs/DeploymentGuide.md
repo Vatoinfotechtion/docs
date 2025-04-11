@@ -657,14 +657,15 @@ To execute the script and access the database, it is necessary to add the **sg-s
    **Note: the scripts will be shared by Infotechtion team**
    1. iarm-create-tables-script.sql
    2. iarm-types-script.sql
-   3. iarm-views-script.sql
-      * **Note**: Run iarm-views-script.sql only if iarm-create-tables-script.sql and iarm-types-script.sql have been executed successfully.
-   4. iarm-triggers-script.sql
-      * **Note**: Run iarm-triggers-script.sql only if iarm-views-script.sql has been executed successfully.
-   5. iarm-sp-script.sql
-      * **Note**: Run iarm-sp-script.sql only if iarm-triggers-script.sql has been executed successfully.
-4. iarm-insert-master-data.sql
-   * + **Note:** Run iarm-insert-master-data.sql only if iarm-sp-script.sql has been executed successfully.
+   3. iarm-function-script.sql
+   4. iarm-views-script.sql
+      * **Note** Run iarm-views-script.sql only if iarm-create-tables-script.sql, iarm-types-script.sql and iarm-function-script.sql have been executed successfully.
+   5. iarm-triggers-script.sql
+      * **Note** Run iarm-triggers-script.sql only if iarm-views-script.sql has been executed successfully.
+   6. iarm-sp-script.sql
+      * **Note** Run iarm-sp-script.sql only if iarm-triggers-script.sql has been executed successfully.
+   7. iarm-insert-master-data.sql
+      * **Note** Run iarm-insert-master-data.sql only if iarm-sp-script.sql has been executed successfully.
 
 #### Run Script for sql-service-principle-access
 
