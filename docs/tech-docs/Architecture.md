@@ -131,10 +131,12 @@ The diagram below provides a high-level overview of how the i-ARM
 product fits into the broader ecosystem, interacting with multiple
 external systems within/out of BoE IT environment to fulfil its role as
 a comprehensive data and records management solution.
+
 <p align="center">
 <img src="./ArchitectureImages/image2.png" style="width:7.26875in;height:6.56875in"
 alt="A diagram of a system Description automatically generated" />
 </p>
+
 Here is an explanation of each component and its role within the
 architecture:
 
@@ -1364,10 +1366,11 @@ person or organization:</p>
 
 The logical data flow diagram shows how data moves through the i-ARM
 system.
-<p align="center">
+
 <img src="./ArchitectureImages/image9.png" style="width:7.04126in;height:9.10843in"
 alt="A diagram of a computer Description automatically generated" />
-</p>
+
+
 The section below explains the general flow of the data within i-ARM
 
 1.  User requests for login
@@ -1657,10 +1660,8 @@ and azure services.</p></li>
 
 The diagram below is a representation of the infrastructure building
 blocks that the i-ARM solution is built upon. (See next page).
-<p align="center">
 <img src="./ArchitectureImages/image10.png" style="width:7.26042in;height:4.97917in"
 alt="A screenshot of a computer Description automatically generated" />
-</p>
 The information flow can be referred in the section above, the
 interactions between different infrastructure components remain secured
 and controlled using the central identity store on the BoE environment
@@ -3584,10 +3585,9 @@ premium connector)</td>
 </table>
 
 ### Information Governance Architecture 
-<p align="center">
 <img src="./ArchitectureImages/image11.png" style="width:7.26806in;height:3.63403in"
 alt="A computer screen shot of a computer program Description automatically generated" />
-</p>
+
 **Information Architecture Sequence**:
 
 | **Sequence** | **Title** | **Description** |
@@ -4186,10 +4186,8 @@ person or organization:</p>
 
 The logical data flow diagram shows how data moves through the i-ARM
 system.
-<p align="center">
 <img src="./ArchitectureImages/image9.png" style="width:7.04126in;height:9.10843in"
 alt="A diagram of a computer Description automatically generated" />
-</p>
 The section below explains the general flow of the data within i-ARM
 
 1.  User requests for login
@@ -4479,10 +4477,10 @@ and azure services.</p></li>
 
 The diagram below is a representation of the infrastructure building
 blocks that the i-ARM solution is built upon. (See next page).
-<p align="center">
+
 <img src="./ArchitectureImages/image10.png" style="width:7.26042in;height:4.97917in"
 alt="A screenshot of a computer Description automatically generated" />
-</p>
+
 The information flow can be referred in the section above, the
 interactions between different infrastructure components remain secured
 and controlled using the central identity store on the BoE environment
