@@ -121,9 +121,10 @@ standard Microsoft Graph APIs.
 
 The diagram below provides a high-level as-is architecture of the
 existing FileSite and ARM solutions within the B’nk's environment.
+<p align="center">
 <img src="./ArchitectureImages/image1.png" style="width:7.24985in;height:3.64167in"
 alt="A diagram of a computer network Description automatically generated" />
-
+</p>
 ### Target Architecture
 
 The diagram below provides a high-level overview of how the i-ARM
@@ -271,13 +272,14 @@ The primary logical components of the system are shown as below
 
 <!-- **  
 ** -->
-
+<p align="center">
 <img src="./ArchitectureImages/image4.png" style="width:7.20903in;height:6.44048in"
 alt="A diagram of a system Description automatically generated" />
-
+</p>
+<p align="center">
 <img src="./ArchitectureImages/image5.png" style="width:7.26875in;height:8.93056in"
 alt="A screenshot of a computer Description automatically generated" />
-
+</p>
 ### Application Building Blocks
 
 The i-ARM solution is designed with a modular and integrated
@@ -292,10 +294,10 @@ while maintaining flexibility for future enhancements.
 Each container is carefully designed to interact with others in a manner
 that supports efficient data flow, secure management, and comprehensive
 reporting.
-
+<p align="center">
 <img src="./ArchitectureImages/image7.png" style="width:8.01183in;height:5.14583in"
 alt="A diagram of a person&#39;s work flow Description automatically generated" />
-
+</p>
 The diagram serves as a visual guide to understanding how the i-ARM solution orchestrates these interactions, ensuring a cohesive and effective system for managing data and records.
 
 **i-ARM Software System Containers Description:**
@@ -3582,10 +3584,10 @@ premium connector)</td>
 </table>
 
 ### Information Governance Architecture 
-
+<p align="center">
 <img src="./ArchitectureImages/image11.png" style="width:7.26806in;height:3.63403in"
 alt="A computer screen shot of a computer program Description automatically generated" />
-
+</p>
 **Information Architecture Sequence**:
 
 | **Sequence** | **Title** | **Description** |
@@ -3603,10 +3605,10 @@ alt="A computer screen shot of a computer program Description automatically gene
 | 7 | Operational User interfaces | Existing or new interfaces which may be required for supporting reporting, service management activities and other applications which are used but not in scope of the M365 integrations. |
 
 **Hub Structure:**
-
+<p align="center">
 <img src="./ArchitectureImages/image12.png" style="width:7.26806in;height:2.37153in"
 alt="A diagram of a company Description automatically generated with medium confidence" />
-
+</p>
 ### Estimation
 
 \[For each solution element (i.e. building block, or grouping of
@@ -6404,9 +6406,10 @@ premium connector)</td>
 </table>
 
 ### Information Governance Architecture 
-
+<p align="center">
 <img src="./ArchitectureImages/image11.png" style="width:7.26806in;height:3.63403in"
 alt="A computer screen shot of a computer program Description automatically generated" />
+</p>
 
 **Information Architecture Sequence**:
 
@@ -6424,10 +6427,12 @@ alt="A computer screen shot of a computer program Description automatically gene
 | 6 | 3*rd* party archival | Integration configured to transfer records from M365 to long term digital preservation solution integrated with the end of lifecycle review workflows. |
 | 7 | Operational User interfaces | Existing or new interfaces which may be required for supporting reporting, service management activities and other applications which are used but not in scope of the M365 integrations. |
 
-**Hub Structure:**
 
+**Hub Structure:**
+<p align="center">
 <img src="./ArchitectureImages/image12.png" style="width:7.26806in;height:2.37153in"
 alt="A diagram of a company Description automatically generated with medium confidence" />
+</p>
 
 ### Estimation
 
