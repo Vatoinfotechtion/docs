@@ -4186,8 +4186,10 @@ person or organization:</p>
 
 The logical data flow diagram shows how data moves through the i-ARM
 system.
+
 <img src="./ArchitectureImages/image9.png" style="width:7.04126in;height:9.10843in"
 alt="A diagram of a computer Description automatically generated" />
+
 The section below explains the general flow of the data within i-ARM
 
 1.  User requests for login
