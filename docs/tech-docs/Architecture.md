@@ -880,8 +880,10 @@ technology selection.
 <tbody>
 <tr>
 <th>Identity Applications</th>
-<td><p>Automatically scales to handle more users.</p></td>
-<p>Supports multi-tenant environments.</p></td>
+<td>
+  <p>Automatically scales to handle more users.</p>
+  <p>Supports multi-tenant environments.</p>
+</td>
 <td><p>High availability with SLA guarantees.</p>
 <p>Built-in redundancy.</p></td>
 <td><p>Microsoft Entra ID</p>
