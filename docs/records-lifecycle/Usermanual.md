@@ -163,7 +163,7 @@ navigation, this overview will describe the various components of iARM.
 |    |                        |   -- **Frequency of Checks (Days)** |
 |    |                        |   -- **Period While Empty (Days)** |
 
-<br>
+<br />
 
 # Features and Functionality
 
@@ -513,7 +513,7 @@ can have** in the My Disposal Dashboard:
 |------|--------------------|--------------------------------------------------------------|
 | 1    | **Ready for Disposal**   | The item has been approved for disposal by either a Business or Archive Approver. |
 | 2    | **Disposal In-Progress** | iARM has sent a disposal request to Microsoft Purview, triggering the SharePoint disposal workflow. The item is actively being disposed of. |
-| 3    | **Disposed**             | iARM has confirmed the item has been disposed of, based on the following scenarios: <br> - Non-records are moved to the SharePoint Site Library's 1st stage recycle bin. <br> - Declared records move from the 1st stage to the 2nd stage recycle bin. |
+| 3    | **Disposed**             | iARM has confirmed the item has been disposed of, based on the following scenarios: <br /> - Non-records are moved to the SharePoint Site Library's 1st stage recycle bin. <br /> - Declared records move from the 1st stage to the 2nd stage recycle bin. |
 | 4    | **Pending Archive Review** | The item is awaiting review by an Archive Reviewer. |
 | 5    | **Ready for Archival**   | The item has been approved for archival by an Archive Approver. |
 | 6    | **Archived**             | iARM has imported the item into the iARM Records Repository, where it can be found in the 'My Data' component of iARM. |
@@ -537,7 +537,7 @@ sections in this doc into 1 and move to the common UI section\]
 | 1     | **Trigger**  | For Business and Archive Reviewers that have records to review, a separate email is sent to each Business and Archive Reviewer daily. |
 | 2     | **Frequency** | Once per day. |
 | 3     | **Sender**   | Differs per organization. |
-| 4     | **Recipient** | **To:** [Business Reviewer] or [Archive Reviewer] <br> **Cc:** n/a |
+| 4     | **Recipient** | **To:** [Business Reviewer] or [Archive Reviewer] <br /> **Cc:** n/a |
 | 5     | **Subject**  | Review records for Disposal |
 
 
@@ -586,7 +586,7 @@ Business Reviewer is able to make.
 | 9      | **Request a Space**         | User can access Request a Space. |
 | 10     | **Data Explorer**           | User can access Data Explorer. |
 
-<br>
+<br />
 
 **BR: Workflows (Dispose, Extend, Relabel)**
 
@@ -646,7 +646,7 @@ be accessed by the business reviewer when extending file retention
   <img src="UserManualImages/Picture46.png" />
   </p>
 
-###### BR: Workflow and Status [after Extending]{.underline} File Record(s)
+###### BR: Workflow and Status [after Extending] File Record(s)
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
@@ -665,7 +665,7 @@ be accessed by the business reviewer when relabeling file records
   <img src="UserManualImages/Picture48.png" />
   </p>
 
-###### BR: Workflow and Status [after Relabeling]{.underline} File Record(s)
+###### BR: Workflow and Status [after Relabeling] File Record(s)
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
@@ -747,7 +747,7 @@ the appropriate value in the selection box or drop-down menu.
   </p>
 
 AR: Workflow and Status [after Approving File Records for
-Archival]{.underline}
+Archival]
 
 The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
@@ -924,9 +924,9 @@ The information pane consists of source enriched metadata, history,compliance co
 
 | Description | Image |
 |------------|-------------|
-| **Properties** <br> **Retention Label** – Displays the retention label, which can be changed by selecting a label from the retention label dropdown. <br> **Expiry Date** – Displays the expiry date (files only). <br> **File Size** – Displays the size of the selected file and the number of items present in the selected folder. <br> **Compliance** – User will be able to either open or download the compliance copy of the selected file.  | <img src="UserManualImages/Picture16.png" /> |
-| **Source Enriched Metadata** <br> Displays the metadata available for the selected folder or file. <br> **Example custom metadata:** <br> - Business Function <br> - Information Type <br> - Information Status <br> - Jurisdiction <br> **Metadata from SharePoint:** <br> - Content Type <br> - Content Type ID <br> - Created <br> - Created By <br> - File Path <br> - List Item ID <br> - Modified <br> - Modified By <br> - Retention Label <br> - Retention Label Applied <br> - Sensitivity | <img src="UserManualImages/Picture17.png" width="350px"> |
-| **History** <br> Displays actions performed by iARM for the folder or file. | <img src="UserManualImages/Picture18.png" width="350px" /> |
+| **Properties** <br /> **Retention Label** – Displays the retention label, which can be changed by selecting a label from the retention label dropdown. <br /> **Expiry Date** – Displays the expiry date (files only). <br /> **File Size** – Displays the size of the selected file and the number of items present in the selected folder. <br /> **Compliance** – User will be able to either open or download the compliance copy of the selected file.  | <img src="UserManualImages/Picture16.png" /> |
+| **Source Enriched Metadata** <br /> Displays the metadata available for the selected folder or file. <br /> **Example custom metadata:** <br /> - Business Function <br /> - Information Type <br /> - Information Status <br /> - Jurisdiction <br /> **Metadata from SharePoint:** <br /> - Content Type <br /> - Content Type ID <br /> - Created <br /> - Created By <br /> - File Path <br /> - List Item ID <br /> - Modified <br /> - Modified By <br /> - Retention Label <br /> - Retention Label Applied <br /> - Sensitivity | <img src="UserManualImages/Picture17.png" width="350px" /> |
+| **History** <br /> Displays actions performed by iARM for the folder or file. | <img src="UserManualImages/Picture18.png" width="350px" /> |
 
 
 
@@ -1111,36 +1111,29 @@ Site.
 
     b.  **Select 'Administration'** from the top horizontal menu.
 
-    <p align="center">
+<div align="center">
   <img src="UserManualImages/Picture69.png" />
-  </p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="UserManualImages/Picture70.png" />
-  </p>
+</div>
 
-    c.  **Select Source Instance Config.**
-
-    <p align="center">
+<div align="center">
   <img src="UserManualImages/Picture71.png" />
-  </p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="UserManualImages/Picture72.png" />
-  </p>
+</div>
 
-    d.  On the Source Instance configuration form, **select a Source
-        from the drop-down list**, in this case 'SharePoint Online'.
-
-  <p align="center">
+<div align="center">
   <img src="UserManualImages/Picture73.png" />
-  </p>
+</div>
 
-    e.  **Select the Source Instance Type.**
-
-  <p>
+<div align="center">
   <img src="UserManualImages/Picture74.png" />
-  </p>
+</div>
 
 
 
@@ -1175,13 +1168,13 @@ g.  **Create the Manifest File for the New Source Site**
 
  Provide the full email address for the Person/Security Group. For
  example:
- [[primary.owner@organization.com]{.underline}](mailto:primary.owner@organization.com)
+ [[primary.owner@organization.com]](mailto:primary.owner@organization.com)
 
 In the event more than one person is specified in the Manifest File,
 the source site configuration process in iARM will fail.
 
   -------------------------------------------------------------------------
- > Example XML -         primaryOwner=\"<primary.owner@organization.com>\"
+ > Example XML -         primaryOwner="&lt;primary.owner@organization.com&gt;"
   --------------------- ---------------------------------------------------
 
   -------------------------------------------------------------------------
@@ -1328,31 +1321,28 @@ the source site configuration process in iARM will fail.
  >Update source instance name, primaryOwner, secondaryOwner.
  >Keep immutableStorageRetentionDuration less than or equals to 7 for pilot mode.
 
-><recordsource
->primaryOwner="alias1@organization.com"
->secondaryOwner="alias2@organization.com"
->sourceInstanceName="Site Name"
->url="https://organization.sharepoint.com/sites/SiteName"
->isPilot="false"
->immutableStorageRetentionDuration="5"
->incrementalScanDuration="7"
+<recordsource 
+  primaryOwner="alias1@organization.com" 
+  secondaryOwner="alias2@organization.com" 
+  sourceInstanceName="Site Name" 
+  url="https://organization.sharepoint.com/sites/SiteName" 
+  isPilot="false" 
+  immutableStorageRetentionDuration="5" 
+  incrementalScanDuration="7">
 
+Add/remove metadata as required.  
+Specify which field(s) contain sensitive information by using the 'IsSensitive' attribute.
 
+<metadata>
+  <field>Title</field>
+  <field>Business Function</field>
+  <field IsSensitive="true">Information Type</field>
+  <field>Information Status</field>
+  <field>Jurisdiction</field>
+</metadata>
 
->Add/remove metadata as required.
- >Specify which field(s) contain sensitive information by using the >IsSensitive attribute.
+</recordsource>
 
-><metadata>
-
-><field>Title</field>
-><field>Business Function</field>
-><field IsSensitive="true">Information Type</field>
-><field>Information Status</field>
-><field>Jurisdiction</field>
-
-></metadata>
-
-></recordsource>
 
 
 h.  **Save and close the Manifest File**.
@@ -1569,14 +1559,14 @@ Data Type Configuration
   </p>
 
 
-<br>
+<br />
 
 # iARM Support
 
 **SUBMITTING SUPPORT REQUESTS AND ACCESS**
 
 -   The Customer may request Support Services by way of a Support
-    Request sent in email to: <support@infotechtion.com>
+    Request sent in email to: &lt;support@infotechtion.com&gt;
 
 -   Each Support Request shall include a description of the Operational
     Fault \[or Vulnerability\] and, where relevant, the start time of
