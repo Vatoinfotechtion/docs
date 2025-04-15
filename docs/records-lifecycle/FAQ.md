@@ -1,14 +1,13 @@
 ## FAQ ##
 
-1.What is the iARM My Disposal Dashboard?
+#### 1.What is the iARM My Disposal Dashboard?
 
 The iARM My Disposal Dashboard is a user interface for managing and
 tracking the disposal and archival of information assets, designed to
 enhance the capabilities of Microsoft Purview Data Lifecycle Management
 and Records Management.
 
-<br>
-2. What are the key features of the My Disposal Dashboard?
+#### 2. What are the key features of the My Disposal Dashboard?
 
 -   Centralized Disposition Management
 
@@ -37,8 +36,8 @@ and Records Management.
 -   Long-Term Digital Preservation
 
 
-<br>
-3. Who can use the My Disposal Dashboard?
+
+#### 3. Who can use the My Disposal Dashboard?
 
 The My Disposal Dashboard can be used by various roles including:
 
@@ -51,8 +50,8 @@ The My Disposal Dashboard can be used by various roles including:
 -   iARM Administrators
 
 
-<br>
-4. What actions can Business Reviewers perform?
+
+#### 4. What actions can Business Reviewers perform?
 
 Business Reviewers can:
 
@@ -67,8 +66,8 @@ Business Reviewers can:
 -   Use filters and manage columns in the dashboard
 
 
-<br>
-5. What actions can Archive Reviewers perform?
+
+#### 5. What actions can Archive Reviewers perform?
 
 Archive Reviewers can:
 
@@ -81,8 +80,8 @@ Archive Reviewers can:
 -   Use filters and manage columns in the dashboard
 
 
-<br>
-6. What is the difference between Business Reviewers and Archive Reviewers?
+
+#### 6. What is the difference between Business Reviewers and Archive Reviewers?
 
 Business Reviewers evaluate items for compliance, retention, and
 disposal based on business needs, while Archive Reviewers focus on
@@ -90,8 +89,8 @@ long-term storage compliance, ensuring records are archived according to
 regulatory and business requirements.
 
 
-<br>
-7. How does the My Disposal Dashboard ensure compliance?
+
+#### 7. How does the My Disposal Dashboard ensure compliance?
 
 The dashboard ensures compliance by:
 
@@ -107,38 +106,36 @@ The dashboard ensures compliance by:
 -   Offering automated notifications and reminders
 
 
-<br>
-8. What is the definition of \"Disposition\" in the context of the My
+
+#### 8. What is the definition of \"Disposition\" in the context of the My
 Disposal Dashboard?
 
 Disposition refers to the action taken on a file when its retention
 period expires, which can include deletion, reclassification, or
 archival.
 
-<br>
-10. How frequently does the system check for disposition activities?
+
+#### 10. How frequently does the system check for disposition activities?
 
 The frequency of checks can be configured in the Disposal Settings,
 specifying the number of days between checks.
 
 
-<br>
-11. How are notifications managed for users?
+
+#### 11. How are notifications managed for users?
 
 Users receive email notifications at intervals specified in the Disposal
 Settings, reminding them of pending disposition tasks.
 
-
-<br>
-12. What is the \"Historic View\" in the My Disposal Dashboard?
+#### 12. What is the \"Historic View\" in the My Disposal Dashboard?
 
 The Historic View provides a detailed log of all past actions taken by
 reviewers, including key details such as site name, file name, retention
 label, status, and action dates.
 
 
-<br>
-13. What is the process for disposing of records in the My Disposal
+
+#### 13. What is the process for disposing of records in the My Disposal
 Dashboard?
 
 The disposal process involves:
@@ -155,15 +152,15 @@ The disposal process involves:
 5.  Finalization of disposal actions
 
 
-<br>
-14. How are records archived using the My Disposal Dashboard?
+
+#### 14. How are records archived using the My Disposal Dashboard?
 
 Records are archived after being approved by Archive Reviewers. The
 items are then copied to the iARM Records Repository for long-term
 storage.
 
-<br>
-15. What types of reports are available in the My Disposal Dashboard?
+
+#### 15. What types of reports are available in the My Disposal Dashboard?
 
 The dashboard offers various reports, including:
 
@@ -184,8 +181,7 @@ The dashboard offers various reports, including:
 -   Regulatory Records
 
 
-<br>
-16. How can I get support for the My Disposal Dashboard?
+#### 16. How can I get support for the My Disposal Dashboard?
 
 Support can be requested via email at support@infotechtion.com. Include
 a description of the issue and any relevant details to assist the
