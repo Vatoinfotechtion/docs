@@ -140,9 +140,7 @@ This section offers a **high-level overview of all iARM features**,
 structured around its top horizontal navigation. Starting with the top
 navigation, this overview will describe the various components of iARM.
 
-<p align="center">
-  <img src="UserManualImages/Picture1.png" />
-  </p>
+![Image](UserManualImages/Picture1.png)
 
 | #  | Component              | Description                                                                 |
 |----|------------------------|-----------------------------------------------------------------------------|
@@ -182,13 +180,9 @@ tracked, and files managed by iARM. 
 There are 3 top-level dashboards, each with 4 to 6 interactive graphs
 and charts. 
 
-<p align="center">
-  <img src="UserManualImages/Picture2.png" />
-  </p>
+![Image](UserManualImages/Picture2.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture3.png" />
-  </p>
+![Image](UserManualImages/Picture3.png)
 
   | #  | Feature          | Description |
 |----|-----------------|----------------------------------------------------------------|
@@ -199,16 +193,11 @@ and charts. 
 
 **Snapshots of the top-level and drill-down dashboards:** 
 
-<p align="center">
-  <img src="UserManualImages/Picture4.png" />
-  </p>
-<p align="center">
-  <img src="UserManualImages/Picture5.png" />
-  </p>
-<p align="center">
-  <img src="UserManualImages/Picture6.png" />
-  </p>
+![Image](UserManualImages/Picture4.png)
 
+![Image](UserManualImages/Picture5.png)
+
+![Image](UserManualImages/Picture6.png)
 
 ## My Disposal Dashboard
 
@@ -277,9 +266,7 @@ most out of the My Disposal Dashboard.
 | 4    | **iARM Administrator** | Admins can edit Disposal Settings, Container Settings, and update Business and Archive Reviewers. |
 
 
-<p align="center">
-  <img src="UserManualImages/Picture28.png" />
-  </p>
+![Image](UserManualImages/Picture28.png)
 
 #### Key Features and Capabilities
 
@@ -372,13 +359,9 @@ Regardless of the role a user represents in the disposition process,
 there will some screens that are universal. To review records, there are
 three views that are relevant and selectable.
 
-<p align="center">
-  <img src="UserManualImages/Picture29.png" />
-  </p> 
+![Image](UserManualImages/Picture29.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture30.png" />
-  </p>
+![Image](UserManualImages/Picture30.png)
 
 | **#** | **Tab**             | **Description**                                                      |
 |------|------------------|----------------------------------------------------------------------|
@@ -393,25 +376,19 @@ The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when accessing the My Disposal
 Dashboard.
 
-<p align="center">
-  <img src="UserManualImages/Picture32.svg" />
-  </p>
+![Image](UserManualImages/Picture32.svg)
 
 **My Disposal Dashboard -- Manage Columns**
 
 Columns can be turned on and off or reconfigured to meet the user's
 preferences.
 
-<p align="center">
-  <img src="UserManualImages/Picture33.svg" />
-  </p>
+![Image](UserManualImages/Picture33.svg)
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when managing or changing columns.
 
-<p align="center">
-  <img src="UserManualImages/Picture34.svg" />
-  </p>
+![Image](UserManualImages/Picture34.svg)
 
 My Disposal Dashboard -- Filtering
 
@@ -423,7 +400,7 @@ Selecting the funnel icon brings up the following screens for filtering.
 
 |         |     |
 |------------|-------------|
-|Filtering files can be accessed by clicking on the icon in the upper right corner.| <img src="UserManualImages/Picture35.png" /> |
+|Filtering files can be accessed by clicking on the icon in the upper right corner.| ![Image](UserManualImages/Picture35.png) |
 
 Once filters are selected and highlighted, click the Apply button to run that filter, or click Reset to start over.
 
@@ -444,9 +421,7 @@ Once filters are selected and highlighted, click the Apply button to run that fi
 
 The following picture shows the filtering selection panel.
 
-<p align="center">
-  <img src="UserManualImages/Picture36.png" />
-  </p>
+![Image](UserManualImages/Picture36.png)
 
 
 My Disposal Dashboard -- Sorting, Refresh and Load More
@@ -465,10 +440,7 @@ access to the item. Otherwise, the item will be presented.
 To see and review all past actions, the Historic View table provides the
 critical names, dates and actions.
 
-<p align="center">
-  <img src="UserManualImages/Picture37.png" />
-  </p>
-
+![Image](UserManualImages/Picture37.png)
 
 The Historic View table presents the following column details.
 
@@ -494,10 +466,7 @@ The table can become quite large, and it is useful to apply filters to
 narrow down the search for information. The filters work by selecting
 the appropriate value in the selection box or drop-down menu.
 
-<p align="center">
-  <img src="UserManualImages/Picture38.png" />
-  </p>
-
+![Image](UserManualImages/Picture38.png)
 
 **High-Level Item-Level Workflow**
 
@@ -505,10 +474,7 @@ The following diagram show the overall all workflow of labelling and
 disposition to help identify the likely sequence of events or where a
 document may be in the process.
 
-<p align="center">
-  <img src="UserManualImages/Picture39.png" />
-  </p>
-
+![Image](UserManualImages/Picture39.png)
 
 **List of Item-Level Statuses**
 
@@ -549,9 +515,7 @@ sections in this doc into 1 and move to the common UI section\]
 
 **Email Content** 
 
-<p align="center">
-  <img src="UserManualImages/Picture40.png" width="300px" />
-  </p>
+![Image](UserManualImages/Picture40.png)
 
 
 <h2>My Disposal Dashboard: Business Review (BR)</h2>
@@ -600,10 +564,7 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application.
 
-<p align="center">
-  <img src="UserManualImages/Picture41.png" />
-  </p>
-
+![Image](UserManualImages/Picture41.png)
 
 **BR: Dashboard**
 
@@ -613,26 +574,20 @@ sufficient knowledge of documents related to their business function
 that they can make decisions about disposition activities. They do not
 need to be the owner of the files.
 
-<p align="center">
-  <img src="UserManualImages/Picture42.png" />
-  </p>
+![Image](UserManualImages/Picture42.png)
 
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when performing a review
 
-<p align="center">
-  <img src="UserManualImages/Picture43.png" />
-  </p>
+![Image](UserManualImages/Picture43.png)
 
 ##### BR: How to Approve File Records for Disposal
 
 The following steps should be taken to filter, sort and select records
 for review or disposition.
 
-<p align="center">
-  <img src="UserManualImages/Picture44.svg" />
-  </p>
+![Image](UserManualImages/Picture44.svg)
 
 ###### BR: Workflow and Status after Approving File Records for Disposal
 
@@ -640,17 +595,14 @@ The diagram below illustrates the workflow of decisions and file
 statuses available to the Business Reviewer within the application after
 approval.
 
-<p align="center">
-  <img src="UserManualImages/Picture45.png" />
-  </p>
+![Image](UserManualImages/Picture45.png)
+
 ##### BR: How to Extend File Records
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when extending file retention
 
-<p align="center">
-  <img src="UserManualImages/Picture46.png" />
-  </p>
+![Image](UserManualImages/Picture46.png)
 
 ###### BR: Workflow and Status [after Extending] File Record(s)
 
@@ -658,18 +610,14 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application after extending the retention period on files.
 
-<p align="center">
-  <img src="UserManualImages/Picture47.png" />
-  </p>
+![Image](UserManualImages/Picture47.png)
 
 ##### BR: How to Relabel File Records
 
 The following diagram shows the available buttons and actions that can
 be accessed by the business reviewer when relabeling file records
 
-<p align="center">
-  <img src="UserManualImages/Picture48.png" />
-  </p>
+![Image](UserManualImages/Picture48.png)
 
 ###### BR: Workflow and Status [after Relabeling] File Record(s)
 
@@ -677,9 +625,7 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Business Reviewer has available within the
 application after Relabeling files.
 
-<p align="center">
-  <img src="UserManualImages/Picture49.png" />
-  </p>
+![Image](UserManualImages/Picture49.png)
 
 ### My Disposal Dashboard: Archive Review (AR)
 
@@ -725,32 +671,24 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application for archival and disposition.
 
-<p align="center">
-  <img src="UserManualImages/Picture50.png" />
-  </p>
+![Image](UserManualImages/Picture50.png)
 
 **AR: Dashboard**
 
 The Archive Reviewer is presented with a similar table of items
 available for archive.
 
-<p align="center">
-  <img src="UserManualImages/Picture51.png" />
-  </p>
+![Image](UserManualImages/Picture51.png)
 
 The table can become quite large, and it is useful to apply filters to
 narrow down the search for information. The filters work by selecting
 the appropriate value in the selection box or drop-down menu.
 
-<p align="center">
-  <img src="UserManualImages/Picture52.png" />
-  </p>
+![Image](UserManualImages/Picture52.png)
 
 **AR: How to Approve File Records for Archival**
 
-<p align="center">
-  <img src="UserManualImages/Picture53.png" />
-  </p>
+![Image](UserManualImages/Picture53.png)
 
 AR: Workflow and Status [after Approving File Records for
 Archival]
@@ -759,15 +697,11 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application after approving the archival or records.
 
-<p align="center">
-  <img src="UserManualImages/Picture54.png" />
-  </p>
+![Image](UserManualImages/Picture54.png)
 
 **AR: How to Approve File Records for Disposal**
 
-<p align="center">
-  <img src="UserManualImages/Picture55.png" />
-  </p>
+![Image](UserManualImages/Picture55.png)
 
 **AR: Workflow and Status after Approving File Records for Disposal**
 
@@ -775,18 +709,14 @@ The following diagram shows the workflow of possible decisions and
 status of files that the Archive Reviewer has available within the
 application after record disposal review.
 
-<p align="center">
-  <img src="UserManualImages/Picture56.png" />
-  </p>
+![Image](UserManualImages/Picture56.png)
 
 <h2>My Disposal Dashboard: Administration</h2>
 
 **The following administrator settings are specific to the My Disposal
 Dashboard.**
 
-<p align="center">
-  <img src="UserManualImages/Picture57.png" />
-  </p>
+![Image](UserManualImages/Picture57.png)
 
   | **#**  | **Component**             | **Description** |
 |--------|---------------------------|-------------------------------------------------------------|
@@ -801,9 +731,7 @@ Dashboard.**
 The following configurations can be made to the time the disposition
 review activities occur.
 
-<p align="center">
-  <img src="UserManualImages/Picture58.png" />
-  </p>
+![Image](UserManualImages/Picture58.png)
 
  | **#**  | **Configuration**            | **Description** |
 |--------|------------------------------|----------------------------------------------------------------|
@@ -818,13 +746,9 @@ of their review activities can be adjusted through this configuration
 screen. Add a name by typing in the text box. Reviewers can be removed
 by clicking on the x next to their name.
 
-<p align="center">
-  <img src="UserManualImages/Picture59.png" />
-  </p>
+![Image](UserManualImages/Picture59.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture60.png" />
-  </p>
+![Image](UserManualImages/Picture60.png)
 
 
 
@@ -834,9 +758,7 @@ This is where the Container Disposal Assessment feature is configured;
 specifically, the (1) Frequency of Checks (Days), and (2) Period While
 Empty (Days).
 
-<p align="center">
-  <img src="UserManualImages/Picture61.png" />
-  </p>
+![Image](UserManualImages/Picture61.png)
 
  | **#**  | **Configuration**          | **Description** |
 |--------|----------------------------|----------------------------------------------------------------|
@@ -851,9 +773,7 @@ Retention Policy. Data Types are to be provided in comma-separated
 format. Example data types are: dll, msi, mdf, ldf, ps1, css, js, sass,
 ts, 7, exe, mdl.
 
-<p align="center">
-  <img src="UserManualImages/Picture62.png" />
-  </p>
+![Image](UserManualImages/Picture62.png)
 
 
 
@@ -863,9 +783,7 @@ The **My Data** component provides access to the folders and files that
 have been copied from the source location. It also provides the ability
 to view enriched metadata extracted from the data source.
 
-<p align="center">
-  <img src="UserManualImages/Picture6.png" />
-  </p>
+![Image](UserManualImages/Picture6.png)
 
 ### My Data: Regulatory Compliant File Records Repository
 
@@ -891,9 +809,7 @@ and source instance from the dropdown menus.
 
 1.  **Select the Data Type**
 
-<p align="center">
-  <img src="UserManualImages/Picture8.png " width="200px" />
-  </p>
+![Image](UserManualImages/Picture8.png)
 
   | #  | Feature         | Description |
 |----|---------------|--------------------------------------------------------------------------------------------------|
@@ -903,16 +819,16 @@ and source instance from the dropdown menus.
 
 2.  **Select the Source and Source Instance**
 
-<p align="center">
-  <img src="UserManualImages/Picture9.png" width="200px" />  <img src="UserManualImages/Picture11.png" width="250px" /> <img src="UserManualImages/Picture10.png" width="200px" />
-  </p>
+![Image](UserManualImages/Picture9.png)
+
+![Image](UserManualImages/Picture11.png)
+
+![Image](UserManualImages/Picture10.png)
 
 3.  **View folders, files, and metadata in the iARM Repository**
 
-<p align="center">
-  <img src="UserManualImages/Picture12.png" /></p>  
-  <p align="center">
-  <img src="UserManualImages/Picture13.png" /> </p>
+![Image](UserManualImages/Picture12.png)
+![Image](UserManualImages/Picture13.png)
 
 4.  **View the File/Folder Information Panel**
 
@@ -923,9 +839,7 @@ The information pane consists of source enriched metadata, history,compliance co
 | View the Details Pane by selecting a file or folder, then select the information icon in the upper right corner.| ![pic14](UserManualImages/Picture14.png) |
 
 
-<p align="center">
-  <img src="UserManualImages/Picture15.png" />
-  </p>
+![Image](UserManualImages/Picture15.png)
 
 
 | Description | Image |
@@ -945,15 +859,11 @@ The information pane consists of source enriched metadata, history,compliance co
 
 |         |     |
 |------------|-------------|
-|To manage the columns, select this icon in the upper right corner.| <img src="UserManualImages/Picture19.png" /> |
+|To manage the columns, select this icon in the upper right corner.| ![Image](UserManualImages/Picture19.png) |
 
-<p align="center">
-  <img src="UserManualImages/Picture20.png" />
-  </p>
+![Image](UserManualImages/Picture20.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture21.png" />
-  </p>
+![Image](UserManualImages/Picture21.png)
 
 
 6.  **Filter Files**
@@ -965,13 +875,9 @@ The information pane consists of source enriched metadata, history,compliance co
 |------------|-------------|
 |Filtering files can be accessed by clicking on the icon in the upper right corner.| ![pic22](UserManualImages/Picture22.png) |
 
-<p align="center">
-  <img src="UserManualImages/Picture23.png" />
-  </p>
+![Image](UserManualImages/Picture23.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture24.png" />
-  </p>
+![Image](UserManualImages/Picture24.png)
 
 
 | #  | Filter        | Description |
@@ -994,13 +900,9 @@ owner to manage compliant storage location.
 |------------|-------------|
 |To view the Source Instance Configuration, select this icon in the right upper corner.| ![pic25](UserManualImages/Picture25.png) |
 
-<p align="center">
-  <img src="UserManualImages/Picture26.png" />
-  </p>
+![Image](UserManualImages/Picture26.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture27.png" />
-  </p>
+![Image](UserManualImages/Picture27.png)
 
   | #  | Data Field                 | Description |
 |----|----------------------------|--------------------------------------------------------------------------------------|
@@ -1022,13 +924,9 @@ addition to the current activity dashboards, there are several reports
 that show the overall state of the records management program within the
 organization.
 
-<p align="center">
-  <img src="UserManualImages/Picture63.png" />
-  </p>
+![Image](UserManualImages/Picture63.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture64.png" />
-  </p>
+![Image](UserManualImages/Picture64.png)
 
 | #  | Feature                | Description |
 |----|------------------------|-----------------------------------------------------------------------------------------------|
@@ -1049,12 +947,9 @@ The **Administration** component shows all the configuration options to
 configure the iARM product and perform admin activities. It is only
 accessible to **Administrators**.
 
-<p align="center">
-  <img src="UserManualImages/Picture65.png" />
-  </p>
-<p align="center">
-  <img src="UserManualImages/Picture66.png" />
-  </p>
+![Image](UserManualImages/Picture65.png)
+
+![Image](UserManualImages/Picture66.png)
 
 ### Disposal Settings
 
@@ -1062,13 +957,9 @@ This is where the **Information Disposal Assessment** feature is
 configured; specifically, the (1) Frequency of Checks (Days)\*, and (2)
 Notification Email (Days)\*.
 
-<p align="center">
-  <img src="UserManualImages/Picture67.png" />
-  </p>
+![Image](UserManualImages/Picture67.png)
 
-<p align="center">
-  <img src="UserManualImages/Picture68.png" />
-  </p>
+![Image](UserManualImages/Picture68.png)
 
 ### Add Edit Reviewers
 
@@ -1117,29 +1008,17 @@ Site.
 
     b.  **Select 'Administration'** from the top horizontal menu.
 
-<div align="center">
-  <img src="UserManualImages/Picture69.png" />
-</div>
+![Image](UserManualImages/Picture69.png)
 
-<div align="center">
-  <img src="UserManualImages/Picture70.png" />
-</div>
+![Image](UserManualImages/Picture70.png)
 
-<div align="center">
-  <img src="UserManualImages/Picture71.png" />
-</div>
+![Image](UserManualImages/Picture71.png)
 
-<div align="center">
-  <img src="UserManualImages/Picture72.png" />
-</div>
+![Image](UserManualImages/Picture72.png)
 
-<div align="center">
-  <img src="UserManualImages/Picture73.png" />
-</div>
+![Image](UserManualImages/Picture73.png)
 
-<div align="center">
-  <img src="UserManualImages/Picture74.png" />
-</div>
+![Image](UserManualImages/Picture74.png)
 
 
 
@@ -1152,9 +1031,7 @@ Site.
 f.  **Select 'Download a template'** - this will download a template
     Manifest File, into the local machine's downloads folder.
 
-<p>
-  <img src="UserManualImages/Picture75.png" />
-  </p>
+![Image](UserManualImages/Picture75.png)
 
 
 g.  **Create the Manifest File for the New Source Site**
@@ -1365,26 +1242,22 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
         select the manifest file to be uploaded.
 
     ii. Upload file - After selecting the file, click open
-  <p align="center">
-  <img src="UserManualImages/Picture76.png" />
-  </p>
+ 
+![Image](UserManualImages/Picture76.png)
 
     iii. **Manifest File Validation** -- At upload, iARM will validate
          the manifest file.
     If the source instance is successfully created, a confirmation message will display in the lower right corner.
 
 
-<p align="center">
-  <img src="UserManualImages/Picture77.png" />
-  </p>
+![Image](UserManualImages/Picture77.png)
 
  If the source instance is unsuccessful, an error message will display
  in the lower right corner. If this is the case, review the steps above
  to troubleshoot how to resolve.
 
-<p align="center">
-  <img src="UserManualImages/Picture78.png" />
-  </p>
+![Image](UserManualImages/Picture78.png)
+
  When the XML file is uploaded, the data from the XML file for Primary
  and Secondary Owners will display as shown below and can be edited
  before final submission.
@@ -1393,9 +1266,7 @@ j.  **Return to iARM \> Administration \> Source Instance Config.**
  will have access to the source instance configuration panel in the
  Administration component of iARM.
 
-<p align="center">
-  <img src="UserManualImages/Picture79.png" />
-  </p>
+![Image](UserManualImages/Picture79.png)
 
 3.  **Select 'Submit' to finalize the setup of the new the SharePoint
     Source Site**
@@ -1457,9 +1328,7 @@ The following diagram depicts **the process and data flow for File
 Records copy errors** from a SharePoint Site source to the regulatory
 records repository in iARM:
 
-<p align="center">
-  <img src="UserManualImages/Picture80.png" />
-  </p>
+![Image](UserManualImages/Picture80.png)
 
 **File Records Copy Error process and workflow:**
 
@@ -1500,17 +1369,13 @@ records repository in iARM:
 The message and configuration of the **email notification is intended to
 be customized** as needed by the organization using iARM.
 
-<p align="center">
-  <img src="UserManualImages/Picture81.png" />
-  </p>
+![Image](UserManualImages/Picture81.png)
 
 > Example
 >
 > CSV file attached to the Email Notification
 
-<p align="center">
-  <img src="UserManualImages/Picture82.png" />
-  </p>
+![Image](UserManualImages/Picture82.png)
 
 ##### Columns and Data provided in the CSV File
 
@@ -1544,9 +1409,7 @@ To resolve this issue, you can:
 
 **Visuals for both resolution paths are shown below:**
 
-<p align="center">
-  <img src="UserManualImages/Picture83.png" />
-  </p>
+![Image](UserManualImages/Picture83.png)
 
 ### Container Settings
 
@@ -1554,15 +1417,11 @@ This is where the **Container Disposal Assessment** feature is
 configured; specifically, the (1) Frequency of Checks (Days), and (2)
 Period While Empty (Days).
 
-<p align="center">
-  <img src="UserManualImages/Picture84.png" />
-  </p>
+![Image](UserManualImages/Picture84.png)
 
 Data Type Configuration
 
-<p align="center">
-  <img src="UserManualImages/Picture85.png" />
-  </p>
+![Image](UserManualImages/Picture85.png)
 
 
 <br />
