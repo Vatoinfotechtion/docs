@@ -92,7 +92,6 @@ const sidebars: SidebarsConfig = {
       items: [
         'product-overview/Overview',
         'product-overview/Usecase',
-        'product-overview/Casestudies',
         'product-overview/FAQ',
       ],
     }
