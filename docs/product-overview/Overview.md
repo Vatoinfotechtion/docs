@@ -10,9 +10,7 @@ At the core of data governance, security and compliance are business, IT Securit
 
 i-ARM provides an integrated platform for data governance to meet an organisations legal and regulatory compliance requirement, providing a high quality of data as an input to business decision making processes.
 
-<p align="center"> 
-  <img src="OverviewImages/overview.png" alt="Product Overview" title="Product Overview" />
-</p>
+![Image](OverviewImages/overview.png)
 
 ## Key Features of i-ARM  
 
