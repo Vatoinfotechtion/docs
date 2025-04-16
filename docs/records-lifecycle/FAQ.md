@@ -1,3 +1,9 @@
+---
+id: FAQ
+title: FAQ – My Disposal Dashboard
+sidebar_label: FAQ
+---
+
 ## FAQ ##
 
 #### 1.What is the iARM My Disposal Dashboard?
