@@ -1,6 +1,12 @@
-<h1> Introduction </h1>
+---
+id: Getstarted
+title: Getstarted – My Disposal Dashboard
+sidebar_label: Getstarted
+---
 
-**The primary interface is \'My Disposal Dashboard\',** it provides an
+<h1>Introduction</h1>
+
+**The primary interface is 'My Disposal Dashboard',** it provides an
 intuitive interface for managing and tracking the disposal and archival
 of information assets. It offers a comprehensive overview of scheduled
 disposals, ensuring full visibility and control over asset lifecycles.
