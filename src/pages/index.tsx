@@ -33,6 +33,13 @@ function HomepageHeader() {
               Technical Documentation
             </Link>
           </div>
+          <div>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/records-lifecycle/Overview">
+              Records Lifecycle
+            </Link>
+          </div>
         </div>
       </div>
     </header>
