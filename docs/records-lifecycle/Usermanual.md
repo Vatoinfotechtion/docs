@@ -1,3 +1,9 @@
+---
+id: Usermanual
+title: User Manual – Records Lifecycle
+sidebar_label: User Manual
+---
+
 # Introduction
 
 ## Summary

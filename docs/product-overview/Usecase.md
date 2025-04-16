@@ -1,3 +1,9 @@
+---
+id: Usecase
+title: Primary Use Cases
+sidebar_label: Use Cases
+---
+
 # Primary Use Cases #
 
 - Manage Disposal / Archival process of expired information.  

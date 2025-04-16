@@ -1,3 +1,9 @@
+---
+id: FAQ
+title: Frequently Asked Questions
+sidebar_label: FAQ
+---
+
 # Frequently Asked Questions (FAQ) – Infotechtion-ARM
 
 ## General Information
