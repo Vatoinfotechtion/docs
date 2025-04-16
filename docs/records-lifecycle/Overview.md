@@ -47,9 +47,8 @@ the requirements and capabilities of the module.
 ## Components  
 
 This section offers a **high-level overview of all iARM features**, structured around its top horizontal navigation. Starting with the top navigation, this overview will describe the various components of iARM.
-<p align="center">
-  <img src="RecordsOverviewImages/Picture1.png" alt="components" />
-  </p>
+
+![Image](RecordsOverviewImages/Picture1.png)
 
 | #  | Component | Description |
 |----|----------|-------------|
@@ -67,6 +66,4 @@ This section offers a **high-level overview of all iARM features**, structured a
 
 The following diagram shows the overall workflow of labeling to disposition with i-ARM, to help identify the likely sequence of events related to a record throughout its lifecycle.  
 
-<p align="center">
-  <img src="RecordsOverviewImages/Picture2.png " alt="WorkFlow" />
-  </p>
+![Image](RecordsOverviewImages/Picture2.png)
