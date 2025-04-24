@@ -6,8 +6,6 @@ Prepared By: i-ARM Devops Team;Vivek.B@infotechtion.com
 
 Prepared For: Consumer Architects
 
-# STANDARDS
-
 ## Naming Standards
 
 The naming standards and guidelines for Azure resources followed by the i-ARM are described in this section. Following recommended naming conventions makes managing resources in the Azure environment easier, increases clarity, and makes resource grouping and recognizing them simpler.
@@ -75,9 +73,7 @@ Below is the list of I-ARM resources which should have unique name
 | NFS | Network File Share |
 | MPIP | Microsoft Purview Information Protection |
 
-# Overview
-
-## Design Architecture
+## Design Architecture (Overview)
 
 ![Image](ConfigurationDesignImages/image1.png)
 
@@ -109,9 +105,7 @@ Below is the list of I-ARM resources which should have unique name
 | 24 | i-ARM Agent Services | Storage Account | HTTPS: \<confirmed during implementation\> | N | Source: N  Target: N | 443 | Y –native | Entra Cloud Service Account |
 | 25 | i-ARM Agent Services | Azure File Share and Network File Share | SMB | N | Source: N  Target: N | 445 | Y –native (Storage Account) | Entra Cloud Service Account |
 
-# Azure Governance
-
-## Management Group
+## Management Group (Azure Governance)
 
 This section describes the deployment strategy for the i-ARM solution within the Azure environment, specifically focusing on the use of Management Groups. By utilizing a structured approach to Management Groups, the solution can be efficiently organized and governed within the landing zone, ensuring compliance, security, and streamlined management of resources across multiple subscriptions.
 
@@ -167,9 +161,7 @@ Before deploying the i-ARM solution, ensure that the following Azure resource pr
 
 This section highlights the importance of Azure Policies in governing the i-ARM solution and ensuring compliance with organizational standards. This section is usually completed with the consumer architecture team, and refers to consumer specific policies as-built in consumer environment.
 
-# Entra
-
-## Application Registration
+## Application Registration (Entra)
 
 This section details the process and significance of Microsoft Entra / Azure Active Directory (AD) application registration for the i-ARM solution. Application registration is essential for enabling secure access and authentication for several components of the solution. By registering the application in Entra ID / Azure AD, you can manage permissions, control access to APIs, and ensure secure integration with other Azure services.
 
@@ -524,8 +516,6 @@ RBAC (Role-Based Access Control) on Azure is a system for managing access to Azu
 | **M365 Purview Compliance Portal** | [Service Account for syncing label and label policies from Microsoft Purview Compliance Portal] | View-Only Retention Management  View-Only Record Management | User | Direct |
 | **Azure Container Instance** | User managed Identity (ADD Name) | ACR Role | User Managed Identity | Direct |
 
-# Networking
-
 ## Virtual Network
 
 This section highlights that the relevant PaaS services for the i-ARM solution are deployed within the Azure Virtual Network. This deployment ensures secure communication and isolation among resources while leveraging the benefits of Azure networking capabilities.
@@ -636,9 +626,7 @@ The section below details the subnets within the Azure Virtual Network for the i
 | AzureBastionSubnet | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-bastion-regionabbr-prd | The Bastion subnet enables secure remote access to Azure Virtual Machines (VMs) without exposing them to the public internet. [Learn more](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) |
 | subnet-iarm-container-regionabbr-prd | vnet-iarm-svc-regionabbr-prd | x.x.x.x /25 | Default | nsg-iarm-container-regionabbr-prd | This subnet enhances the network capabilities and security of container instances in Azure. |
 
-# Key Vault
-
-## Vault
+## Key Vault
 
 Azure Key Vault is a critical component for the i-ARM solution, safeguarding secrets used by services within the i-ARM framework. It provides secure storage for sensitive data such as API keys, passwords, ensuring that they are protected with strong encryption and access policies. Integrated with Entra ID / Azure Active Directory, it enforces strict access controls, allowing only authorized users and applications to retrieve sensitive information.
 
@@ -663,8 +651,6 @@ Azure Key Vault is a critical component for the i-ARM solution, safeguarding sec
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
 \* An [azure policy exemption](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure) rule needs to be created in the consumer azure portal to exempt the “kv-iarm-svc-regionabbr-prd” key vault from the “[Deny-PublicPaaSEndpoints](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Deny-PublicPaaSEndpoints.html)” policy to allow configuring the Key Vault firewall with “**Enabled from selected virtual networks and IP addresses**”. This is necessary for Power Automate to read secrets from the “kv-iarm-svc-regionabbr-prd” Key Vault. Since Power Automate is a cloud service, it initiates requests from the public internet and does not operate within the same private network as the key vault.
-
-# Web
 
 ## App Service Plan
 
@@ -1060,8 +1046,6 @@ This section outlines the App Service configuration for the i-ARM web app, which
 | **Continuous deployment** | Disabled | |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
-# Database
-
 ## Azure SQL Database
 
 This section details the configuration of the Azure SQL Database, which serves as the backend data store for i-ARM services. The database is equipped with a private endpoint, ensuring secure, private access within a designated VNET and preventing exposure to the public internet.
@@ -1106,9 +1090,7 @@ This setup delivers a strong and secure data storage solution, integral to the r
 | | **Private DNS Zone** | privatelink.database.windows.net |
 | **Diagnostics** | Diagnostics logs are sent to the central log analytics workspace of the solution | |
 
-# Azure Monitoring
-
-## Log Analytics Workspace
+## Log Analytics Workspace (Azure Monitoring)
 
 This section provides an overview of the Log Analytics Workspace configuration, which acts as a central repository for aggregating and analyzing log data from various resources of i-ARM. The workspace is crucial for enhancing operational visibility and security by enabling the collection, querying, and monitoring of log data, while supporting advanced integrations with services like Azure Monitor and Azure Sentinel for comprehensive data analysis and threat detection, if required.
 
@@ -1118,9 +1100,7 @@ This section provides an overview of the Log Analytics Workspace configuration, 
 | **Resource Group** | rg-iarm-svc-regionabbr-prd |
 | **Region** | \<Consumer Azure region\> |
 
-# Virtual Machine
-
-## On-Premises Data Gateway
+## On-Premises Data Gateway (Virtual Machine)
 
 The application gateway serves as an intermediary, facilitating secure connections between external SaaS offerings, such as Power Platform and Power BI, and the SQL database that is safeguarded by a firewall or positioned behind the native platform firewall of SQL azure database.
 
@@ -1180,9 +1160,7 @@ On your machine, navigate to the **Windows Features (Turn Windows features on or
 * The i-ARM Scanner Service VM should not have any Azure policy such as Auto Shutdown Schedule configured for automatic shutdown that would cause it to shut down on its own. Reference: [Deploy Virtual Machine Auto Shutdown Schedule - Deploy-Vm-autoShutdown](https://www.azadvertizer.net/azpolicyadvertizer/Deploy-Vm-autoShutdown.html)
 * MPIP Scanner Reference: [Get started with the information protection scanner | Microsoft Learn](https://learn.microsoft.com/en-us/purview/deploy-scanner-prereqs)
 
-# Security
-
-## Consumer Firewall Access
+## Consumer Firewall Access (Security)
 
 The policy document shared earlier outlines (Azure policies) various security policies established as part of the Enterprise Scale Landing Zone. These policies are designed to enhance the overall security posture of the subscription, ensuring robust protection against potential threats. As a critical component of our architecture, the i-ARM services are required to comply with these security policies, reinforcing our commitment to safeguarding data and maintaining regulatory compliance.
 
@@ -1214,8 +1192,6 @@ The policy document shared earlier outlines (Azure policies) various security po
 
 [Available Service Tags](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags)
 
-# Powerplatform
-
 ## Power BI
 
 This section provides an overview of the Power BI configuration, which acts as a central hub for aggregating and visualizing data from various resources of i-ARM. Power BI is crucial for enhancing operational insights and decision-making by enabling the creation of interactive reports and dashboards, while supporting advanced integrations for comprehensive data analysis and real-time performance monitoring, if required.
@@ -1246,9 +1222,7 @@ When the power automate flows are imported in an environment other than the defa
 
 [Learn more](https://learn.microsoft.com/en-us/purview/retention-label-flow#limitations-for-this-scenario)
 
-# SharePoint Webpart
-
-## PRM SPFx
+## PRM SPFx 
 
 The Physical Records Management Module within i-ARM is built on the SharePoint Framework (SPFx), that allow authorized users to register, categorize, and store information about physical records in a structured and secure manner. The modular design enables seamless integration with SharePoint’s core functionalities, ensuring that users can easily interact with their data while benefiting from features like version control, metadata tagging, and user permissions.
 
@@ -1291,9 +1265,7 @@ The Term Store allows us to manage and maintain a consistent set of terms and me
 
 Managed properties are used to optimize the search for physical records by mapping relevant metadata fields so that these fields can be easily queried and retrieved via the search functionality. The PnP Search Webpart leverages these fields to allow authorized users to view reports based on the search and filter criteria.
 
-# Azure DevOps
-
-## Repository
+## Repository (Azure DevOps)
 
 The Infotechtion Azure DevOps code repository utilizes Git for version control, enabling collaboration through branching, pull requests, and code reviews. Integrated with Azure Pipelines for CI/CD, it automates builds and deployments while enforcing role-based access controls to ensure security and accountability in the i-ARM services development process.
 
