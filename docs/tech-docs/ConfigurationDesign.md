@@ -79,9 +79,7 @@ Below is the list of I-ARM resources which should have unique name
 
 ## Design Architecture
 
-![A screenshot of a computer
-
-Description automatically generated](data:image/png;base64...)
+![Image](ConfigurationDesignImages/image1.jpg)
 
 | **Ref** | **Source Name** | **Target Name** | **Protocols** | **Data Gateway** | **VNet** | **Target’s Inbound Port** | **Firewall** | **Authentication method** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
