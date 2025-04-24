@@ -77,7 +77,11 @@ const sidebars: SidebarsConfig = {
         'tech-docs/Architecture',
         'tech-docs/Targetoperatingsystem',
         'tech-docs/ConfigurationDesign',
-        'tech-docs/DeploymentGuide',
+        {
+    type: 'doc',
+    id: 'tech-docs/DeploymentGuide',
+    label: 'Deployment Guide',
+  },
       ],
     }
   ],
