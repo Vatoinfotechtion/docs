@@ -15,7 +15,7 @@ The design shows the schema of underlying key tables used by i-ARM and their rel
 - Due to the use of Azure SQL database offering as the backend of i-ARM, the Data at rest is encrypted using Transparent Data Encryption (TDE). 
 - Role-based access control (RBAC) ensures that users have access only to the data they need. 
 
-![Image](DBSchemaImages/image.png)
+![Image](DBSchemaImages/image.jpg)
 
 **Core Entities** 
 
